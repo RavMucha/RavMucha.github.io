@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="RavMucha" content="">
+    <meta name="keywords" content="Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, Finance, career timeline, job qualifications, resume">
+    <meta name="description" content="My CV as a website">
 	<link rel="icon" type="image/png" href="/me_ico.ico"/>
 
-    <title>Resume by Rafal Mucha</title>
+    <title>CV by Rafal Mucha</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,18 +21,35 @@
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-
+<script>
+if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
+    else {
+	alert("Please use Google Chrome, optionally MS Edge for best experience.\n\nInternet Explorer and Firefox tend to lose some styling elements at render.\nOpera and Safari were not tested as of yet.");}
+</script>
     <!-- Stylesheets / rest's on the bottom for faster loads -->
     <link href="css/resume.min.css" rel="stylesheet">
 <style>
 .solol {list-style-image: url("img/SL.PNG");}
 .duol {list-style-image: url("img/DL.png");}
 .googl {list-style-image: url("img/GL.png");}
+#guzik {position: fixed;bottom: 15px;right: 20px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.8;}
+#guzik:hover {background-color: #495057;opacity: 0.9;}
+#guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
+#guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
+@keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
+/* Chrome, Safari i Opera */
+@-webkit-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
+/* FireFox */
+@-moz-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
+/* Internet Explorer ...;-( */
+@-ms-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
+/* Opera, wersje 12+ */
+@-o-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
 </style>
-  </head>
-
+</head>
   <body id="page-top">
-
+<a href="CV 2.0 Rafal Mucha.pdf" id="guzik" download><i class="em em-inbox_tray"></i><span class="guzikhint subheading">download my cv</span></a>
+    <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Start</span>
@@ -58,7 +75,7 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#awards">Achievements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -66,26 +83,31 @@
 		  <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#footer">Footer</a>
           </li>
+          <br/>
           <li class="nav-item">
-            <a class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!"><i class="fa fa-bug"></i> Report a bug</a>
+            <a class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <div class="container-fluid p-0">
-
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Rafał
             <span class="text-primary">Mucha</span>
           </h1>
-          <div class="subheading mb-5"><i class="fa fa-map-marker"></i> Kraków  ·  <i class="fa fa-user"></i> April 1987  ·  <i class="fa fa-phone-square"></i> +48 794 534 604  ·  <i class="fa fa-inbox"></i>
-            <a href="mailto:r.p.mucha@gmail.com?subject=Response2CV">r.p.mucha@gmail.com</a>
+          <div class="subheading mb-5"><i class="fa fa-map-marker"></i> <a href="#" data-toggle="modal" data-target="#mapaKraka">Kraków</a>
+<div class="modal fade bd-example-modal-lg" id="mapaKraka" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.156110345693!2d20.002538803666585!3d50.08093989726195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645337160b089%3A0x84a5709cc373db92!2z8J-PoQ!5e0!3m2!1spl!2spl!4v1532419377895" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>  ·  <i class="fa fa-user"></i> April 1987  ·  <i class="fa fa-phone-square"></i> <a href="tel:+48794534604">794 534 604</a>  ·  <i class="fa fa-inbox"></i>
+            <a href="mailto:r.p.mucha@gmail.com?subject=Response2CV&Body=Hello!">r.p.mucha@gmail.com</a>
           </div>
           <p class="mb-5">Economics master's degree graduate, working in the corporate finance sector. People focused,
 eager to learn new skills, proactive and keen on new challanges. Experienced in customer
-service, accounting, reporting, general IT and an aspiring programmer, focused on FrontEnd WebDev, mobile and automation.</p>
+service, accounting, reporting, general IT and an self-trained programmer, focused on FrontEnd WebDev, mobile and automations.</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/rafał-mucha-5b4a84110" target="_blank">
@@ -128,7 +150,17 @@ service, accounting, reporting, general IT and an aspiring programmer, focused o
               </a>
             </li>
           </ul>
-        </div>
+          <div class="container">
+    <div class="row">
+        <div class="col-9 alert alert-secondary alert-dismissible fade show" role="alert"  style="margin-top: 60px;">
+  <h4 class="alert-heading">Searching for a <span class="text-success">downloadable</span> CV?</h4>
+  <p class="mb-0">No problemo! You'll find the download button in the lower-right corner.</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span></button>
+    </div>
+        <div class="col-3"></div>
+  </div>
+  </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
@@ -139,10 +171,10 @@ service, accounting, reporting, general IT and an aspiring programmer, focused o
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Reporting & Analysis Senior Analyst  <span class="badge badge-secondary">Command Center</span></h3>
               <div class="subheading mb-3"><li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush"><li class="list-group-item">Preparation of daily/monthly reports in MS Excel
+              <p><ul class="list-group list-group-flush">
+<li class="list-group-item">Active website development, maintenance and improvements (<strong>HTML, CSS, JavaScript, jQuery, ASP.NET, Bootstrap, Google Charts</strong>), administration, access control, Front End & some occasional Back End maintenance
+</li><li class="list-group-item">Preparation of daily/monthly reports in MS Excel
 </li><li class="list-group-item">Preparation of monthly dashboards in SAP BusinessObjects & MS Power BI
-</li><li class="list-group-item">Website building, maintenance and improvements (HTML, CSS, JavaScript, jQuery, ASP.NET,
- PHP)
 </li><li class="list-group-item">Preparation of monthly service review PPT decks
 </li><li class="list-group-item">General IT support for Citrix, Cisco telephony, VPN, Office Suite software, ERPs, server issues,
  ticketing on ServiceNOW, BMC Remedy and various ITSM systems
@@ -283,7 +315,7 @@ service, accounting, reporting, general IT and an aspiring programmer, focused o
 
 		   <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Telephone consultant / Transcription Team Lead</h3>
+              <h3 class="mb-0">Telephone consultant | Transcription Team Lead</h3>
               <div class="subheading mb-3"><li style="list-style: square inside url('img/05.png')"> Medicover Sp. z o.o.</li></div>
               <p><ul class="list-group list-group-flush"><li class="list-group-item">Telephone customer service in Polish and English</li>
 <li class="list-group-item">Training new joiners</li>
@@ -297,7 +329,7 @@ service, accounting, reporting, general IT and an aspiring programmer, focused o
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Manager / web-based business owner</h3>
+              <h3 class="mb-0">Manager | web-based business owner</h3>
               <div class="subheading mb-3"><li style="list-style: square inside url('img/06.png')"> Academic Incubators of Entrepreneurship</li></div>
               <p>Management of a startup business, invoicing, contacting clients, sales of advertising space, website administration (HTML, phpBB).<br/>
 Employed and managed the work of up to 15 contractors.</p>
@@ -367,7 +399,6 @@ Employed and managed the work of up to 15 contractors.</p>
             <li class="list-inline-item">
               <i class="devicons devicons-jquery"></i>
             </li>
-            </li>
             <li class="list-inline-item">
               <i class="devicons devicons-bootstrap"></i>
             </li>
@@ -375,8 +406,11 @@ Employed and managed the work of up to 15 contractors.</p>
               <i class="devicons devicons-angular"></i>
             </li>
 			<li class="list-inline-item">
-              <i class="devicons devicons-php"></i>
+              <i class="devicons devicons-nodejs"></i>
             </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+			  </li>
 			<li class="list-inline-item">
               <i class="devicons devicons-database"></i>
 			  </li>
@@ -386,6 +420,9 @@ Employed and managed the work of up to 15 contractors.</p>
 			<li class="list-inline-item">
               <i class="devicons devicons-git"></i>
 			  </li>
+              <li class="list-inline-item">
+              <i class="devicons devicons-vim"></i>
+              </li>
 			<li class="list-inline-item">
               <i class="devicons devicons-linux"></i>
             </li>
@@ -399,29 +436,30 @@ Employed and managed the work of up to 15 contractors.</p>
               <i class="devicons devicons-windows"></i>
 			  </li>
           </ul>
-
-          <div class="subheading mb-3">Apps &amp; Software</div>
-          <ul class="fa-ul mb-0">
-            <li class="list-group-item disabled">
+<button class="btn btn btn-secondary subheading" type="button" data-toggle="collapse" data-target="#pokaSkillsy" aria-expanded="false" aria-controls="pokaSkillsy">Apps &amp; Software that I have used &amp; know&nbsp;&nbsp;&nbsp;<span class="badge badge-pill badge-dark">CLICK</span></button>
+    <div class="card card-body collapse" id="pokaSkillsy">
+          <ul class="fa-ul mb-0 list-group">
+            <li class="list-group-item list-group-item-dark">
               GNU | Linux | Ubuntu | Windows</li>
-            <li class="list-group-item disabled">
+            <li class="list-group-item list-group-item-secondary">
               MS Office: Sharepoint | Excel | Word | PowerPoint | Access | Sway | OneNote | Teams | Outlook...</li>
-            <li class="list-group-item disabled">
+            <li class="list-group-item list-group-item-dark">
               SAP BusinessObjects | MS Power BI</li>
-			<li class="list-group-item disabled">
+			<li class="list-group-item list-group-item-secondary">
               BMC Remedy | ServiceNOW | Hornbill SupportWorks</li>
-			<li class="list-group-item disabled">
+			<li class="list-group-item list-group-item-dark">
               Oracle HFM | SAP ERP</li>
-			<li class="list-group-item disabled">
+			<li class="list-group-item list-group-item-secondary">
               CRM | SalesForce</li>
-			<li class="list-group-item disabled">
-              MS Active Directory | Bash | PowerShell | Command Prompt Citrix | SalesForce</li>
-			<li class="list-group-item disabled">
-              Gimp | Citrix | RDP | Cisco VPN | LANDesk | WebEx</li>
-			<li class="list-group-item disabled">
-              Atom | Brackets | Git | GitHub | Eclipse | SharePoint Designer</li>
+			<li class="list-group-item list-group-item-dark">
+              MS Active Directory | Bash | PowerShell | Command Prompt</li>
+			<li class="list-group-item list-group-item-secondary">
+              Gimp | Citrix | RDPs | Cisco VPN | LANDesk | WebEx</li>
+			<li class="list-group-item list-group-item-dark">
+              Visual Studio Code | Atom | Brackets | Git | GitHub | Eclipse | SharePoint Designer</li>
           </ul>
         </div>
+    </div>
 		<br/>
 		  <div class="subheading mb-3">Languages</div>
           <ul class="fa-ul mb-0">
@@ -435,26 +473,20 @@ Employed and managed the work of up to 15 contractors.</p>
               <i class="fa-li fa em em-gb"></i>
               English
 			  <div class="progress" style="width: 25%">
-  <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"><b>C2</b></div>
+  <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><b>C1+</b></div>
 </div></li>
             <li>
               <i class="fa-li fa em em-de"></i>
               German
 			  <div class="progress" style="width: 25%">
-  <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><b>B1</b></div>
+  <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><b>A2</b></div>
 </div></li>
-            <li>
-              <i class="fa-li fa em em-flag-ea"></i>
-              Spanish
-			  <div class="progress" style="width: 25%">
-	<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"><b>A2</b></div>
-				</div></li>
           </ul>
         </div>
       </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <h2 class="mb-5">Achievements</h2>
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-star fa-lg text-warning"></i>
@@ -462,7 +494,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m3c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img src="img/mediCert3.jpg"/>
+	<img height="100%" width="100%" src="img/mediCert3.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">2012 | Awarded by the Deputy Director for Medical Quality</span></li>
@@ -472,7 +504,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m5c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img src="img/ujkCert.jpg"/>
+	<img height="100%" width="100%" src="img/ujkCert.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">2013 | University scholarship</span></li>
@@ -482,7 +514,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m1c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img src="img/mediCert4.jpg"/>
+	<img height="100%" width="100%" src="img/mediCert4.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">2013 | Medicover Call Center award</span></li>
@@ -492,7 +524,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m2c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img src="img/capiCert.jpg"/>
+	<img height="100%" width="100%" src="img/capiCert.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">Created the training for CAPITA | main trainer for 1.5 year</span></li>
@@ -502,7 +534,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m4c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img src="img/GooCert.jpg"/>
+	<img height="100%" width="100%" src="img/GooCert.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">SEO | SEM | e-commerce | online marketing</span></li>
@@ -518,6 +550,7 @@ Employed and managed the work of up to 15 contractors.</p>
 			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1023-489871/pdf/" target="_blank">CSS Fundamentals</a></li>
 			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1014-489871/pdf/" target="_blank">HTML Fundamentals</a></li>
 			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1068-489871/pdf/" target="_blank">Java Course</a></li>
+            <li class="solol">SoloLearn community courses in <b>Kotlin, Git, AngularJS, Bootstrap 3, ECMAScript 6, C, Machine Learning</b></li>
 			<li class="duol">Duolingo German Fluency: <a href="https://www.duolingo.com/Rafal_Mucha" target="_blank">Intermediate (Estimated)</a></li>
 			<li class="duol">Duolingo Spanish Fluency: <a href="https://www.duolingo.com/Rafal_Mucha" target="_blank">Intermediate (Estimated)</a></li>
           </ul>
@@ -538,12 +571,10 @@ Employed and managed the work of up to 15 contractors.</p>
 <li><i class="fa-li fa fa-heart"></i> Personal development literature</li>
 </ul></p>
         </div>
-      </section>
     </div>
-    <section class="py-lg-4 d-flex flex-column" id="footer" style="background-color:#e8eeef">
-<footer id="footer"><p class="text-info" style="margin-left:7%"><i>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do przeprowadzenia rekrutacji (ustawa z 29 sierpnia 1997 r.
-o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, ze zm.).</i></p></footer>
-</section>
+    </section>
+<div id="footer" class="col-lg-12 col-sm-6 col-md-6 col-lg-6" style="letter-spacing: 1px; margin: 1% 0 1% 0; text-align: center;">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do przeprowadzenia rekrutacji (ustawa z 29 sierpnia 1997 r.
+o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, ze zm.).</div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -553,15 +584,15 @@ o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, 
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-    
-    <!--Photo change omn scroll-->
+
+    <!--Photo change on scroll-->
     <script>
-$(function () { 
+$(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 6000) { 
+        if ($(this).scrollTop() > 7000) {
             $('.img-profile').attr("src","img/FACE2.jpg");
         }
-        if ($(this).scrollTop() < 6000) { 
+        if ($(this).scrollTop() < 7000) {
             $('.img-profile').attr("src","img/profile.jpg");
         }
     })
