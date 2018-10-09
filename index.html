@@ -592,15 +592,15 @@ o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, 
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 7000) {
-            $('.img-profile').attr("src","img/FACE2.jpg");
+          var face2 = $('.img-profile');
+            face2.attr("src","img/FACE2.jpg");
         }
         if ($(this).scrollTop() < 7000) {
-            $('.img-profile').attr("src","img/profile.jpg");
+          var face1 = $('.img-profile');
+            face1.attr("src","img/profile.jpg");
         }
     })
 });
 </script>
-
-  </body>
-
+</body>
 </html>
