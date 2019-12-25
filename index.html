@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, Finance, career timeline, job qualifications, resume">
     <meta name="description" content="My CV as a website">
-	<link rel="icon" type="image/png" href="/me_ico.ico"/>
+	<link rel="icon" type="image/png" href="./me_ico.ico">
 
     <title>CV by Rafal Mucha</title>
 
@@ -29,6 +29,12 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
     <!-- Stylesheets / rest's on the bottom for faster loads -->
     <link href="css/resume.min.css" rel="stylesheet">
 <style>
+.Sith {filter:hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%);}
+.sabre {color:#ddd; background-color: #57141a;}
+.hovCol:hover {color:red!important;}
+.darkness {color:#ddd; background-color: #111;}
+.darkness2 {color:#c13d3d; background-color: #111;}
+.darkness3 {color:#ddd; background-color: #111; border: 1px solid rgba(250,250,250,.125)}
 .solol {list-style-image: url("img/SL.PNG");}
 .m1m0 {list-style-image: url("img/M1M0.png");}
 .prohub {list-style-image: url("img/PHlog.png");}
@@ -93,14 +99,21 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
           </li>
           <br/>
           <li class="nav-item">
-            <a class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
+            <a id="BUG" class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
+          </li>
+          <br/>
+          <li class="nav-item" id="darkMode">
+            <a class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire"></i> Dark Mode</a>
+          </li>
+            <li class="nav-item" id="lightMode" style="display: none;">
+            <a class="nav-link btn btn-outline-secondary btn-sm"><i class="fa fa-rebel"></i> Light Mode</a>
           </li>
         </ul>
       </div>
     </nav>
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Rafał
+          <h1 class="mb-0"><span id="Raf">Rafał</span>
             <span class="text-primary">Mucha</span>
           </h1>
           <div class="subheading mb-5"><i class="fa fa-map-marker"></i> <a href="#" data-toggle="modal" data-target="#mapaKraka">Kraków</a>
@@ -160,7 +173,7 @@ service, accounting, reporting, general IT and an self-trained programmer, focus
           </ul>
           <div class="container">
     <div class="row">
-        <div class="col-9 alert alert-secondary alert-dismissible fade show" role="alert"  style="margin-top: 60px;">
+        <div id="infoAlert" class="col-9 alert alert-secondary alert-dismissible fade show" role="alert"  style="margin-top: 60px;">
   <h4 class="alert-heading">Searching for a <span class="text-success">downloadable</span> CV?</h4>
   <p class="mb-0">No problemo! You'll find the download button in the lower-right corner.</p>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -884,6 +897,50 @@ $(function () {
             face1.attr("src","img/profile.jpg");
         }
     })
+    $("#darkMode").on("click", function() {
+      $('#sideNav').removeClass("bg-primary").addClass("bg-dark");
+      $("#darkMode").hide();
+      $("#lightMode").show();
+      $("body").addClass("darkness");
+      $("#infoAlert").addClass("sabre");
+      $(".list-group-flush .list-group-item").addClass("darkness3");
+      $("#pokaSkillsy").css("background-color", "#222");
+      $("li .btn").removeClass("btn-light").addClass("btn-dark");
+      $(".badge-dark").addClass("badge-light").removeClass("badge-dark");
+      $("h1,h2,h3").addClass("darkness2");
+      $(".badge-info").addClass("badge-danger").removeClass("badge-info");
+      $(".text-primary").addClass("text-danger").removeClass("text-primary");
+      $("#Raf").css("color", "#ddd");
+      $(".fa-ul a, .subheading a").css("color", "#c20404");
+      $(".bg-info").addClass("bg-danger").removeClass("bg-info");      
+      $("#guzik").css("background-color", "#c20404");
+      $("h4 .text-success").addClass("text-muted").removeClass("text-success");
+      $("i.devicons, .fa-stack.fa-lg").addClass("hovCol");
+      $('.img-profile').addClass("Sith");
+      $("#BUG").addClass("btn-outline-danger").removeClass("btn-outline-warning");
+    });
+    $("#lightMode").on("click", function() {
+      $('#sideNav').removeClass("bg-dark").addClass("bg-primary");
+      $("#lightMode").hide();
+      $("#darkMode").show();
+      $("body").removeClass("darkness");
+      $("#infoAlert").removeClass("sabre");
+      $(".list-group-flush .list-group-item").removeClass("darkness3");
+      $("#pokaSkillsy").css("background-color", "#fff");
+      $("li .btn").removeClass("btn-dark").addClass("btn-light");
+      $(".badge-light").addClass("badge-dark").removeClass("badge-light");
+      $("h1,h2,h3").removeClass("darkness2");
+      $(".badge-danger").addClass("badge-info").removeClass("badge-danger");
+      $(".text-danger").addClass("text-primary").removeClass("text-danger");
+      $("#Raf").css("color", "#343a40");
+      $(".fa-ul a, .subheading a").css("color", "#389bbd");
+      $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
+      $("#guzik").css("background-color", "#389bbd");
+      $("h4 .text-muted").addClass("text-success").removeClass("text-muted");
+      $("i.devicons, .fa-stack.fa-lg").removeClass("hovCol");
+      $('.img-profile').removeClass("Sith");
+      $("#BUG").addClass("btn-outline-warning").removeClass("btn-outline-danger");
+    });
 });
 </script>
 </body>
