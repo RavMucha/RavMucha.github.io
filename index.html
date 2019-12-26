@@ -29,9 +29,26 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
     <!-- Stylesheets / rest's on the bottom for faster loads -->
     <link href="css/resume.min.css" rel="stylesheet">
 <style>
-.Sith {filter:hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%);}
-.sabre {color:#ddd; background-color: #57141a;}
+.Sith {filter:hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(0px 0px 5px red) drop-shadow(3px 3px 8px #111);
+  animation: redGlow 1500ms linear 0s 1 normal, redGlowConst 3s linear 2s infinite alternate-reverse;}
+  @keyframes redGlow {
+  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
+  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
+@keyframes redGlowConst {
+  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
+  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
+}
+.Jedi {animation: greenGlow 1s linear 10ms reverse;}
+  @keyframes greenGlow {
+  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
+  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
+}
+.sabre {color:#ddd; background-color: #57141a; box-shadow: inset -2px -2px 10px #24090b, inset 2px 2px 10px #24090b;}
+.modImgSith {filter: contrast(120%) saturate(90%) grayscale(50%); background-color: #223;}
+.hovCol:focus {color:#57141a!important;}
 .hovCol:hover {color:red!important;}
+.hovCol:active {color:#57141a!important;}
 .darkness {color:#ddd; background-color: #111;}
 .darkness2 {color:#c13d3d; background-color: #111;}
 .darkness3 {color:#ddd; background-color: #111; border: 1px solid rgba(250,250,250,.125)}
@@ -102,12 +119,16 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
             <a id="BUG" class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
           </li>
           <br/>
-          <li class="nav-item" id="darkMode">
+          <li class="nav-item" id="darkMode" onclick="playSaber('./media/saberOn.mp3')">
             <a class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire"></i> Dark Mode</a>
           </li>
-            <li class="nav-item" id="lightMode" style="display: none;">
+            <li class="nav-item" id="lightMode" style="display: none;" onclick="playSaber('./media/saberOff.mp3')">
             <a class="nav-link btn btn-outline-secondary btn-sm"><i class="fa fa-rebel"></i> Light Mode</a>
           </li>
+          <script>function playSaber(url) {
+            var sound = new Audio(url);
+            sound.play();
+          }</script>
         </ul>
       </div>
     </nav>
@@ -557,7 +578,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m3c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/mediCert3.jpg"/>
+	<img class="modImg" height="100%" src="img/mediCert3.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">2012 | Awarded by the Deputy Director for Medical Quality</span></li>
@@ -567,7 +588,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m5c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/ujkCert.jpg"/>
+	<img class="modImg" width="100%" src="img/ujkCert.png"/>
     </div>
   </div>
 </div><span class="badge badge-info">2013 | University scholarship</span></li>
@@ -577,7 +598,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m1c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/mediCert4.jpg"/>
+	<img class="modImg" width="100%" src="img/mediCert4.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">2013 | Medicover Call Center award</span></li>
@@ -587,7 +608,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m2c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/capiCert.jpg"/>
+	<img class="modImg" width="100%" src="img/capiCert.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">Created the training for CAPITA | main trainer for 1.5 years</span></li>
@@ -597,7 +618,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="m4c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/GooCert.jpg"/>
+	<img class="modImg" width="100%" src="img/GooCert.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">SEO | SEM | e-commerce | online marketing</span></li>
@@ -606,7 +627,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-    <img width="100%" src="img/SixSigma.png"/>
+    <img class="modImg" width="100%" src="img/SixSigma.png"/>
     </div>
   </div>
 </div></li>
@@ -615,7 +636,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/Grass6.png"/>
+<img class="modImg" height="100%" width="100%" src="img/Grass6.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">JS | SVG | D3 library</span></li>
@@ -624,7 +645,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/Grass5.png"/>
+<img class="modImg" height="100%" width="100%" src="img/Grass5.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">JS | SVG | D3 library</span></li>
@@ -633,7 +654,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/Grass4.png"/>
+<img class="modImg" height="100%" width="100%" src="img/Grass4.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">JavaScript</span></li>
@@ -642,7 +663,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/Grass3.png"/>
+<img class="modImg" height="100%" width="100%" src="img/Grass3.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">JavaScript</span></li>
@@ -651,7 +672,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/Grass2.png"/>
+<img class="modImg" height="100%" width="100%" src="img/Grass2.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">JavaScript</span></li>
@@ -660,7 +681,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/Grass1.png"/>
+<img class="modImg" height="100%" width="100%" src="img/Grass1.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">JavaScript</span></li>
@@ -669,7 +690,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert04" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/MimoCert5.png"/>
+<img class="modImg" height="100%" width="100%" src="img/MimoCert5.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">Swift | Xcode</span></li>
@@ -678,7 +699,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert03" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img height="100%" width="100%" src="img/MimoCert4.png"/>
+<img class="modImg" height="100%" width="100%" src="img/MimoCert4.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">Kotlin | Android Studio</span></li>
@@ -687,7 +708,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert02" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/MimoCS.png"/>
+<img class="modImg" width="100%" src="img/MimoCS.png"/>
 </div>
 </div>
 </div><span class="badge badge-info">C# | Unity</span></li>
@@ -696,7 +717,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-    <img width="100%" src="img/MimoCert3.png"/>
+    <img class="modImg" width="100%" src="img/MimoCert3.png"/>
     </div>
   </div>
 </div><span class="badge badge-info">Cryptography | SQL | White Hat Hacking</span></li>
@@ -705,7 +726,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert00" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/MimoCert2.png"/>
+	<img class="modImg" width="100%" src="img/MimoCert2.png"/>
     </div>
   </div>
 </div><span class="badge badge-info">HTML | CSS | JS</span></li>
@@ -714,7 +735,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/MimoCert.jpg"/>
+	<img class="modImg" width="100%" src="img/MimoCert.jpg"/>
     </div>
   </div>
 </div><span class="badge badge-info">HTML | CSS | JS | GitHub</span></li>
@@ -723,7 +744,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certRD" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/RM_React Development.jpg"/>
+<img class="modImg" width="100%" src="img/RM_React Development.jpg"/>
 </div>
 </div>
 </div></li>
@@ -732,7 +753,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certBaW" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/RM_BaW.png"/>
+<img class="modImg" width="100%" src="img/RM_BaW.png"/>
 </div>
 </div>
 </div></li>
@@ -741,7 +762,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certCN" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/RM_CN.png"/>
+<img class="modImg" width="100%" src="img/RM_CN.png"/>
 </div>
 </div>
 </div></li>
@@ -750,7 +771,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certITB" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/ITB.png"/>
+<img class="modImg" width="100%" src="img/ITB.png"/>
 </div>
 </div>
 </div></li>
@@ -759,7 +780,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certJSA" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/JSA.png"/>
+<img class="modImg" width="100%" src="img/JSA.png"/>
 </div>
 </div>
 </div></li>
@@ -768,7 +789,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certBC" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/RM_Blockchain.png"/>
+<img class="modImg" width="100%" src="img/RM_Blockchain.png"/>
 </div>
 </div>
 </div></li>
@@ -777,7 +798,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certHTMLA" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/HTMLA.png"/>
+<img class="modImg" width="100%" src="img/HTMLA.png"/>
 </div>
 </div>
 </div></li>
@@ -786,7 +807,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="certAI" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
-<img width="100%" src="img/RM_AI.png"/>
+<img class="modImg" width="100%" src="img/RM_AI.png"/>
 </div>
 </div>
 </div></li>
@@ -795,7 +816,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/Mucha_HTML.jpg"/>
+	<img class="modImg" width="100%" src="img/Mucha_HTML.jpg"/>
     </div>
   </div>
 </div></li>
@@ -804,7 +825,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/Mucha_CSS.jpg"/>
+	<img class="modImg" width="100%" src="img/Mucha_CSS.jpg"/>
     </div>
   </div>
 </div></li>
@@ -813,7 +834,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/Mucha_Java.jpg"/>
+	<img class="modImg" width="100%" src="img/Mucha_Java.jpg"/>
     </div>
   </div>
 </div></li>
@@ -822,7 +843,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/Mucha_Python 2.jpg"/>
+	<img class="modImg" width="100%" src="img/Mucha_Python 2.jpg"/>
     </div>
   </div>
 </div></li>
@@ -831,7 +852,7 @@ Employed and managed the work of up to 15 contractors.</p>
 <div class="modal fade bd-example-modal-lg" id="cert5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-	<img width="100%" src="img/Mucha_JS.jpg"/>
+	<img class="modImg" width="100%" src="img/Mucha_JS.jpg"/>
     </div>
   </div>
 </div></li>
@@ -916,8 +937,9 @@ $(function () {
       $("#guzik").css("background-color", "#c20404");
       $("h4 .text-success").addClass("text-muted").removeClass("text-success");
       $("i.devicons, .fa-stack.fa-lg").addClass("hovCol");
-      $('.img-profile').addClass("Sith");
+      $('.img-profile').addClass("Sith").removeClass("Jedi");
       $("#BUG").addClass("btn-outline-danger").removeClass("btn-outline-warning");
+      $('.modImg').addClass("modImgSith");
     });
     $("#lightMode").on("click", function() {
       $('#sideNav').removeClass("bg-dark").addClass("bg-primary");
@@ -938,8 +960,9 @@ $(function () {
       $("#guzik").css("background-color", "#389bbd");
       $("h4 .text-muted").addClass("text-success").removeClass("text-muted");
       $("i.devicons, .fa-stack.fa-lg").removeClass("hovCol");
-      $('.img-profile').removeClass("Sith");
+      $('.img-profile').removeClass("Sith").addClass("Jedi");
       $("#BUG").addClass("btn-outline-warning").removeClass("btn-outline-danger");
+      $('.modImg').removeClass("modImgSith");
     });
 });
 </script>
