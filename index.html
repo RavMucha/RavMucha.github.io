@@ -35,12 +35,69 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
   from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
   to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
 }
+@-webkit-keyframes redGlow {
+  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
+  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
+/* FireFox */
+@-moz-keyframes redGlow {
+  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
+  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
+/* Internet Explorer ...;-( */
+@-ms-keyframes redGlow {
+  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
+  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
+/* Opera, wersje 12+ */
+@-o-keyframes redGlow {
+  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
+  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
 @keyframes redGlowConst {
+  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
+  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
+}
+@-webkit-keyframes redGlowConst {
+  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
+  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
+}
+/* FireFox */
+@-moz-keyframes redGlowConst {
+  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
+  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
+}
+/* Internet Explorer ...;-( */
+@-ms-keyframes redGlowConst {
+  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
+  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
+}
+/* Opera, wersje 12+ */
+@-o-keyframes redGlowConst {
   from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
   to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
 }
 .Jedi {animation: greenGlow 1s linear 10ms reverse;}
   @keyframes greenGlow {
+  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
+  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
+}
+@-webkit-keyframes greenGlow {
+  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
+  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
+}
+/* FireFox */
+@-moz-keyframes greenGlow {
+  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
+  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
+}
+/* Internet Explorer ...;-( */
+@-ms-keyframes greenGlow {
+  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
+  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
+}
+/* Opera, wersje 12+ */
+@-o-keyframes greenGlow {
   from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
   to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
 }
@@ -213,7 +270,7 @@ service, accounting, reporting, general IT and an self-trained programmer, focus
               <h3 class="mb-0">RPA Infrastructure Leader  <span class="badge badge-secondary">Web Developer</span></h3>
               <div class="subheading mb-3"><li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li></div>
               <p><ul class="list-group list-group-flush">
-<li class="list-group-item">E2E web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript, jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA</strong>
+<li class="list-group-item">E2E web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript, jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React</strong>
 </li><li class="list-group-item">Automations & RPA/robotics consultancy
 </li><li class="list-group-item">Automations (Excel, macros, scripting solutions) design & implementation
 </li><li class="list-group-item">Business Intelligence Dashboard reporting
