@@ -31,6 +31,10 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
 <style>
 .Sith {filter:hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(0px 0px 5px red) drop-shadow(3px 3px 8px #111);
   animation: redGlow 1500ms linear 0s 1 normal, redGlowConst 3s linear 2s infinite alternate-reverse;}
+    @keyframes redGlow {
+  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
+  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
   @keyframes redGlow {
   from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
   to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
@@ -53,6 +57,26 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
 @-o-keyframes redGlow {
   from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
   to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
+}
+@keyframes redGlowConstBTN {
+  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
+  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #57141a);}
+}
+@-webkit-keyframes redGlowConstBTN {
+  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
+  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #57141a);}
+}
+@-moz-keyframes redGlowConstBTN {
+  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
+  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #57141a);}
+}
+@-ms-keyframes redGlowConstBTN {
+  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
+  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #57141a);}
+}
+@-o-keyframes redGlowConstBTN {
+  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
+  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #57141a);}
 }
 @keyframes redGlowConst {
   from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
@@ -172,12 +196,12 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
             <a class="nav-link js-scroll-trigger" href="#footer">Footer</a>
           </li>
           <br/>
-          <li class="nav-item">
+          <li class="nav-item" style="opacity: 0.9;">
             <a id="BUG" class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
           </li>
           <br/>
-          <li class="nav-item" id="darkMode" onclick="playSaber('./media/saberOn.mp3')">
-            <a class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire"></i> Dark Mode</a>
+          <li class="nav-item" style="opacity: 0.9;" id="darkMode" onclick="playSaber('./media/saberOn.mp3')">
+            <a class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;"></i> Dark Mode</a>
           </li>
             <li class="nav-item" id="lightMode" style="display: none;" onclick="playSaber('./media/saberOff.mp3')">
             <a class="nav-link btn btn-outline-secondary btn-sm"><i class="fa fa-rebel"></i> Light Mode</a>
