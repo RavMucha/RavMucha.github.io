@@ -30,7 +30,7 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
     <link href="css/resume.min.css" rel="stylesheet">
 <style>
   body::-webkit-scrollbar {
-    width: 0.6rem;
+    width: 0.7rem;
 }
 body::-webkit-scrollbar-track {
     background: rgb(253, 253, 253, 0.7);
@@ -211,20 +211,19 @@ body::-webkit-scrollbar-thumb:hover {
             <a class="nav-link js-scroll-trigger" href="#footer">Footer</a>
           </li>
           <br/>
-          <li class="nav-item" style="opacity: 0.9;">
-            <a id="BUG" class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
-          </li>
-          <br/>
           <li class="nav-item" style="opacity: 0.9;" id="darkMode" onclick="playSaber('./media/saberOn.mp3')">
-            <a class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;"></i> Dark Mode</a>
+            <a style="padding: 6px; margin-left: 9px; margin-right: 9px;" class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;"></i> Dark Mode</a>
           </li>
             <li class="nav-item" id="lightMode" style="display: none;" onclick="playSaber('./media/saberOff.mp3')">
-            <a class="nav-link btn btn-outline-secondary btn-sm"><i class="fa fa-rebel"></i> Light Mode</a>
+            <a style="padding: 6px; margin-left: 9px; margin-right: 9px;" class="nav-link btn btn-outline-secondary btn-sm"><i class="fa fa-rebel"></i> Light Mode</a>
           </li>
-          <script>function playSaber(url) {
-            var sound = new Audio(url);
-            sound.play();
-          }</script>
+          <script>
+          function playSaber(url) {var sound = new Audio(url);sound.play();}
+          </script>
+          <br/>
+          <li class="nav-item" style="opacity: 0.9;">
+            <a id="BUG" style="padding: 6px; margin-left: 9px; margin-right: 9px;" class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
+          </li>
         </ul>
       </div>
     </nav>
