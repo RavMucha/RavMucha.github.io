@@ -36,6 +36,18 @@ body::-webkit-scrollbar-track {
     background: rgb(253, 253, 253, 0.7);
     box-shadow: inset 1px 0px 5px rgb(150, 150, 150); 
 }
+.hack-bar ::-webkit-scrollbar-track {
+  background: #343a40!important;
+  box-shadow: none;  
+}
+.hack-bar ::-webkit-scrollbar-thumb {
+  background: rgb(255, 0, 0, 0.7);
+  box-shadow: inset 0 0 5px #90000c;
+}
+.hack-bar ::-webkit-scrollbar-thumb:hover {
+  background: rgba(163, 0, 14, 0.7);
+  box-shadow: inset 0 0 5px #520007;
+}
 body::-webkit-scrollbar-thumb {
     background: rgba(73, 80, 87, 0.7);
     box-shadow: inset 0 0 7px rgb(70, 70, 70);
@@ -1019,6 +1031,7 @@ $(function () {
         }
     })
     $("#darkMode").on("click", function() {
+      $('html').addClass('hack-bar');
       $('#sideNav').removeClass("bg-primary").addClass("bg-dark");
       $("#darkMode").hide();
       $("#lightMode").show();
@@ -1042,6 +1055,7 @@ $(function () {
       $('.modImg').addClass("modImgSith");
     });
     $("#lightMode").on("click", function() {
+      $('html').removeClass('hack-bar');
       $('#sideNav').removeClass("bg-dark").addClass("bg-primary");
       $("#lightMode").hide();
       $("#darkMode").show();
