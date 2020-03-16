@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, Finance, career timeline, job qualifications, resume">
     <meta name="description" content="My CV as a website">
 	<link rel="icon" type="image/png" href="./me_ico.ico">
@@ -29,6 +29,9 @@ if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
     <!-- Stylesheets / rest's on the bottom for faster loads -->
     <link href="css/resume.min.css" rel="stylesheet">
 <style>
+  @media only screen {
+@-ms-viewport { width: device-width; }
+}
   body::-webkit-scrollbar {
     width: 0.7rem;
 }
@@ -176,6 +179,10 @@ body::-webkit-scrollbar-thumb:hover {
 #guzik:hover {background-color: #495057;opacity: 0.9;}
 #guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
+#guzikBug {position: fixed;bottom: 70px;right: 20px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.8;}
+#guzikBug:hover {background-color: #495057;opacity: 0.9;}
+#guzikBug .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
+#guzikBug:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
 @keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
 /* Chrome, Safari i Opera */
 @-webkit-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
@@ -188,7 +195,8 @@ body::-webkit-scrollbar-thumb:hover {
 </style>
 </head>
   <body id="page-top">
-<a href="CV 2.0 Rafal Mucha.pdf" id="guzik" download><img src="img/tray.png" style="width: 30px; height: 30px"/><span class="guzikhint subheading">download my cv</span></a>
+<a href="CV 2.0 Rafal Mucha.pdf" id="guzik" download><img src="img/Tray.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">download my cv</span></a>
+<a href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" id="guzikBug"><img src="img/Bug.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">report a bug</span></a>
     <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -225,7 +233,7 @@ body::-webkit-scrollbar-thumb:hover {
           </li>
           <br/>
           <li class="nav-item" style="opacity: 0.9;" id="darkMode" onclick="playSaber('./media/saberOn.mp3')">
-            <a style="padding: 6px; margin-left: 9px; margin-right: 9px;" class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;"></i> Dark Mode</a>
+            <a style="padding: 6px; margin-left: 9px; margin-right: 9px; margin-bottom: 4px;" class="nav-link btn btn-outline-dark btn-sm"><i class="fa fa-empire" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;"></i> Dark Mode</a>
           </li>
             <li class="nav-item" id="lightMode" style="display: none;" onclick="playSaber('./media/saberOff.mp3')">
             <a style="padding: 6px; margin-left: 9px; margin-right: 9px;" class="nav-link btn btn-outline-secondary btn-sm"><i class="fa fa-rebel"></i> Light Mode</a>
@@ -233,10 +241,6 @@ body::-webkit-scrollbar-thumb:hover {
           <script>
           function playSaber(url) {var sound = new Audio(url);sound.play();}
           </script>
-          <br/>
-          <li class="nav-item" style="opacity: 0.9;">
-            <a id="BUG" style="padding: 6px; margin-left: 9px; margin-right: 9px; margin-bottom: 9px;" class="nav-link btn btn-outline-warning btn-sm" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!"><i class="fa fa-bug"></i> Report a bug</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -1060,7 +1064,7 @@ $(function () {
       $("h4 .text-success").addClass("text-muted").removeClass("text-success");
       $("i.devicons, .fa-stack.fa-lg").addClass("hovCol");
       $('.img-profile').addClass("Sith").removeClass("Jedi");
-      $("#BUG").addClass("btn-outline-danger").removeClass("btn-outline-warning");
+      $("#guzikBug").css("background-color", "#ba8b00");
       $('.modImg').addClass("modImgSith");
     });
     $("#lightMode").on("click", function() {
@@ -1084,7 +1088,7 @@ $(function () {
       $("h4 .text-muted").addClass("text-success").removeClass("text-muted");
       $("i.devicons, .fa-stack.fa-lg").removeClass("hovCol");
       $('.img-profile').removeClass("Sith").addClass("Jedi");
-      $("#BUG").addClass("btn-outline-warning").removeClass("btn-outline-danger");
+      $("#guzikBug").css("background-color", "#ffc107");
       $('.modImg').removeClass("modImgSith");
     });
 });
