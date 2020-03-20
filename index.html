@@ -175,22 +175,29 @@ body::-webkit-scrollbar-thumb:hover {
 .uk {list-style-image: url("img/flag-UK.png");}
 .pl {list-style-image: url("img/flag-PL.png");}
 .de {list-style-image: url("img/flag-GR.png");}
-#guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.8;}
+#guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
 #guzik:hover {background-color: #495057;opacity: 0.9;}
 #guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#guzikBug {position: fixed;bottom: 70px;right: 15px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.8;}
+#guzikBug {position: fixed;bottom: 70px;right: 15px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
 #guzikBug:hover {background-color: #495057;opacity: 0.9;}
 #guzikBug .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzikBug:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#lightMode {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #b5bec7;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.8;}
+#lightMode {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #b5bec7;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
+animation: clicker .1s reverse;}
 #lightMode:hover {background-color: #495057;opacity: 0.9;}
 #lightMode .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #lightMode:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#darkMode {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #24272b;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.8;}
+#darkMode {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #24272b;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
+animation: clicker .1s reverse;}
 #darkMode:hover {background-color: #495057;opacity: 0.9;}
 #darkMode .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #darkMode:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
+@keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
+@-webkit-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
+@-moz-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
+@-ms-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
+@-o-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
 @keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
 /* Chrome, Safari i Opera */
 @-webkit-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
