@@ -1088,7 +1088,11 @@ o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script>
-      function playSaber(url) {var sound = new Audio(url);sound.play();}
+      function playSaber(url) {
+        var sound = new Audio(url);
+        sound.play();
+        sound.volume = 0.3;
+      }
       </script>
     <!--Photo change on scroll-->
 <script>
