@@ -177,22 +177,23 @@ body::-webkit-scrollbar-thumb:hover {
 .uk {list-style-image: url("img/flag-UK.png");}
 .pl {list-style-image: url("img/flag-PL.png");}
 .de {list-style-image: url("img/flag-GR.png");}
+.chatSend:hover {color:#eee!important;}
 #guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
-#guzik:hover {background-color: #495057;opacity: 0.9;}
+#darkMode:hover, #lightMode:hover, #guzik:hover, #guzikChat:hover, #guzikBug:hover {background-color: #495057;opacity: 0.9;}
 #guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
 #guzikBug {position: fixed;bottom: 70px;right: 15px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
-#guzikBug:hover {background-color: #495057;opacity: 0.9;}
 #guzikBug .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzikBug:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#lightMode {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #b5bec7;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
+#guzikChat {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #20c997;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
+#guzikChat .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
+#guzikChat:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
+#lightMode {position: fixed;bottom: 180px;right: 15px;z-index: 99;border: none;outline: none;background-color: #b5bec7;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
 animation: clicker .1s reverse;}
-#lightMode:hover {background-color: #495057;opacity: 0.9;}
 #lightMode .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #lightMode:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#darkMode {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #24272b;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
+#darkMode {position: fixed;bottom: 180px;right: 15px;z-index: 99;border: none;outline: none;background-color: #24272b;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
 animation: clicker .1s reverse;}
-#darkMode:hover {background-color: #495057;opacity: 0.9;}
 #darkMode .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #darkMode:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
 @keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
@@ -213,6 +214,58 @@ animation: clicker .1s reverse;}
 </head>
   <body id="page-top">
 <a href="CV 2.0 Rafal Mucha.pdf" id="guzik" style="box-shadow: 1px 1px 4px #666;" download><img src="img/DTray.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">download my cv</span></a>
+<a href="#" data-toggle="modal" data-target="#chatForm" style="box-shadow: 1px 1px 4px #666;" id="guzikChat"><img src="img/chat.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">contact form</span></a>
+<div class="modal fade bd-example-modal-lg" id="chatForm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content container chatHolder">
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-4 chatHead">Contact me</h2>
+        <p class="text-center mb-5">Have any open offers or projects? Want to talk it over? Fell free to send me a message.</p>
+        <div class="row">
+          <div class="col-md-1"></div>
+            <div class="col-md-10 mb-md-3 mb-sm-2 mb-xs-2">
+                <form id="contact-form" name="contact-form" netlify><!--action="mail.php" method="POST"-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk" autofocus autocomplete="name" required>
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="email" id="email" name="email" class="form-control chatInput" placeholder="elon@tesla.com" autocomplete="email" required>
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control chatInput" placeholder="Lead Engineer job offer" required>
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea chatInput" placeholder="$1m/y | 100% HO | required good HTML & basic CSS"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center text-md-right">
+                    <a class="btn btn-outline-info chatSend" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </section>
+    </div>
+  </div>
+</div>
 <a href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" style="box-shadow: 1px 1px 4px #666;" id="guzikBug"><img src="img/Bug.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">report a bug</span></a>
 <a id="lightMode" style="display: none; box-shadow: 1px 1px 4px #666;" onclick="playSaber('./media/saberOff.mp3')"><img src="img/Rebel.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">light mode</span></a>
 <a id="darkMode" style="box-shadow: 1px 1px 4px #666;" onclick="playSaber('./media/saberOn.mp3')"><img src="img/Empire.png" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse; width: 25px; height: 25px"/><span class="guzikhint subheading">dark mode</span></a>
@@ -1195,7 +1248,11 @@ $(function () {
       $("i.devicons, .fa-stack.fa-lg").addClass("hovCol");
       $('.img-profile').addClass("Sith").removeClass("Jedi");
       $("#guzikBug").css("background-color", "#ba8b00");
+      $("#guzikChat").css("background-color", "#fd7e14");
       $('.modImg').addClass("modImgSith");
+      $(".chatSend").removeClass("btn-outline-info").addClass("btn-outline-danger");
+      $(".chatHead, .chatHolder").css("background-color", "#343a40");
+      $(".chatInput").css("background-color", "#111");
     });
     $("#lightMode").on("click", function() {
       $('html').removeClass('hack-bar');
@@ -1219,7 +1276,10 @@ $(function () {
       $("i.devicons, .fa-stack.fa-lg").removeClass("hovCol");
       $('.img-profile').removeClass("Sith").addClass("Jedi");
       $("#guzikBug").css("background-color", "#ffc107");
+      $("#guzikChat").css("background-color", "#20c997");
       $('.modImg').removeClass("modImgSith");
+      $(".chatSend").removeClass("btn-outline-danger").addClass("btn-outline-info");
+      $(".chatHead, .chatHolder, .chatInput").css("background-color", "#fff");
     });
 });
 </script>
