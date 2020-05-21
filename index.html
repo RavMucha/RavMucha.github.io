@@ -177,6 +177,16 @@ body::-webkit-scrollbar-thumb:hover {
 .uk {list-style-image: url("img/flag-UK.png");}
 .pl {list-style-image: url("img/flag-PL.png");}
 .de {list-style-image: url("img/flag-GR.png");}
+.formLabel {font-variant: small-caps; 
+            font-weight: 600;
+            transform: translateX(0px) translateY(0px) scale(1);
+            transition-property: transform;
+            transition-duration: 200ms;
+            transition-delay: 5ms;}
+.formLabel:hover {transform: translateX(6px) translateY(-3px) scale(1.2);
+                  transition-property: transform;
+                  transition-duration: 200ms;
+                  transition-delay: 5ms;}
 .chatSend:hover {color:#eee!important;}
 #guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
 #darkMode:hover, #lightMode:hover, #guzik:hover, #guzikChat:hover, #guzikBug:hover {background-color: #495057;opacity: 0.9;}
@@ -230,13 +240,13 @@ animation: clicker .1s reverse;}
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk" autofocus autocomplete="name" required>
-                                <label for="name" class="">Your name</label>
+                                <label for="name" class="formLabel">your name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="email" id="email" name="email" class="form-control chatInput" placeholder="elon@tesla.com" autocomplete="email" required>
-                                <label for="email" class="">Your email</label>
+                                <label for="email" class="formLabel">your email</label>
                             </div>
                         </div>
                     </div>
@@ -244,7 +254,7 @@ animation: clicker .1s reverse;}
                         <div class="col-md-12">
                             <div class="md-form mb-0">
                                 <input type="text" id="subject" name="subject" class="form-control chatInput" placeholder="Lead Engineer job offer" required>
-                                <label for="subject" class="">Subject</label>
+                                <label for="subject" class="formLabel">subject</label>
                             </div>
                         </div>
                     </div>
@@ -252,7 +262,7 @@ animation: clicker .1s reverse;}
                         <div class="col-md-12">
                             <div class="md-form">
                                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea chatInput" placeholder="$1m/y | 100% HO | required good HTML & basic CSS"></textarea>
-                                <label for="message">Your message</label>
+                                <label for="message" class="formLabel">your message</label>
                             </div>
                         </div>
                     </div>
