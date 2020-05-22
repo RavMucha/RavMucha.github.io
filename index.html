@@ -189,7 +189,14 @@ body::-webkit-scrollbar-thumb:hover {
                   transition-delay: 5ms;}
 .chatSend:hover {color:#eee!important;}
 #guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
-#darkMode:hover, #lightMode:hover, #guzik:hover, #guzikChat:hover, #guzikBug:hover {background-color: #495057;opacity: 0.9;}
+#darkMode:hover, #lightMode:hover, #guzik:hover, #guzikChat:hover, #guzikBug:hover {
+                  background-color: #495057;
+                  opacity: 0.9;
+                  transform: scale(1.05) translateX(-1px) translateY(-1px);
+                  transition-property: transform;
+                  transition-duration: 200ms;
+                  transition-delay: 5ms;
+                  }
 #guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
 #guzikBug {position: fixed;bottom: 70px;right: 15px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
