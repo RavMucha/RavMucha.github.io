@@ -187,7 +187,6 @@ body::-webkit-scrollbar-thumb:hover {
                   transition-property: transform;
                   transition-duration: 200ms;
                   transition-delay: 5ms;}
-.chatSend:hover {color:#eee!important;}
 #guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
 #darkMode:hover, #lightMode:hover, #guzik:hover, #guzikChat:hover, #guzikBug:hover {
                   background-color: #495057;
@@ -273,10 +272,10 @@ animation: clicker .1s reverse;}
                             </div>
                         </div>
                     </div>
+                    <div class="text-center text-md-right">
+                      <input type="submit" value="Send!" class="btn btn-outline-info"/>
+                  </div>
                 </form>
-                <div class="text-center text-md-right">
-                    <a class="btn btn-outline-info chatSend" onclick="document.getElementById('contact-form').submit();">Send</a>
-                </div>
             </div>
             <div class="col-md-1"></div>
         </div>
