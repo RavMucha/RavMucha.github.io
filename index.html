@@ -225,6 +225,8 @@ iframe.site {
                   transition-duration: 200ms;
                   transition-delay: 5ms;
                   }
+.text-form {color: #14c08c;}
+.text-form-dark {color: rgb(253, 126, 20);}
 #guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
 #guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
 #guzikBug {position: fixed;bottom: 70px;right: 15px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
@@ -414,13 +416,13 @@ service, accounting, reporting, general IT and an self-trained programmer, focus
           </ul>
           <div class="container">
     <div class="row">
-        <div id="infoAlert" class="col-9 alert alert-secondary alert-dismissible fade show" role="alert"  style="margin-top: 60px;">
-  <h4 class="alert-heading">Searching for a <span class="text-success">downloadable</span> CV?</h4>
+        <div id="infoAlert" class="col-9 alert alert-secondary alert-dismissible fade show" role="alert" style="margin-top: 60px;">
+  <h4 class="alert-heading">Searching for a <span class="text-info">downloadable</span> CV or want to <span class="text-form">contact</span> me?</h4>
   <p class="mb-0">No problemo! You'll find the download button in the lower-right corner.</p>
+  <p class="mb-0">There's also a contact form amongst those options.</p>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span></button>
     </div>
-        <div class="col-3"></div>
   </div>
   </div>
       </section>
@@ -1358,7 +1360,8 @@ $(function () {
       $(".fa-ul a, .subheading a").css("color", "#c20404");
       $(".bg-info").addClass("bg-danger").removeClass("bg-info");      
       $("#guzik").css("background-color", "#c20404");
-      $("h4 .text-success").addClass("text-muted").removeClass("text-success");
+      $("h4 .text-info").addClass("text-danger").removeClass("text-info");
+      $("h4 .text-form").addClass("text-form-dark").removeClass("text-form");
       $("i.devicons, i.newIcon, .fa-stack.fa-lg").addClass("hovCol");
       $('.img-profile').addClass("Sith").removeClass("Jedi");
       $("#guzikBug").css("background-color", "#ba8b00");
@@ -1386,7 +1389,8 @@ $(function () {
       $(".fa-ul a, .subheading a").css("color", "#389bbd");
       $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
       $("#guzik").css("background-color", "#389bbd");
-      $("h4 .text-muted").addClass("text-success").removeClass("text-muted");
+      $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
+      $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
       $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
       $('.img-profile').removeClass("Sith").addClass("Jedi");
       $("#guzikBug").css("background-color", "#ffc107");
