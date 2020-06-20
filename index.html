@@ -1,323 +1,881 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, Finance, career timeline, job qualifications, resume">
-    <meta name="description" content="My CV as a website">
-	<link rel="icon" type="image/png" href="./me_ico.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords"
+    content="Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, Finance, career timeline, job qualifications, resume">
+  <meta name="description" content="My CV as a website">
+  <link rel="icon" type="image/png" href="./me_ico.ico">
 
-    <title>CV by Rafal Mucha</title>
+  <title>CV by Rafal Mucha</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Some cool fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-<script>
-if(navigator.userAgent.indexOf("Chrome") != -1 ){;}
-    else {
-	alert("Please use Google Chrome, optionally MS Edge for best experience.\n\nInternet Explorer and Firefox tend to lose some styling elements at render.\nOpera and Safari were not tested as of yet.");}
-</script>
-    <!-- Stylesheets / rest's on the bottom for faster loads -->
-    <link href="css/resume.min.css" rel="stylesheet">
-<style>
-  @media only screen {
-@-ms-viewport { width: device-width; }
-}
-  body::-webkit-scrollbar {
-    width: 0.7rem;
-}
-body::-webkit-scrollbar-track {
-    background: rgb(253, 253, 253, 0.7);
-    box-shadow: inset 1px 0px 5px rgb(150, 150, 150); 
-}
-.hack-bar ::-webkit-scrollbar-track {
-  background: #343a40!important;
-  box-shadow: none;  
-}
-.hack-bar ::-webkit-scrollbar-thumb {
-  background: rgb(255, 0, 0, 0.7);
-  box-shadow: inset 0 0 5px #90000c;
-}
-.hack-bar ::-webkit-scrollbar-thumb:hover {
-  background: rgba(163, 0, 14, 0.7);
-  box-shadow: inset 0 0 5px #520007;
-}
-body::-webkit-scrollbar-thumb {
-    background: rgba(73, 80, 87, 0.7);
-    box-shadow: inset 0 0 7px rgb(70, 70, 70);
-    border-radius: 0px 25px 25px 0px;
-}
-body::-webkit-scrollbar-thumb:hover {
-        background: rgba(52, 58, 64, 0.8);
-        box-shadow: inset 0 0 7px rgb(20, 20, 20);
-}
-.site {
-  width: 100%;
-  height: 500px;
-  border-radius: 15px;
-}
-iframe.site {
-  border-radius: 13px;
-}
-.flipLink:visited {
-  color: var(--gray-dark);
-}
-.list-inline-item .colored, .flip {
-    transition-property: transform;
-    transition-duration: 500ms;
-    transition-delay: 50ms;
-}
-.list-inline-item:hover .colored, .flip:hover {
-  transform: scale(1.4) rotateZ(360deg);
-    transition-property: transform;
-    transition-duration: 500ms;
-    transition-delay: 1ms;
-}
-#footer {
-  backdrop-filter: invert(4%);
-  letter-spacing: 1px;
-  text-align: center;
-  border-bottom: none;
-}
-.Sith {filter:hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(0px 0px 5px red) drop-shadow(3px 3px 8px #111);
-  animation: redGlow 1500ms linear 0s 1 normal, redGlowConst 3s linear 2s infinite alternate-reverse;}
+  <!-- Some cool fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script>
+    if (navigator.userAgent.indexOf("Chrome") != -1) {
+      ;
+    } else {
+      alert(
+        "Please use Google Chrome, optionally MS Edge for best experience.\n\nInternet Explorer and Firefox tend to lose some styling elements at render.\nOpera and Safari were not tested as of yet."
+        );
+    }
+  </script>
+  <!-- Stylesheets / rest's on the bottom for faster loads -->
+  <link href="css/resume.min.css" rel="stylesheet">
+  <style>
+    @media only screen {
+      @-ms-viewport {
+        width: device-width;
+      }
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.7rem;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: rgb(253, 253, 253, 0.7);
+      box-shadow: inset 1px 0px 5px rgb(150, 150, 150);
+    }
+
+    .hack-bar ::-webkit-scrollbar-track {
+      background: #343a40 !important;
+      box-shadow: none;
+    }
+
+    .hack-bar ::-webkit-scrollbar-thumb {
+      background: rgb(255, 0, 0, 0.7);
+      box-shadow: inset 0 0 5px #90000c;
+    }
+
+    .hack-bar ::-webkit-scrollbar-thumb:hover {
+      background: rgba(163, 0, 14, 0.7);
+      box-shadow: inset 0 0 5px #520007;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: rgba(73, 80, 87, 0.7);
+      box-shadow: inset 0 0 7px rgb(70, 70, 70);
+      border-radius: 0px 25px 25px 0px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: rgba(52, 58, 64, 0.8);
+      box-shadow: inset 0 0 7px rgb(20, 20, 20);
+    }
+
+    .site {
+      width: 100%;
+      height: 500px;
+      border-radius: 15px;
+    }
+
+    iframe.site {
+      border-radius: 13px;
+    }
+
+    .flipLink:visited {
+      color: var(--gray-dark);
+    }
+
+    .list-inline-item .colored,
+    .flip {
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-delay: 50ms;
+    }
+
+    .list-inline-item:hover .colored,
+    .flip:hover {
+      transform: scale(1.4) rotateZ(360deg);
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-delay: 1ms;
+    }
+
+    #footer {
+      backdrop-filter: invert(4%);
+      letter-spacing: 1px;
+      text-align: center;
+      border-bottom: none;
+    }
+
+    .Sith {
+      filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(0px 0px 5px red) drop-shadow(3px 3px 8px #111);
+      animation: redGlow 1500ms linear 0s 1 normal, redGlowConst 3s linear 2s infinite alternate-reverse;
+    }
+
     @keyframes redGlow {
-  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
-  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
-}
-  @keyframes redGlow {
-  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
-  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
-}
-@-webkit-keyframes redGlow {
-  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
-  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
-}
-/* FireFox */
-@-moz-keyframes redGlow {
-  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
-  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
-}
-/* Internet Explorer ...;-( */
-@-ms-keyframes redGlow {
-  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
-  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
-}
-/* Opera, wersje 12+ */
-@-o-keyframes redGlow {
-  from {filter: drop-shadow(0 0 6px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 20px #111)drop-shadow( 0 0 30px #57141a)drop-shadow( 0 0 50px #c13d3d)drop-shadow( 0 0 60px red)drop-shadow( 0 0 70px #57141a)drop-shadow( 0 0 80px #c13d3d);}
-  to {filter: drop-shadow(0 0 3px #111)drop-shadow( 0 0 5px #111)drop-shadow( 0 0 10px #111)drop-shadow( 0 0 15px #57141a)drop-shadow( 0 0 25px #c13d3d)drop-shadow( 0 0 30px red)drop-shadow( 0 0 35px #57141a)drop-shadow( 0 0 50px #c13d3d);}
-}
-@keyframes redGlowConstBTN {
-  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
-  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);}
-}
-@-webkit-keyframes redGlowConstBTN {
-  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
-  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);}
-}
-@-moz-keyframes redGlowConstBTN {
-  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
-  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);}
-}
-@-ms-keyframes redGlowConstBTN {
-  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
-  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);}
-}
-@-o-keyframes redGlowConstBTN {
-  from {filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);}
-  to {filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);}
-}
-@keyframes redGlowConst {
-  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
-  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
-}
-@-webkit-keyframes redGlowConst {
-  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
-  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
-}
-/* FireFox */
-@-moz-keyframes redGlowConst {
-  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
-  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
-}
-/* Internet Explorer ...;-( */
-@-ms-keyframes redGlowConst {
-  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
-  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
-}
-/* Opera, wersje 12+ */
-@-o-keyframes redGlowConst {
-  from {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);}
-  to {filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);}
-}
-.Jedi {animation: greenGlow 1s linear 10ms reverse;}
-  @keyframes greenGlow {
-  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
-  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
-}
-@-webkit-keyframes greenGlow {
-  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
-  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
-}
-/* FireFox */
-@-moz-keyframes greenGlow {
-  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
-  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
-}
-/* Internet Explorer ...;-( */
-@-ms-keyframes greenGlow {
-  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
-  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
-}
-/* Opera, wersje 12+ */
-@-o-keyframes greenGlow {
-  from {filter: drop-shadow(0 0 6px white)drop-shadow( 0 0 10px #ddd)drop-shadow( 0 0 20px #ddd)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 50px darkgreen)drop-shadow( 0 0 60px green)drop-shadow( 0 0 70px lightgreen)drop-shadow( 0 0 80px darkgreen);}
-  to {filter: drop-shadow(0 0 2px white)drop-shadow( 0 0 3px #ddd)drop-shadow( 0 0 7px #ddd)drop-shadow( 0 0 10px lightgreen)drop-shadow( 0 0 20px darkgreen)drop-shadow( 0 0 25px green)drop-shadow( 0 0 30px lightgreen)drop-shadow( 0 0 40px darkgreen);}
-}
-.langList {list-style-type: square; margin: 10px;}
-.langList li {margin: 5px; letter-spacing: 1px; font-weight: 600;}
-.sabre {color:#ddd; background-color: #57141a; box-shadow: inset -2px -2px 10px #24090b, inset 2px 2px 10px #24090b;}
-.modImgSith {filter: contrast(120%) saturate(90%) grayscale(50%); background-color: #223;}
-.hovCol:focus {color:#57141a!important;}
-.hovCol:hover {color:red!important;}
-.hovCol:active {color:#57141a!important;}
-.darkness {color:#ddd; background-color: #111;}
-.darkness2 {color:#c13d3d; background-color: #111; text-shadow: 0px 0px 1px red;}
-.darkness3 {color:#ddd; background-color: #111; border: 1px solid rgba(250,250,250,.125)}
-.solol {list-style-image: url("img/SL.PNG");}
-.m1m0 {list-style-image: url("img/M1M0.png");}
-.prohub {list-style-image: url("img/PHlog.png");}
-.udem {list-style-image: url("img/udemy.png");}
-.duol {list-style-image: url("img/DL.png");}
-.googl {list-style-image: url("img/GL.png");}
-.grass {list-style-image: url("img/GH.png");}
-.sixsigma {list-style-image: url("img/SixS.png");}
-.uk {list-style-image: url("img/flag-UK.png");}
-.pl {list-style-image: url("img/flag-PL.png");}
-.de {list-style-image: url("img/flag-GR.png");}
-.formLabel {font-variant: small-caps; 
-            font-weight: 600;
-            transform: translateX(0px) translateY(0px) scale(1);
-            transition-property: transform;
-            transition-duration: 200ms;
-            transition-delay: 5ms;}
-.formLabel:hover {transform: translateX(6px) translateY(-3px) scale(1.2);
-                  transition-property: transform;
-                  transition-duration: 200ms;
-                  transition-delay: 5ms;}
-#guzik {position: fixed;bottom: 15px;right: 15px;z-index: 99;border: none;outline: none;background-color: #389bbd;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
-#darkMode:hover, #lightMode:hover, #guzik:hover, #guzikChat:hover, #guzikBug:hover {
-                  background-color: #495057;
-                  opacity: 0.9;
-                  transform: scale(1.05) translateX(-1px) translateY(-1px);
-                  transition-property: transform;
-                  transition-duration: 200ms;
-                  transition-delay: 5ms;
-                  }
-.text-form {color: #14c08c;}
-.text-form-dark {color: rgb(253, 126, 20);}
-#guzik .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
-#guzik:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#guzikBug {position: fixed;bottom: 70px;right: 15px;z-index: 99;border: none;outline: none;background-color: #ffc107;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
-#guzikBug .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
-#guzikBug:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#guzikChat {position: fixed;bottom: 125px;right: 15px;z-index: 99;border: none;outline: none;background-color: #20c997;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;}
-#guzikChat .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
-#guzikChat:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#lightMode {position: fixed;bottom: 180px;right: 15px;z-index: 99;border: none;outline: none;background-color: #b5bec7;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
-animation: clicker .1s reverse;}
-#lightMode .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
-#lightMode:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-#darkMode {position: fixed;bottom: 180px;right: 15px;z-index: 99;border: none;outline: none;background-color: #24272b;color: white;cursor: pointer;padding: 10px;border-radius: 50%;font-size: 16px;opacity: 0.7;
-animation: clicker .1s reverse;}
-#darkMode .guzikhint {visibility: hidden; position: absolute; z-index: 99; top: 2px; right: 115%; background-color:#495057; width: 140px; color: #fefefe; text-align:center; padding:5px 0; border-radius:6px;}
-#darkMode:hover .guzikhint {visibility: visible; -webkit-animation: Fejder 1s; -moz-animation: Fejder 1s; -ms-animation: Fejder 1s; -o-animation: Fejder 1s; animation: Fejder 1s;}
-@keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
-@-webkit-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
-@-moz-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
-@-ms-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
-@-o-keyframes clicker {0% {transform: scale(0.9);}50% {transform: scale(0.8);}100% {transform: scale(1);}}
-@keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
-/* Chrome, Safari i Opera */
-@-webkit-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
-/* FireFox */
-@-moz-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
-/* Internet Explorer ...;-( */
-@-ms-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
-/* Opera, wersje 12+ */
-@-o-keyframes Fejder {from { opacity: 0; }to{ opacity: 1; }}
-</style>
+      from {
+        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
+      }
+
+      to {
+        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
+      }
+    }
+
+    @keyframes redGlow {
+      from {
+        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
+      }
+
+      to {
+        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
+      }
+    }
+
+    @-webkit-keyframes redGlow {
+      from {
+        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
+      }
+
+      to {
+        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
+      }
+    }
+
+    /* FireFox */
+    @-moz-keyframes redGlow {
+      from {
+        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
+      }
+
+      to {
+        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
+      }
+    }
+
+    /* Internet Explorer ...;-( */
+    @-ms-keyframes redGlow {
+      from {
+        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
+      }
+
+      to {
+        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
+      }
+    }
+
+    /* Opera, wersje 12+ */
+    @-o-keyframes redGlow {
+      from {
+        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
+      }
+
+      to {
+        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
+      }
+    }
+
+    @keyframes redGlowConstBTN {
+      from {
+        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
+      }
+
+      to {
+        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+      }
+    }
+
+    @-webkit-keyframes redGlowConstBTN {
+      from {
+        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
+      }
+
+      to {
+        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+      }
+    }
+
+    @-moz-keyframes redGlowConstBTN {
+      from {
+        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
+      }
+
+      to {
+        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+      }
+    }
+
+    @-ms-keyframes redGlowConstBTN {
+      from {
+        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
+      }
+
+      to {
+        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+      }
+    }
+
+    @-o-keyframes redGlowConstBTN {
+      from {
+        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
+      }
+
+      to {
+        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+      }
+    }
+
+    @keyframes redGlowConst {
+      from {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
+      }
+
+      to {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
+      }
+    }
+
+    @-webkit-keyframes redGlowConst {
+      from {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
+      }
+
+      to {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
+      }
+    }
+
+    /* FireFox */
+    @-moz-keyframes redGlowConst {
+      from {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
+      }
+
+      to {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
+      }
+    }
+
+    /* Internet Explorer ...;-( */
+    @-ms-keyframes redGlowConst {
+      from {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
+      }
+
+      to {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
+      }
+    }
+
+    /* Opera, wersje 12+ */
+    @-o-keyframes redGlowConst {
+      from {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
+      }
+
+      to {
+        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
+      }
+    }
+
+    .Jedi {
+      animation: greenGlow 1s linear 10ms reverse;
+    }
+
+    @keyframes greenGlow {
+      from {
+        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
+      }
+
+      to {
+        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
+      }
+    }
+
+    @-webkit-keyframes greenGlow {
+      from {
+        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
+      }
+
+      to {
+        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
+      }
+    }
+
+    /* FireFox */
+    @-moz-keyframes greenGlow {
+      from {
+        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
+      }
+
+      to {
+        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
+      }
+    }
+
+    /* Internet Explorer ...;-( */
+    @-ms-keyframes greenGlow {
+      from {
+        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
+      }
+
+      to {
+        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
+      }
+    }
+
+    /* Opera, wersje 12+ */
+    @-o-keyframes greenGlow {
+      from {
+        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
+      }
+
+      to {
+        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
+      }
+    }
+
+    .langList {
+      list-style-type: square;
+      margin: 10px;
+    }
+
+    .langList li {
+      margin: 5px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .sabre {
+      color: #ddd;
+      background-color: #57141a;
+      box-shadow: inset -2px -2px 10px #24090b, inset 2px 2px 10px #24090b;
+    }
+
+    .modImgSith {
+      filter: contrast(120%) saturate(90%) grayscale(50%);
+      background-color: #223;
+    }
+
+    .hovCol:focus {
+      color: #57141a !important;
+    }
+
+    .hovCol:hover {
+      color: red !important;
+    }
+
+    .hovCol:active {
+      color: #57141a !important;
+    }
+
+    .darkness {
+      color: #ddd;
+      background-color: #111;
+    }
+
+    .darkness2 {
+      color: #c13d3d;
+      background-color: #111;
+      text-shadow: 0px 0px 1px red;
+    }
+
+    .darkness3 {
+      color: #ddd;
+      background-color: #111;
+      border: 1px solid rgba(250, 250, 250, .125)
+    }
+
+    .solol {
+      list-style-image: url("img/SL.PNG");
+    }
+
+    .m1m0 {
+      list-style-image: url("img/M1M0.png");
+    }
+
+    .prohub {
+      list-style-image: url("img/PHlog.png");
+    }
+
+    .udem {
+      list-style-image: url("img/udemy.png");
+    }
+
+    .duol {
+      list-style-image: url("img/DL.png");
+    }
+
+    .googl {
+      list-style-image: url("img/GL.png");
+    }
+
+    .grass {
+      list-style-image: url("img/GH.png");
+    }
+
+    .sixsigma {
+      list-style-image: url("img/SixS.png");
+    }
+
+    .uk {
+      list-style-image: url("img/flag-UK.png");
+    }
+
+    .pl {
+      list-style-image: url("img/flag-PL.png");
+    }
+
+    .de {
+      list-style-image: url("img/flag-GR.png");
+    }
+
+    .formLabel {
+      font-variant: small-caps;
+      font-weight: 600;
+      transform: translateX(0px) translateY(0px) scale(1);
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 5ms;
+    }
+
+    .formLabel:hover {
+      transform: translateX(6px) translateY(-3px) scale(1.2);
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 5ms;
+    }
+
+    #guzik {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #389bbd;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      opacity: 0.7;
+    }
+
+    #darkMode:hover,
+    #lightMode:hover,
+    #guzik:hover,
+    #guzikChat:hover,
+    #guzikBug:hover {
+      background-color: #495057;
+      opacity: 0.9;
+      transform: scale(1.05) translateX(-1px) translateY(-1px);
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 5ms;
+    }
+
+    .text-form {
+      color: #14c08c;
+    }
+
+    .text-form-dark {
+      color: rgb(253, 126, 20);
+    }
+
+    #guzik .guzikhint {
+      visibility: hidden;
+      position: absolute;
+      z-index: 99;
+      top: 2px;
+      right: 115%;
+      background-color: #495057;
+      width: 140px;
+      color: #fefefe;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+    }
+
+    #guzik:hover .guzikhint {
+      visibility: visible;
+      -webkit-animation: Fejder 1s;
+      -moz-animation: Fejder 1s;
+      -ms-animation: Fejder 1s;
+      -o-animation: Fejder 1s;
+      animation: Fejder 1s;
+    }
+
+    #guzikBug {
+      position: fixed;
+      bottom: 70px;
+      right: 15px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #ffc107;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      opacity: 0.7;
+    }
+
+    #guzikBug .guzikhint {
+      visibility: hidden;
+      position: absolute;
+      z-index: 99;
+      top: 2px;
+      right: 115%;
+      background-color: #495057;
+      width: 140px;
+      color: #fefefe;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+    }
+
+    #guzikBug:hover .guzikhint {
+      visibility: visible;
+      -webkit-animation: Fejder 1s;
+      -moz-animation: Fejder 1s;
+      -ms-animation: Fejder 1s;
+      -o-animation: Fejder 1s;
+      animation: Fejder 1s;
+    }
+
+    #guzikChat {
+      position: fixed;
+      bottom: 125px;
+      right: 15px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #20c997;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      opacity: 0.7;
+    }
+
+    #guzikChat .guzikhint {
+      visibility: hidden;
+      position: absolute;
+      z-index: 99;
+      top: 2px;
+      right: 115%;
+      background-color: #495057;
+      width: 140px;
+      color: #fefefe;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+    }
+
+    #guzikChat:hover .guzikhint {
+      visibility: visible;
+      -webkit-animation: Fejder 1s;
+      -moz-animation: Fejder 1s;
+      -ms-animation: Fejder 1s;
+      -o-animation: Fejder 1s;
+      animation: Fejder 1s;
+    }
+
+    #lightMode {
+      position: fixed;
+      bottom: 180px;
+      right: 15px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #b5bec7;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      opacity: 0.7;
+      animation: clicker .1s reverse;
+    }
+
+    #lightMode .guzikhint {
+      visibility: hidden;
+      position: absolute;
+      z-index: 99;
+      top: 2px;
+      right: 115%;
+      background-color: #495057;
+      width: 140px;
+      color: #fefefe;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+    }
+
+    #lightMode:hover .guzikhint {
+      visibility: visible;
+      -webkit-animation: Fejder 1s;
+      -moz-animation: Fejder 1s;
+      -ms-animation: Fejder 1s;
+      -o-animation: Fejder 1s;
+      animation: Fejder 1s;
+    }
+
+    #darkMode {
+      position: fixed;
+      bottom: 180px;
+      right: 15px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #24272b;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      opacity: 0.7;
+      animation: clicker .1s reverse;
+    }
+
+    #darkMode .guzikhint {
+      visibility: hidden;
+      position: absolute;
+      z-index: 99;
+      top: 2px;
+      right: 115%;
+      background-color: #495057;
+      width: 140px;
+      color: #fefefe;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+    }
+
+    #darkMode:hover .guzikhint {
+      visibility: visible;
+      -webkit-animation: Fejder 1s;
+      -moz-animation: Fejder 1s;
+      -ms-animation: Fejder 1s;
+      -o-animation: Fejder 1s;
+      animation: Fejder 1s;
+    }
+
+    @keyframes clicker {
+      0% {
+        transform: scale(0.9);
+      }
+
+      50% {
+        transform: scale(0.8);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @-webkit-keyframes clicker {
+      0% {
+        transform: scale(0.9);
+      }
+
+      50% {
+        transform: scale(0.8);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @-moz-keyframes clicker {
+      0% {
+        transform: scale(0.9);
+      }
+
+      50% {
+        transform: scale(0.8);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @-ms-keyframes clicker {
+      0% {
+        transform: scale(0.9);
+      }
+
+      50% {
+        transform: scale(0.8);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @-o-keyframes clicker {
+      0% {
+        transform: scale(0.9);
+      }
+
+      50% {
+        transform: scale(0.8);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes Fejder {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Chrome, Safari i Opera */
+    @-webkit-keyframes Fejder {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* FireFox */
+    @-moz-keyframes Fejder {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Internet Explorer ...;-( */
+    @-ms-keyframes Fejder {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Opera, wersje 12+ */
+    @-o-keyframes Fejder {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
-  <body id="page-top">
-<a href="CV 2.0 Rafal Mucha.pdf" id="guzik" style="box-shadow: 1px 1px 4px #666;" download><img src="img/DTray.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">download my cv</span></a>
-<a data-toggle="modal" data-target="#chatForm" style="box-shadow: 1px 1px 4px #666;" id="guzikChat"><img src="img/chat.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">contact form</span></a>
-<div class="modal fade bd-example-modal-lg" id="chatForm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content container chatHolder" style="border: 2px solid #666; border-radius: 10px; box-shadow: 0px 0px 50px #24272b;">
-      <section class="mb-4">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="line-height: 1.5;"><span aria-hidden="true">&times;</span></button>
-        <h2 class="h1-responsive font-weight-bold text-center my-4 chatHead">Contact me</h2>
-        <p class="text-center mb-5">Have any open offers or projects? Want to talk it over? Fell free to send me a message.</p>
-        <div class="row">
-          <div class="col-md-1"></div>
+
+<body id="page-top">
+  <a href="CV 2.0 Rafal Mucha.pdf" id="guzik" style="box-shadow: 1px 1px 4px #666;" download><img src="img/DTray.png"
+      style="width: 25px; height: 25px" /><span class="guzikhint subheading">download my cv</span></a>
+  <a data-toggle="modal" data-target="#chatForm" style="box-shadow: 1px 1px 4px #666;" id="guzikChat"><img
+      src="img/chat.png" style="width: 25px; height: 25px" /><span class="guzikhint subheading">contact form</span></a>
+  <div class="modal fade bd-example-modal-lg" id="chatForm" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content container chatHolder"
+        style="border: 2px solid #666; border-radius: 10px; box-shadow: 0px 0px 50px #24272b;">
+        <section class="mb-4">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="line-height: 1.5;"><span
+              aria-hidden="true">&times;</span></button>
+          <h2 class="h1-responsive font-weight-bold text-center my-4 chatHead">Contact me</h2>
+          <p class="text-center mb-5">Have any open offers or projects? Want to talk it over? Fell free to send me a
+            message.</p>
+          <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-10 mb-md-3 mb-sm-2 mb-xs-2">
-                <form id="contact-form" name="contact-form" netlify><!--action="mail.php" method="POST"-->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk" autofocus autocomplete="name" required>
-                                <label for="name" class="formLabel">your name</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="email" id="email" name="email" class="form-control chatInput" placeholder="elon@tesla.com" autocomplete="email" required>
-                                <label for="email" class="formLabel">your email</label>
-                            </div>
-                        </div>
+              <form id="contact-form" name="contact-form" netlify>
+                <!--action="mail.php" method="POST"-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk"
+                        autofocus autocomplete="name" required>
+                      <label for="name" class="formLabel">your name</label>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control chatInput" placeholder="Lead Engineer job offer" required>
-                                <label for="subject" class="formLabel">subject</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea chatInput" placeholder="$1m/y | 100% HO | required good HTML & basic CSS"></textarea>
-                                <label for="message" class="formLabel">your message</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center text-md-right">
-                      <input type="submit" value="Send!" class="btn btn-outline-info chatSend"/>
                   </div>
-                </form>
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="email" id="email" name="email" class="form-control chatInput"
+                        placeholder="elon@tesla.com" autocomplete="email" required>
+                      <label for="email" class="formLabel">your email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="subject" name="subject" class="form-control chatInput"
+                        placeholder="Lead Engineer job offer" required>
+                      <label for="subject" class="formLabel">subject</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea type="text" id="message" name="message" rows="2"
+                        class="form-control md-textarea chatInput"
+                        placeholder="$1m/y | 100% HO | required good HTML & basic CSS"></textarea>
+                      <label for="message" class="formLabel">your message</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center text-md-right">
+                  <input type="submit" value="Send!" class="btn btn-outline-info chatSend" />
+                </div>
+              </form>
             </div>
             <div class="col-md-1"></div>
-        </div>
-    </section>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
-</div>
-<a href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" style="box-shadow: 1px 1px 4px #666;" id="guzikBug"><img src="img/Bug.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">report a bug</span></a>
-<a id="lightMode" style="display: none; box-shadow: 1px 1px 4px #666;" onclick="playSaber('./media/saberOff.mp3')"><img src="img/Rebel.png" style="width: 25px; height: 25px"/><span class="guzikhint subheading">light mode</span></a>
-<a id="darkMode" style="box-shadow: 1px 1px 4px #666;" onclick="playSaber('./media/saberOn.mp3')"><img src="img/Empire.png" style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse; width: 25px; height: 25px"/><span class="guzikhint subheading">dark mode</span></a>
-    <div class="container-fluid p-0">
+  <a href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" style="box-shadow: 1px 1px 4px #666;"
+    id="guzikBug"><img src="img/Bug.png" style="width: 25px; height: 25px" /><span class="guzikhint subheading">report a
+      bug</span></a>
+  <a id="lightMode" style="display: none; box-shadow: 1px 1px 4px #666;"
+    onclick="playSaber('./media/saberOff.mp3')"><img src="img/Rebel.png" style="width: 25px; height: 25px" /><span
+      class="guzikhint subheading">light mode</span></a>
+  <a id="darkMode" style="box-shadow: 1px 1px 4px #666;" onclick="playSaber('./media/saberOn.mp3')"><img
+      src="img/Empire.png"
+      style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse; width: 25px; height: 25px" /><span
+      class="guzikhint subheading">dark mode</span></a>
+  <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Start</span>
@@ -325,7 +883,8 @@ animation: clicker .1s reverse;}
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -342,1101 +901,1431 @@ animation: clicker .1s reverse;}
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-		  <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Achievements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
-		  <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#footer">Footer</a>
           </li>
         </ul>
       </div>
     </nav>
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0"><span id="Raf">Rafał</span>
-            <span class="text-primary">Mucha</span>
-          </h1>
-          <div class="subheading mb-5"><i class="fa fa-map-marker"></i> <a href="#" data-toggle="modal" data-target="#mapaKraka">Kraków</a>
-<div class="modal fade bd-example-modal-lg" id="mapaKraka" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.156110345693!2d20.002538803666585!3d50.08093989726195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645337160b089%3A0x84a5709cc373db92!2z8J-PoQ!5e0!3m2!1spl!2spl!4v1532419377895" width="100%" height="500px" frameborder="0" style="border: 1px solid; border-radius: 4px;" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>  ·  <i class="fa fa-user"></i> 1987  ·  <i class="fa fa-phone-square"></i> <a href="tel:+48794534604">794 534 604</a>  ·  <i class="fa fa-inbox"></i>
-            <a href="mailto:r.p.mucha@gmail.com?subject=Response2CV&Body=Hello!">r.p.mucha@gmail.com</a>
-          </div>
-          <p class="mb-5">Economics master's degree graduate, working in the corporate IT sector. People focused,
-eager to learn new skills, proactive and keen on new challanges. Experienced in customer
-service, accounting, reporting, general IT and an self-trained programmer, focused on FrontEnd WebDev, mobile and automations.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a class="flipLink" href="https://www.linkedin.com/in/rafał-mucha-5b4a84110" target="_blank">
-                <span class="fa-stack fa-lg flip">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="flipLink" href="https://github.com/RavMucha" target="_blank">
-                <span class="fa-stack fa-lg flip">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-			<li class="list-inline-item">
-              <a class="flipLink" href="https://www.instagram.com/ravmucha/" target="_blank">
-                <span class="fa-stack fa-lg flip">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="flipLink" href="https://twitter.com/rafal_mucha" target="_blank">
-                <span class="fa-stack fa-lg flip">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="flipLink" href="https://www.sololearn.com/Profile/489871" target="_blank">
-                <span class="fa-stack fa-lg flip">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <img class="fa fa-stack-1x fa-inverse" src="./img/Solo.svg"></img>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <div class="container">
-    <div class="row">
-        <div id="infoAlert" class="col-9 alert alert-secondary alert-dismissible fade show" role="alert" style="margin-top: 60px;">
-  <h4 class="alert-heading">Searching for a <span class="text-info">downloadable</span> CV or want to <span class="text-form">contact</span> me?</h4>
-  <p class="mb-0">No problemo! You'll find the download button in the lower-right corner.</p>
-  <p class="mb-0">There's also a contact form amongst those options.</p>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span></button>
-    </div>
-  </div>
-  </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Experienced Software Engineer</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/00.png')"> GFT Poland Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">Web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using:
-  <ul class="langList">
-    <li>HTML, CSS, JavaScript,</li>
-    <li>React, Vue.js, Bootstrap, jQuery,</li>
-    <li>Angular, Angular Material, </li>
-    <li>Node.js, Express, PostgreSQL, Docker,</li>
-    <li>TypeScript, SASS</li>
-  </ul>
-</li><li class="list-group-item">Designing and implementation of solutions according to customer requirements, documentation of work and mentoring.  
-</li><li class="list-group-item">Building modern Single Page Applications
-</li><li class="list-group-item">Version control using <strong>Git, GitHub, GitLab</strong>
-</li><li class="list-group-item">Working in <strong>Scrum</strong> methodology
-</li></ul>
-</p>
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0"><span id="Raf">Rafał</span>
+          <span class="text-primary">Mucha</span>
+        </h1>
+        <div class="subheading mb-5"><i class="fa fa-map-marker"></i> <a href="#" data-toggle="modal"
+            data-target="#mapaKraka">Kraków</a>
+          <div class="modal fade bd-example-modal-lg" id="mapaKraka" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.156110345693!2d20.002538803666585!3d50.08093989726195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645337160b089%3A0x84a5709cc373db92!2z8J-PoQ!5e0!3m2!1spl!2spl!4v1532419377895"
+                  width="100%" height="500px" frameborder="0" style="border: 1px solid; border-radius: 4px;"
+                  allowfullscreen></iframe>
+              </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2020 - Present</span>
+          </div> · <i class="fa fa-user"></i> 1987 · <i class="fa fa-phone-square"></i> <a href="tel:+48794534604">794
+            534 604</a> · <i class="fa fa-inbox"></i>
+          <a href="mailto:r.p.mucha@gmail.com?subject=Response2CV&Body=Hello!">r.p.mucha@gmail.com</a>
+        </div>
+        <p class="mb-5">Economics master's degree graduate, working in the corporate IT sector. People focused,
+          eager to learn new skills, proactive and keen on new challanges. Experienced in customer
+          service, accounting, reporting, general IT and an self-trained programmer, focused on FrontEnd WebDev, mobile
+          and automations.</p>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a class="flipLink" href="https://www.linkedin.com/in/rafał-mucha-5b4a84110" target="_blank">
+              <span class="fa-stack fa-lg flip">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="flipLink" href="https://github.com/RavMucha" target="_blank">
+              <span class="fa-stack fa-lg flip">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="flipLink" href="https://www.instagram.com/ravmucha/" target="_blank">
+              <span class="fa-stack fa-lg flip">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="flipLink" href="https://twitter.com/rafal_mucha" target="_blank">
+              <span class="fa-stack fa-lg flip">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="flipLink" href="https://www.sololearn.com/Profile/489871" target="_blank">
+              <span class="fa-stack fa-lg flip">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <img class="fa fa-stack-1x fa-inverse" src="./img/Solo.svg"></img>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div id="infoAlert" class="col-9 alert alert-secondary alert-dismissible fade show" role="alert"
+              style="margin-top: 60px;">
+              <h4 class="alert-heading">Searching for a <span class="text-info">downloadable</span> CV or want to <span
+                  class="text-form">contact</span> me?</h4>
+              <p class="mb-0">No problemo! You'll find the download button in the lower-right corner.</p>
+              <p class="mb-0">There's also a contact form amongst those options.</p>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
             </div>
           </div>
+        </div>
+    </section>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Experience</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Continuous Improvement Leader  <span class="badge badge-secondary">Web Developer</span></h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">E2E web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript, jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React, TypeScript</strong>
-</li><li class="list-group-item">Automations & RPA/robotics consultancy
-</li><li class="list-group-item">Automations (Excel, macros, scripting solutions) design & implementation
-</li><li class="list-group-item">Business Intelligence Dashboard reporting
-</li><li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
-</li><li class="list-group-item">Support engagements in identifying CI opportunities
-</li><li class="list-group-item">Driving Continuous Improvement projects to achieve overall objectives of the Organization and engagement
-</li><li class="list-group-item">Promoting continuous improvement methodology
-</li><li class="list-group-item">Generating demand for automation (through different tools and focus workshops)
-</li><li class="list-group-item">Sharing knowledge and awareness proactively
-</li><li class="list-group-item">Provide training and knowledge sharing to the business
-</li></ul>
-<br/>
-<span class="badge badge-info">Additionally:</span>
-<p><b>Web Development basics trainer</b> <span style="font-size: 0.9em;">(conducting trainings for employees on the basics of FrontEnd development - 
-  HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap & SharePoints as servers)</span></p>
-</p>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Experienced Software Engineer</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/00.png')"> GFT Poland Sp. z o.o.</li>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2019 - January 2020</span>
-            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Web development, maintenance and improvements, administration, access
+                  control, Front End & Back End maintenance using:
+                  <ul class="langList">
+                    <li>HTML, CSS, JavaScript,</li>
+                    <li>React, Vue.js, Bootstrap, jQuery,</li>
+                    <li>Angular, Angular Material, </li>
+                    <li>Node.js, Express, PostgreSQL, Docker,</li>
+                    <li>TypeScript, SASS</li>
+                  </ul>
+                </li>
+                <li class="list-group-item">Designing and implementation of solutions according to customer
+                  requirements, documentation of work and mentoring. 
+                </li>
+                <li class="list-group-item">Building modern Single Page Applications
+                </li>
+                <li class="list-group-item">Version control using <strong>Git, GitHub, GitLab</strong>
+                </li>
+                <li class="list-group-item">Working in <strong>Scrum</strong> methodology, <strong>Figma</strong> designs
+                </li>
+              </ul>
+            </p>
           </div>
-
-<div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Continuous Improvement Specialist  <span class="badge badge-secondary">Web Developer</span></h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">E2E web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript, jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints</strong>
-</li><li class="list-group-item">Business Intelligence Dashboard reporting
-</li><li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
-</li><li class="list-group-item">Support engagements in identifying CI opportunities
-</li><li class="list-group-item">Driving Continuous Improvement projects to achieve overall objectives of the Organization and engagement
-</li><li class="list-group-item">Promoting continuous improvement methodology
-</li><li class="list-group-item">Generating demand for automation (through different tools and focus workshops)
-</li><li class="list-group-item">Sharing knowledge and awareness proactively
-</li><li class="list-group-item">Provide training and knowledge sharing to the business
-</li></ul>
-</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2019 - June 2019</span>
-            </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">February 2020 - Present</span>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Reporting & Analysis Senior Analyst  <span class="badge badge-secondary">Command Center</span></h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">Active website development, maintenance and improvements (<strong>HTML, CSS, JavaScript, jQuery, ASP.NET, Bootstrap, Google Charts</strong>), administration, access control, Front End & some occasional Back End maintenance
-</li><li class="list-group-item">Preparation of daily/monthly reports in MS Excel
-</li><li class="list-group-item">Preparation of monthly dashboards in SAP BusinessObjects & MS Power BI
-</li><li class="list-group-item">Preparation of monthly service review PPT decks
-</li><li class="list-group-item">General IT support for Citrix, Cisco telephony, VPN, Office Suite software, ERPs, server issues,
- ticketing on ServiceNOW, BMC Remedy and various ITSM systems
-</li><li class="list-group-item">Calculation of process metrics data based on agreed definitions
-</li><li class="list-group-item">Data collection plan control
-</li><li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
-</li><li class="list-group-item">Coordination with engagement team in getting data
-</li><li class="list-group-item">Updating required process documentation (procedures) and other documentation within agreed
- timeframes
-</li><li class="list-group-item">Creation of project plans
-</li><li class="list-group-item">Coordination of MS SQL database structure creation
-</li><li class="list-group-item">Integration of data and information
-</li><li class="list-group-item">Implementation of interfaces for data input and data output
-</li><li class="list-group-item">Enhancements of service reporting tool sets</li></ul>
-<br/>
-<span class="badge badge-info">Additionally:</span>
-<p><b>Risk & Compliance Coordinator</b> <span style="font-size: 0.9em;">(auditing, creation, preparation and updates of a BCP, R&C logs,
- operational and Disaster Recovery-related documentation)</span></p></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2017 - February 2019</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Finance Service Specialist for General Accounting  <span class="badge badge-secondary">General Ledger Reporting</span></h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/02.png')"> ABB Global Business Services</li></div>
-              <p><ul class="list-group list-group-flush"><li class="list-group-item">Performing general accounting activities</li>
-<li class="list-group-item">Execution of assigned accounting analyses and reports</li>
-<li class="list-group-item">Ensuring the production of reports, statement of accounts, reconciliations, statements of sourcing and application of funds (SAP FI, Excel, Oracle HFM, ServiceNOW)</li>
-<li class="list-group-item">Conduction of investigations and reconciliations of accounts</li>
-<li class="list-group-item">Application of accounting techniques and standard practices to the classification and recording of financial transactions</li>
-<li class="list-group-item">Participation in internal control testing and preparation of relevant documentation</li>
-<li class="list-group-item">Support of management with financial aspects of project funding and risk assessment</li></ul></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">March 2017 - July 2017</span>
-            </div>
-          </div>
-
-		  	<div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Accountant  <span class="badge badge-secondary">General Ledger</span></h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">SAP system & Desktop Housekeeping</li>
-<li class="list-group-item">Month end journal processing</li>
-<li class="list-group-item">Timesheet and Expenses Administration, including issuing missing timesheet reports and chasing missing timesheets</li>
-<li class="list-group-item">Setup of new projects in line with approved PIDs or WSAs, including input of initial income & expenditure forecasts</li>
-<li class="list-group-item">Assistance with the updating/maintenance of project forecasts in liaison with Project Managers</li>
-<li class="list-group-item">Invoice Processing (Accounts receivable and payable)</li>
-<li class="list-group-item">Assistance with Co-ordination of Annual Business Plan and monthly forecasts</li>
-<li class="list-group-item">Processing and facilitating timely approval of supplier invoices</li>
-<li class="list-group-item">Creating Purchase Orders and adminstration of the end to end PO process</li>
-<li class="list-group-item">Generating various financial and timesheet reports in SAP to Excel</li>
-<li class="list-group-item">SalesForce Opportunities creation, maintenance and revenue scheduling</li></ul>
-<br/>
-<span class="badge badge-info">Additionally:</span>
-<ul><li>Lead trainer of accounting and bookkeeping basics,</li>
-<li>Head of the office's Social Fund Committee,</li>
-<li>Member of the office's Charity Team.</li></ul></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2016 - February 2017</span>
-            </div>
-          </div>
-
-		  		            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior <span><img src="img/09.png"/></span> Application Support Specialist</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">Resolving access related reqests via SAP within agreed SLAs</li>
-<li class="list-group-item">Test system changes and upgrades</li>
-<li class="list-group-item">First line support for internal customers (via mail and phone)</li>
-<li class="list-group-item">Performing system administration tasks</li>
-<li class="list-group-item">Solving complex issues related to customers’ queries</li></ul>
-<br/>
-<span class="badge badge-info">Additionally:</span>
-<ul><li>Lead trainer of accounting and bookkeeping basics,</li>
-<li>Head of the office's Social Fund Committee,</li>
-<li>Member of the office's Charity Team,</li>
-<li>Supporting recruitment (screening candidates), project management, internal marketing, maintenance and updates of a database of employees in MS Access.</li></ul></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">March 2016 - July 2016</span>
-            </div>
-          </div>
-
-		            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">IT Service Desk Analyst</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">Responding to incoming requests made via a variety of channels (email, web, voice), against thresholds in line with the contracted SLAs</li>
-<li class="list-group-item">Logging (via Hornbill SupportWorks and BMC Remedy), categorising and prioritising all 1st level calls according to the agreed SLA</li>
-<li class="list-group-item">First Time Fix calls where appropriate via LANDesk, remote access and admin consoles</li>
-<li class="list-group-item">Active Directory user and domain maintenance</li>
-<li class="list-group-item">Monitoring of servers</li>
-<li class="list-group-item">Resolving tickets relating to AD group accesses, new starter and leaver requests, issues with MVS telephony, servers, Exchange, Sharepoint and MS Office, CRM plug-ins, Remote Desktop Software, Cisco VPN, WebEx and proprietary corporate software</li></ul>
-<br/>
-<span class="badge badge-info">Additionally:</span>
-<ul><li>Lead trainer of accounting and bookkeeping basics</li>
-<li>Head of the office's Social Fund Committee</li></ul></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2015 - March 2016 <span class="badge badge-dark">Company's contract ended</span></span>
-            </div>
-          </div>
-
-		            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Data Administrator</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush">
-<li class="list-group-item">Handling and processing data supplied by the customer, expert and/or provider ensuring the data is accurately input and complete in the CRM system and Excel spreadsheet database</li>
-<li class="list-group-item">Keeping case notes up to date, concise and relevant to ensure colleagues can interpret correctly and actions are clear</li>
-<li class="list-group-item">Making outbound calling, chasing medical providers for medical records</li>
-<li class="list-group-item">Operating within own area of accountability, proactively escalating critical points that may affect a case and act upon them in a timely manner to resolve</li>
-<li class="list-group-item">Achieve targets for quality and utilisation including Service Standards and applying the Data Protection Act precautions</li></ul></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2015 <span class="badge badge-dark">Company's contract ended</span></span>
-            </div>
-          </div>
-
-		            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Customer Advisor</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/04.png')"> PLAY</li></div>
-              <p>Customer service in a PLAY carrier store, calling clients, cash handling , sales of network services.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2014 - April 2015</span>
-            </div>
-          </div>
-
-		   <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Telephone consultant | Transcription Process Lead</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/05.png')"> Medicover Sp. z o.o.</li></div>
-              <p><ul class="list-group list-group-flush"><li class="list-group-item">Telephone customer service in Polish and English</li>
-<li class="list-group-item">Training new joiners</li>
-<li class="list-group-item">Transcription of phone calls</li>
-<li class="list-group-item">Supervisory of work in a team of 4 staff as team leader of a special side project lasting 3 months.</li></ul></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2011 - June 2014</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Manager | web-based business owner</h3>
-              <div class="subheading mb-3"><li style="list-style: square inside url('img/06.png')"> Academic Incubators of Entrepreneurship</li></div>
-              <p>Management of a startup business, invoicing, contacting clients, sales of advertising space, website administration (HTML, phpBB).<br/>
-Employed and managed the work of up to 15 contractors.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2011 - October 2012</span>
-            </div>
-          </div>
-
         </div>
 
-      </section>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Continuous Improvement Leader <span class="badge badge-secondary">Web Developer</span></h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">E2E web development, maintenance and improvements, administration, access
+                  control, Front End & Back End maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript,
+                    jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React, TypeScript</strong>
+                </li>
+                <li class="list-group-item">Automations & RPA/robotics consultancy
+                </li>
+                <li class="list-group-item">Automations (Excel, macros, scripting solutions) design & implementation
+                </li>
+                <li class="list-group-item">Business Intelligence Dashboard reporting
+                </li>
+                <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
+                </li>
+                <li class="list-group-item">Support engagements in identifying CI opportunities
+                </li>
+                <li class="list-group-item">Driving Continuous Improvement projects to achieve overall objectives of the
+                  Organization and engagement
+                </li>
+                <li class="list-group-item">Promoting continuous improvement methodology
+                </li>
+                <li class="list-group-item">Generating demand for automation (through different tools and focus
+                  workshops)
+                </li>
+                <li class="list-group-item">Sharing knowledge and awareness proactively
+                </li>
+                <li class="list-group-item">Provide training and knowledge sharing to the business
+                </li>
+              </ul>
+              <br />
+              <span class="badge badge-info">Additionally:</span>
+              <p><b>Web Development basics trainer</b> <span style="font-size: 0.9em;">(conducting trainings for
+                  employees on the basics of FrontEnd development -
+                  HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap & SharePoints as servers)</span></p>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2019 - January 2020</span>
+          </div>
+        </div>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Continuous Improvement Specialist <span class="badge badge-secondary">Web Developer</span>
+            </h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">E2E web development, maintenance and improvements, administration, access
+                  control, Front End & Back End maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript,
+                    jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints</strong>
+                </li>
+                <li class="list-group-item">Business Intelligence Dashboard reporting
+                </li>
+                <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
+                </li>
+                <li class="list-group-item">Support engagements in identifying CI opportunities
+                </li>
+                <li class="list-group-item">Driving Continuous Improvement projects to achieve overall objectives of the
+                  Organization and engagement
+                </li>
+                <li class="list-group-item">Promoting continuous improvement methodology
+                </li>
+                <li class="list-group-item">Generating demand for automation (through different tools and focus
+                  workshops)
+                </li>
+                <li class="list-group-item">Sharing knowledge and awareness proactively
+                </li>
+                <li class="list-group-item">Provide training and knowledge sharing to the business
+                </li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">February 2019 - June 2019</span>
+          </div>
+        </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><li style="list-style: square inside url('img/08.png')"> Jan Kochanowski University in Kielce</li></h3>
-              <div class="subheading mb-3">Master's degree</div>
-              <div class="subheading mb-5">Economics  <span class="badge badge-pill badge-light">Full time</span>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Reporting & Analysis Senior Analyst <span class="badge badge-secondary">Command
+                Center</span></h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Active website development, maintenance and improvements (<strong>HTML, CSS,
+                    JavaScript, jQuery, ASP.NET, Bootstrap, Google Charts</strong>), administration, access control,
+                  Front End & some occasional Back End maintenance
+                </li>
+                <li class="list-group-item">Preparation of daily/monthly reports in MS Excel
+                </li>
+                <li class="list-group-item">Preparation of monthly dashboards in SAP BusinessObjects & MS Power BI
+                </li>
+                <li class="list-group-item">Preparation of monthly service review PPT decks
+                </li>
+                <li class="list-group-item">General IT support for Citrix, Cisco telephony, VPN, Office Suite software,
+                  ERPs, server issues,
+                  ticketing on ServiceNOW, BMC Remedy and various ITSM systems
+                </li>
+                <li class="list-group-item">Calculation of process metrics data based on agreed definitions
+                </li>
+                <li class="list-group-item">Data collection plan control
+                </li>
+                <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
+                </li>
+                <li class="list-group-item">Coordination with engagement team in getting data
+                </li>
+                <li class="list-group-item">Updating required process documentation (procedures) and other documentation
+                  within agreed
+                  timeframes
+                </li>
+                <li class="list-group-item">Creation of project plans
+                </li>
+                <li class="list-group-item">Coordination of MS SQL database structure creation
+                </li>
+                <li class="list-group-item">Integration of data and information
+                </li>
+                <li class="list-group-item">Implementation of interfaces for data input and data output
+                </li>
+                <li class="list-group-item">Enhancements of service reporting tool sets</li>
+              </ul>
+              <br />
+              <span class="badge badge-info">Additionally:</span>
+              <p><b>Risk & Compliance Coordinator</b> <span style="font-size: 0.9em;">(auditing, creation, preparation
+                  and updates of a BCP, R&C logs,
+                  operational and Disaster Recovery-related documentation)</span></p>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2017 - February 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Finance Service Specialist for General Accounting <span
+                class="badge badge-secondary">General Ledger Reporting</span></h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/02.png')"> ABB Global Business Services</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Performing general accounting activities</li>
+                <li class="list-group-item">Execution of assigned accounting analyses and reports</li>
+                <li class="list-group-item">Ensuring the production of reports, statement of accounts, reconciliations,
+                  statements of sourcing and application of funds (SAP FI, Excel, Oracle HFM, ServiceNOW)</li>
+                <li class="list-group-item">Conduction of investigations and reconciliations of accounts</li>
+                <li class="list-group-item">Application of accounting techniques and standard practices to the
+                  classification and recording of financial transactions</li>
+                <li class="list-group-item">Participation in internal control testing and preparation of relevant
+                  documentation</li>
+                <li class="list-group-item">Support of management with financial aspects of project funding and risk
+                  assessment</li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2017 - July 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Junior Accountant <span class="badge badge-secondary">General Ledger</span></h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">SAP system & Desktop Housekeeping</li>
+                <li class="list-group-item">Month end journal processing</li>
+                <li class="list-group-item">Timesheet and Expenses Administration, including issuing missing timesheet
+                  reports and chasing missing timesheets</li>
+                <li class="list-group-item">Setup of new projects in line with approved PIDs or WSAs, including input of
+                  initial income & expenditure forecasts</li>
+                <li class="list-group-item">Assistance with the updating/maintenance of project forecasts in liaison
+                  with Project Managers</li>
+                <li class="list-group-item">Invoice Processing (Accounts receivable and payable)</li>
+                <li class="list-group-item">Assistance with Co-ordination of Annual Business Plan and monthly forecasts
+                </li>
+                <li class="list-group-item">Processing and facilitating timely approval of supplier invoices</li>
+                <li class="list-group-item">Creating Purchase Orders and adminstration of the end to end PO process</li>
+                <li class="list-group-item">Generating various financial and timesheet reports in SAP to Excel</li>
+                <li class="list-group-item">SalesForce Opportunities creation, maintenance and revenue scheduling</li>
+              </ul>
+              <br />
+              <span class="badge badge-info">Additionally:</span>
+              <ul>
+                <li>Lead trainer of accounting and bookkeeping basics,</li>
+                <li>Head of the office's Social Fund Committee,</li>
+                <li>Member of the office's Charity Team.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2016 - February 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Junior <span><img src="img/09.png" /></span> Application Support Specialist</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Resolving access related reqests via SAP within agreed SLAs</li>
+                <li class="list-group-item">Test system changes and upgrades</li>
+                <li class="list-group-item">First line support for internal customers (via mail and phone)</li>
+                <li class="list-group-item">Performing system administration tasks</li>
+                <li class="list-group-item">Solving complex issues related to customers’ queries</li>
+              </ul>
+              <br />
+              <span class="badge badge-info">Additionally:</span>
+              <ul>
+                <li>Lead trainer of accounting and bookkeeping basics,</li>
+                <li>Head of the office's Social Fund Committee,</li>
+                <li>Member of the office's Charity Team,</li>
+                <li>Supporting recruitment (screening candidates), project management, internal marketing, maintenance
+                  and updates of a database of employees in MS Access.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2016 - July 2016</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">IT Service Desk Analyst</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Responding to incoming requests made via a variety of channels (email, web,
+                  voice), against thresholds in line with the contracted SLAs</li>
+                <li class="list-group-item">Logging (via Hornbill SupportWorks and BMC Remedy), categorising and
+                  prioritising all 1st level calls according to the agreed SLA</li>
+                <li class="list-group-item">First Time Fix calls where appropriate via LANDesk, remote access and admin
+                  consoles</li>
+                <li class="list-group-item">Active Directory user and domain maintenance</li>
+                <li class="list-group-item">Monitoring of servers</li>
+                <li class="list-group-item">Resolving tickets relating to AD group accesses, new starter and leaver
+                  requests, issues with MVS telephony, servers, Exchange, Sharepoint and MS Office, CRM plug-ins, Remote
+                  Desktop Software, Cisco VPN, WebEx and proprietary corporate software</li>
+              </ul>
+              <br />
+              <span class="badge badge-info">Additionally:</span>
+              <ul>
+                <li>Lead trainer of accounting and bookkeeping basics</li>
+                <li>Head of the office's Social Fund Committee</li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2015 - March 2016 <span class="badge badge-dark">Company's contract
+                ended</span></span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Data Administrator</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Handling and processing data supplied by the customer, expert and/or
+                  provider ensuring the data is accurately input and complete in the CRM system and Excel spreadsheet
+                  database</li>
+                <li class="list-group-item">Keeping case notes up to date, concise and relevant to ensure colleagues can
+                  interpret correctly and actions are clear</li>
+                <li class="list-group-item">Making outbound calling, chasing medical providers for medical records</li>
+                <li class="list-group-item">Operating within own area of accountability, proactively escalating critical
+                  points that may affect a case and act upon them in a timely manner to resolve</li>
+                <li class="list-group-item">Achieve targets for quality and utilisation including Service Standards and
+                  applying the Data Protection Act precautions</li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2015 <span class="badge badge-dark">Company's contract ended</span></span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Customer Advisor</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/04.png')"> PLAY</li>
+            </div>
+            <p>Customer service in a PLAY carrier store, calling clients, cash handling , sales of network services.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2014 - April 2015</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Telephone consultant | Transcription Process Lead</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/05.png')"> Medicover Sp. z o.o.</li>
+            </div>
+            <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Telephone customer service in Polish and English</li>
+                <li class="list-group-item">Training new joiners</li>
+                <li class="list-group-item">Transcription of phone calls</li>
+                <li class="list-group-item">Supervisory of work in a team of 4 staff as team leader of a special side
+                  project lasting 3 months.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2011 - June 2014</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Manager | web-based business owner</h3>
+            <div class="subheading mb-3">
+              <li style="list-style: square inside url('img/06.png')"> Academic Incubators of Entrepreneurship</li>
+            </div>
+            <p>Management of a startup business, invoicing, contacting clients, sales of advertising space, website
+              administration (HTML, phpBB).<br />
+              Employed and managed the work of up to 15 contractors.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">April 2011 - October 2012</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">
+              <li style="list-style: square inside url('img/08.png')"> Jan Kochanowski University in Kielce</li>
+            </h3>
+            <div class="subheading mb-3">Master's degree</div>
+            <div class="subheading mb-5">Economics <span class="badge badge-pill badge-light">Full time</span>
               <p><span class="badge badge-info">Specialty:</span> Economics of industry and services
-			<br/>
-			<span class="badge badge-info">Activities and Societies:</span>
-			Group's foreman</p>
-			</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2012 - September 2014</span>
+                <br />
+                <span class="badge badge-info">Activities and Societies:</span>
+                Group's foreman</p>
             </div>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><li style="list-style: square inside url('img/08.png')"> Jan Kochanowski University in Kielce</li></h3>
-			    <div class="subheading mb-3">Bachelor's degree</div>
-              <div class="subheading mb-5">Economics <span class="badge badge-pill badge-light">Full time</span>
-              <p><span class="badge badge-info">Specialty:</span> Economics of finance and banking
-			<br/>
-			<span class="badge badge-info">Activities and Societies:</span>
-			Group's foreman</p>
-			</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2009 - September 2012</span>
-            </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2012 - September 2014</span>
           </div>
         </div>
-      </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">
+              <li style="list-style: square inside url('img/08.png')"> Jan Kochanowski University in Kielce</li>
+            </h3>
+            <div class="subheading mb-3">Bachelor's degree</div>
+            <div class="subheading mb-5">Economics <span class="badge badge-pill badge-light">Full time</span>
+              <p><span class="badge badge-info">Specialty:</span> Economics of finance and banking
+                <br />
+                <span class="badge badge-info">Activities and Societies:</span>
+                Group's foreman</p>
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2009 - September 2012</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i type="button" data-toggle="modal" data-target="#port2" class="newIcon devicon-jquery-plain colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i type="button" data-toggle="modal" data-target="#port2" class="newIcon devicon-bootstrap-plain colored"></i>
-              <div class="modal fade bd-example-modal-lg" id="port2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item">
+            <i class="devicons devicons-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-css3"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-javascript"></i>
+          </li>
+          <li class="list-inline-item">
+            <i type="button" data-toggle="modal" data-target="#port2" class="newIcon devicon-jquery-plain colored"></i>
+          </li>
+          <li class="list-inline-item">
+            <i type="button" data-toggle="modal" data-target="#port2"
+              class="newIcon devicon-bootstrap-plain colored"></i>
+            <div class="modal fade bd-example-modal-lg" id="port2" tabindex="-1" role="dialog"
+              aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
-              <div class="modal-content site">
-                <iframe src="https://rafal-mucha.netlify.app/" class="site" frameborder="0"></iframe>
+                <div class="modal-content site">
+                  <iframe src="https://rafal-mucha.netlify.app/" class="site" frameborder="0"></iframe>
+                </div>
               </div>
-              </div>
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <i type="button" data-toggle="modal" data-target="#port1" class="newIcon devicon-vuejs-plain colored"></i>
-              <div class="modal fade bd-example-modal-lg" id="port1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <i type="button" data-toggle="modal" data-target="#port1" class="newIcon devicon-vuejs-plain colored"></i>
+            <div class="modal fade bd-example-modal-lg" id="port1" tabindex="-1" role="dialog"
+              aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
-              <div class="modal-content site">
-                <iframe src="https://v-convert.netlify.app/" class="site" frameborder="0"></iframe>
+                <div class="modal-content site">
+                  <iframe src="https://v-convert.netlify.app/" class="site" frameborder="0"></iframe>
+                </div>
               </div>
-              </div>
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-angular"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-react"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="newIcon devicon-typescript-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery_ui"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-dotnet"></i>
-            </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-nodejs_small"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-python"></i>
-    </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-postgresql"></i>
-    </li>
-			<li class="list-inline-item">
-        <i class="newIcon devicon-d3js-plain"></i>
-      </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-github_badge"></i>
-            </li>
-            <li class="list-inline-item">
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-typescript-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-jquery_ui"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-dotnet"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-nodejs_small"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-npm"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-python"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-mysql"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-postgresql"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-mongodb"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-d3js-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-terminal"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-git"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-github_badge"></i>
+          </li>
+          <li class="list-inline-item">
             <i class="newIcon devicon-gitlab-plain"></i>
           </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-stackoverflow"></i>
-            </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-git"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="newIcon devicon-docker-plain"></i>
-        </li>
-              <li class="list-inline-item">
-              <i class="devicons devicons-vim"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-terminal"></i>
-                </li>
-              <li class="list-inline-item">
-                <i class="newIcon devicon-babel-plain"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="newIcon devicon-webpack-plain"></i>
-                  </li>
-                <li class="list-inline-item">
-                  <i class="newIcon devicon-gimp-plain"></i>
-                  </li>
-                <li class="list-inline-item">
-                  <i class="newIcon devicon-inkscape-plain"></i>
-                  </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-linux"></i>
-            </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-android"></i>
-			  </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-ubuntu"></i>
-			  </li>
-			<li class="list-inline-item">
-              <i class="devicons devicons-windows"></i>
-        </li>
-      <li class="list-inline-item">
-          <i class="devicons devicons-chrome"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-firefox"></i>
-        </li>
-          </ul>
-<button class="btn btn btn-secondary subheading" type="button" data-toggle="collapse" data-target="#pokaSkillsy" aria-expanded="false" aria-controls="pokaSkillsy">Apps &amp; Software that I have used &amp; know&nbsp;&nbsp;&nbsp;<span class="badge badge-pill badge-dark">CLICK</span></button>
-    <div class="card card-body collapse" id="pokaSkillsy">
+          <li class="list-inline-item">
+            <i class="devicons devicons-stackoverflow"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-docker-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-babel-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-webpack-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-gimp-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-inkscape-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-android"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-ubuntu"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-windows"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-chrome"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-firefox"></i>
+          </li>
+        </ul>
+        <button class="btn btn btn-secondary subheading" type="button" data-toggle="collapse" data-target="#pokaSkillsy"
+          aria-expanded="false" aria-controls="pokaSkillsy">Apps &amp; Software that I have used &amp;
+          know&nbsp;&nbsp;&nbsp;<span class="badge badge-pill badge-dark">CLICK</span></button>
+        <div class="card card-body collapse" id="pokaSkillsy">
           <ul class="fa-ul mb-0 list-group">
             <li class="list-group-item list-group-item-dark">
-              GNU | Linux | Ubuntu | Windows</li>
+              Android | Linux | Ubuntu | Windows</li>
             <li class="list-group-item list-group-item-secondary">
               MS Office: Sharepoint | Excel | Word | PowerPoint | Access | Sway | OneNote | Teams | Outlook...</li>
             <li class="list-group-item list-group-item-dark">
               SAP BusinessObjects | MS Power BI</li>
-			<li class="list-group-item list-group-item-secondary">
+            <li class="list-group-item list-group-item-secondary">
               BMC Remedy | ServiceNOW | Hornbill SupportWorks</li>
-			<li class="list-group-item list-group-item-dark">
+            <li class="list-group-item list-group-item-dark">
               Oracle HFM | SAP ERP</li>
-			<li class="list-group-item list-group-item-secondary">
+            <li class="list-group-item list-group-item-secondary">
               CRM | SalesForce</li>
-			<li class="list-group-item list-group-item-dark">
-              MS Active Directory | Bash | PowerShell | Command Prompt</li>
-			<li class="list-group-item list-group-item-secondary">
-              Gimp | Citrix | RDPs | Cisco VPN | LANDesk | WebEx</li>
-			<li class="list-group-item list-group-item-dark">
+            <li class="list-group-item list-group-item-dark">
+              MS Active Directory | Bash | PowerShell | Command Prompt | npm</li>
+            <li class="list-group-item list-group-item-secondary">
+              Figma | Gimp | Citrix | RDPs | Cisco VPN | LANDesk | WebEx</li>
+            <li class="list-group-item list-group-item-dark">
               Visual Studio Code | Atom | Brackets | Git | GitHub | Eclipse | SharePoint Designer</li>
           </ul>
         </div>
-    </div>
-		<br/>
-		  <div class="subheading mb-3">Languages</div>
-          <ul class="fa-ul mb-0">
-		  <li class="pl">
-              Polish
-			  <div class="progress" style="width: 25%">
-  <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><b>Native</b></div>
-</div></li>
-		  <li class="uk">
-              English
-			  <div class="progress" style="width: 25%">
-  <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><b>C1+</b></div>
-</div></li>
-            <li class="de">
-              German
-			  <div class="progress" style="width: 25%">
-  <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><b>A2</b></div>
-</div></li>
-          </ul>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Achievements</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-star fa-lg text-warning"></i>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m3c">Written praise for providing help and work quality <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="m3c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" height="100%" src="img/mediCert3.jpg"/>
-    </div>
+      </div>
+      <br />
+      <div class="subheading mb-3">Languages</div>
+      <ul class="fa-ul mb-0">
+        <li class="pl">
+          Polish
+          <div class="progress" style="width: 25%">
+            <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><b>Native</b></div>
+          </div>
+        </li>
+        <li class="uk">
+          English
+          <div class="progress" style="width: 25%">
+            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><b>C1+</b></div>
+          </div>
+        </li>
+        <li class="de">
+          German
+          <div class="progress" style="width: 25%">
+            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><b>A2</b></div>
+          </div>
+        </li>
+      </ul>
   </div>
-</div><span class="badge badge-info">2012 | Awarded by the Deputy Director for Medical Quality</span></li>
-			<li>
-              <i class="fa-li fa fa-star fa-lg text-warning"></i>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m5c">Scholarship for best students <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="m5c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/ujkCert.png"/>
-    </div>
-  </div>
-</div><span class="badge badge-info">2013 | University scholarship</span></li>
-			<li>
-              <i class="fa-li fa fa-star fa-lg text-warning"></i>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m1c">Most ideas in 2013 <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="m1c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/mediCert4.jpg"/>
-    </div>
-  </div>
-</div><span class="badge badge-info">2013 | Medicover Call Center award</span></li>
-			<li>
-            <i class="fa-li fa fa-star fa-lg text-warning"></i>
-			  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m2c">Accounting and bookkeeping basics training <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="m2c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/capiCert.jpg"/>
-    </div>
-  </div>
-</div><span class="badge badge-info">Created the training for CAPITA | main trainer for 1.5 years</span></li>
+  </section>
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+    <div class="my-auto">
+      <h2 class="mb-5">Achievements</h2>
+      <ul class="fa-ul mb-0">
+        <li>
+          <i class="fa-li fa fa-star fa-lg text-warning"></i>
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m3c">Written praise for
+            providing help and work quality <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="m3c" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" src="img/mediCert3.jpg" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">2012 | Awarded by the Deputy Director for Medical Quality</span>
+        </li>
+        <li>
+          <i class="fa-li fa fa-star fa-lg text-warning"></i>
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m5c">Scholarship for best
+            students <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="m5c" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/ujkCert.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">2013 | University scholarship</span>
+        </li>
+        <li>
+          <i class="fa-li fa fa-star fa-lg text-warning"></i>
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m1c">Most ideas in 2013
+            <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="m1c" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/mediCert4.jpg" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">2013 | Medicover Call Center award</span>
+        </li>
+        <li>
+          <i class="fa-li fa fa-star fa-lg text-warning"></i>
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m2c">Accounting and
+            bookkeeping basics training <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="m2c" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/capiCert.jpg" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">Created the training for CAPITA | main trainer for 1.5 years</span>
+        </li>
 
-			<li class="googl">
-			<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m4c">Google Internet Revolutions <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="m4c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/GooCert.jpg"/>
+        <li class="googl">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m4c">Google Internet
+            Revolutions <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="m4c" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/GooCert.jpg" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">SEO | SEM | e-commerce | online marketing</span>
+        </li>
+        <li class="sixsigma">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert6">Six Sigma <span
+              class="badge badge-success">Green Belt</span> certified <span
+              class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert6" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/SixSigma.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg6">Grasshopper
+            <b>Animations II</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certg6" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/Grass6.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">JS | SVG | D3 library</span>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg5">Grasshopper
+            <b>Animations</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certg5" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/Grass5.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">JS | SVG | D3 library</span>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg4">Grasshopper
+            <b>Array Methods</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certg4" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/Grass4.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">JavaScript</span>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg3">Grasshopper
+            <b>Intro to Interviewing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certg3" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/Grass3.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">JavaScript</span>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg2">Grasshopper
+            <b>Fundamentals II</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certg2" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/Grass2.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">JavaScript</span>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg1">Grasshopper
+            <b>Fundamentals</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certg1" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/Grass1.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">JavaScript</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert04">M1M0 <b>Build an
+              iOS App</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert04" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/MimoCert5.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">Swift | Xcode</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert03">M1M0 <b>Make an
+              Android App</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert03" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" height="100%" width="100%" src="img/MimoCert4.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">Kotlin | Android Studio</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert02">M1M0 <b>Make a
+              game</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert02" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/MimoCS.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">C# | Unity</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert01">M1M0 <b>Become a
+              Hacker</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert01" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/MimoCert3.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">Cryptography | SQL | White Hat Hacking</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert00">M1M0 <b>Learn to
+              Code</b> advanced course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert00" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/MimoCert2.png" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">HTML | CSS | JS</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert0">M1M0 <b>Make a
+              website</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert0" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/MimoCert.jpg" />
+              </div>
+            </div>
+          </div><span class="badge badge-info">HTML | CSS | JS | GitHub</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDM">Programming Hub
+            <b>Digital Marketing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certDM" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_DM.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certMATLAB">Programming
+            Hub <b>MATLAB</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certMATLAB" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_MATLAB.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certTesting">Programming
+            Hub <b>Software Testing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certTesting" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_Testing.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certMongo">Programming
+            Hub <b>Mongo DB</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certMongo" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_Mongo.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certExpress">Programming
+            Hub <b>Express JS</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certExpress" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_Express.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCloud">Programming
+            Hub <b>Cloud Computing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certCloud" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_CC.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDart">Programming Hub
+            <b>Dart & Flutter</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certDart" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_Dart.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRPA">Programming Hub
+            <b>Robotic Process Automation</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certRPA" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_RPA.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSEO">Programming Hub
+            <b>SEO</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certSEO" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_SEO.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certjQ">Programming Hub
+            <b>jQuery</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certjQ" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_JQ.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSQL">Programming Hub
+            <b>SQL</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certSQL" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_SQL.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAJS">Programming Hub
+            <b>AngularJS & Karma</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certAJS" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_AJS.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVBN">Programming Hub
+            <b>VB.Net</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certVBN" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_VBNet.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVB">Programming Hub
+            <b>VB 6</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certVB" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_VB 6.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRD">Programming Hub
+            <b>React Development</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certRD" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_React Development.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBaW">Programming Hub
+            <b>Building a Website</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certBaW" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_BaW.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCN">Programming Hub
+            <b>Computer Networks</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certCN" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_CN.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certITB">Programming Hub
+            <b>IT Basics</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certITB" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/ITB.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certJSA">Programming Hub
+            <b>JavaScript Advanced</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certJSA" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/JSA.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBC">Programming Hub
+            <b>Blockchain</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certBC" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_Blockchain.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certHTMLA">Programming
+            Hub <b>HTML Advanced</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certHTMLA" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/HTMLA.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAI">Programming Hub
+            <b>Artificial Intelligence</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certAI" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_AI.png" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert1">Programming Hub
+            <b>HTML</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert1" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/Mucha_HTML.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert2">Programming Hub
+            <b>CSS</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert2" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/Mucha_CSS.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert3">Programming Hub
+            <b>Java</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert3" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/Mucha_Java.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert4">Programming Hub
+            <b>Python 2</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert4" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/Mucha_Python 2.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert5">Programming Hub
+            <b>JavaScript</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="cert5" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/Mucha_JS.jpg" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-38929dc3-ff92-4093-b9c0-64630caabe23.jpg?v=1588366963000"
+            target="_blank">Essentials in JavaScript ES6 Course</a></li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-68f8cbc5-2baf-4bb7-8d06-a514d19ab24a.jpg?v=1586628547000"
+            target="_blank">Vue.js Fast Crash Course</a></li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-c68a67b2-19d5-4534-a764-96bc36feea44.jpg?v=1585428978000"
+            target="_blank">Git Started with GitHub Course</a></li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-acba41b5-a59b-4fef-bae2-e105f1ed5681.jpg?v=1585128111000"
+            target="_blank">React Basic Course</a></li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-f949ed50-77e8-4b5a-b6af-ca50018693dc.jpg?v=1584808203000"
+            target="_blank">Vue.js Crash Course</a></li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-d40ad945-51f8-46d2-a185-f6ab24f8515f.jpg?v=1584714659000"
+            target="_blank">The Ultimate Vue 2 Crash Course</a></li>
+        <li class="udem">Udemy <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-CP36CDTE.jpg?v=1538746070000"
+            target="_blank">Sass: From Beginner to Advanced Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1092-489871/pdf/"
+            target="_blank">Angular + NestJS Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1097-489871/pdf/"
+            target="_blank">React + Redux Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1089-489871/pdf/" target="_blank">C
+            Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1080-489871/pdf/" target="_blank">C#
+            Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1075-489871/pdf/"
+            target="_blank">Swift Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1073-489871/pdf/"
+            target="_blank">Python 3 Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1081-489871/pdf/"
+            target="_blank">Ruby Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1051-489871/pdf/" target="_blank">C++
+            Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1082-489871/pdf/"
+            target="_blank">jQuery Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1060-489871/pdf/" target="_blank">SQL
+            Fundamentals</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1024-489871/pdf/"
+            target="_blank">JavaScript Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1059-489871/pdf/" target="_blank">PHP
+            Course</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1023-489871/pdf/" target="_blank">CSS
+            Fundamentals</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1014-489871/pdf/"
+            target="_blank">HTML Fundamentals</a></li>
+        <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1068-489871/pdf/"
+            target="_blank">Java Course</a></li>
+        <li class="solol">SoloLearn community courses in <b>Kotlin, Git, Node.js, Angular JS, Bootstrap, ECMAScript 6,
+            Machine Learning</b></li>
+        <li class="duol">Duolingo German Fluency: <a href="https://www.duolingo.com/Rafal_Mucha"
+            target="_blank">Intermediate (Estimated)</a></li>
+      </ul>
     </div>
-  </div>
-</div><span class="badge badge-info">SEO | SEM | e-commerce | online marketing</span></li>
-<li class="sixsigma">
-            <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert6">Six Sigma <span class="badge badge-success">Green Belt</span> certified <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-    <img class="modImg" width="100%" src="img/SixSigma.png"/>
+  </section>
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+    <div class="my-auto">
+      <h2 class="mb-5">Interests</h2>
+      <p class="mb-0">
+        <ul class="fa-ul mb-0">
+          <li><i class="fa-li fa fa-heart"></i> Electronics &amp; new technologies: VR, AR, artificial intelligence,
+            machine leraning, smart home...</li>
+          <li><i class="fa-li fa fa-heart"></i> Sports: gym, dancing, mountain walking</li>
+          <li><i class="fa-li fa fa-heart"></i> Music, mostly instrumental &amp; classical</li>
+          <li><i class="fa-li fa fa-heart"></i> Music equipment: headphones &amp; speakers</li>
+          <li><i class="fa-li fa fa-heart"></i> Learning languages,currently <i class="em em-de"></i> German</li>
+          <li><i class="fa-li fa fa-heart"></i> Coding, exploring new languages, FrontEnd frameworks, libraries &amp;
+            APIs</li>
+          <li><i class="fa-li fa fa-heart"></i> Card games: Magic: The Gathering &amp; Poker</li>
+          <li><i class="fa-li fa fa-heart"></i> Personal development literature</li>
+        </ul>
+      </p>
     </div>
-  </div>
-</div></li>
-<li class="grass">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg6">Grasshopper <b>Animations II</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/Grass6.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">JS | SVG | D3 library</span></li>
-<li class="grass">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg5">Grasshopper <b>Animations</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/Grass5.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">JS | SVG | D3 library</span></li>
-<li class="grass">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg4">Grasshopper <b>Array Methods</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/Grass4.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">JavaScript</span></li>
-<li class="grass">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg3">Grasshopper <b>Intro to Interviewing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/Grass3.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">JavaScript</span></li>
-<li class="grass">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg2">Grasshopper <b>Fundamentals II</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/Grass2.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">JavaScript</span></li>
-<li class="grass">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg1">Grasshopper <b>Fundamentals</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/Grass1.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">JavaScript</span></li>
-<li class="m1m0">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert04">M1M0 <b>Build an iOS App</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert04" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/MimoCert5.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">Swift | Xcode</span></li>
-<li class="m1m0">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert03">M1M0 <b>Make an Android App</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert03" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" height="100%" width="100%" src="img/MimoCert4.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">Kotlin | Android Studio</span></li>
-<li class="m1m0">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert02">M1M0 <b>Make a game</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert02" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/MimoCS.png"/>
-</div>
-</div>
-</div><span class="badge badge-info">C# | Unity</span></li>
-<li class="m1m0">
-            <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert01">M1M0 <b>Become a Hacker</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-    <img class="modImg" width="100%" src="img/MimoCert3.png"/>
     </div>
-  </div>
-</div><span class="badge badge-info">Cryptography | SQL | White Hat Hacking</span></li>
-<li class="m1m0">
-            <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert00">M1M0 <b>Learn to Code</b> advanced course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert00" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/MimoCert2.png"/>
-    </div>
-  </div>
-</div><span class="badge badge-info">HTML | CSS | JS</span></li>
-<li class="m1m0">
-        	<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert0">M1M0 <b>Make a website</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/MimoCert.jpg"/>
-    </div>
-  </div>
-</div><span class="badge badge-info">HTML | CSS | JS | GitHub</span></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDM">Programming Hub <b>Digital Marketing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certDM" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_DM.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certMATLAB">Programming Hub <b>MATLAB</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certMATLAB" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_MATLAB.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certTesting">Programming Hub <b>Software Testing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certTesting" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_Testing.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certMongo">Programming Hub <b>Mongo DB</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certMongo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_Mongo.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certExpress">Programming Hub <b>Express JS</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certExpress" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_Express.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCloud">Programming Hub <b>Cloud Computing</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certCloud" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_CC.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDart">Programming Hub <b>Dart & Flutter</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certDart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_Dart.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRPA">Programming Hub <b>Robotic Process Automation</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certRPA" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_RPA.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSEO">Programming Hub <b>SEO</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certSEO" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_SEO.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certjQ">Programming Hub <b>jQuery</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certjQ" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_JQ.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSQL">Programming Hub <b>SQL</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certSQL" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_SQL.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAJS">Programming Hub <b>AngularJS & Karma</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certAJS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_AJS.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVBN">Programming Hub <b>VB.Net</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certVBN" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_VBNet.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVB">Programming Hub <b>VB 6</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certVB" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_VB 6.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRD">Programming Hub <b>React Development</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certRD" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_React Development.jpg"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBaW">Programming Hub <b>Building a Website</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certBaW" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_BaW.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCN">Programming Hub <b>Computer Networks</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certCN" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_CN.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certITB">Programming Hub <b>IT Basics</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certITB" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/ITB.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certJSA">Programming Hub <b>JavaScript Advanced</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certJSA" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/JSA.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBC">Programming Hub <b>Blockchain</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certBC" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_Blockchain.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certHTMLA">Programming Hub <b>HTML Advanced</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certHTMLA" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/HTMLA.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAI">Programming Hub <b>Artificial Intelligence</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="certAI" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<img class="modImg" width="100%" src="img/RM_AI.png"/>
-</div>
-</div>
-</div></li>
-<li class="prohub">
-    		<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert1">Programming Hub <b>HTML</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/Mucha_HTML.jpg"/>
-    </div>
-  </div>
-</div></li>
-<li class="prohub">
-        	<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert2">Programming Hub <b>CSS</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/Mucha_CSS.jpg"/>
-    </div>
-  </div>
-</div></li>
-<li class="prohub">
-        	<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert3">Programming Hub <b>Java</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/Mucha_Java.jpg"/>
-    </div>
-  </div>
-</div></li>
-<li class="prohub">
-        	<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert4">Programming Hub <b>Python 2</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/Mucha_Python 2.jpg"/>
-    </div>
-  </div>
-</div></li>
-<li class="prohub">
-            <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert5">Programming Hub <b>JavaScript</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
-<div class="modal fade bd-example-modal-lg" id="cert5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-	<img class="modImg" width="100%" src="img/Mucha_JS.jpg"/>
-    </div>
-  </div>
-</div></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-38929dc3-ff92-4093-b9c0-64630caabe23.jpg?v=1588366963000" target="_blank">Essentials in JavaScript ES6 Course</a></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-68f8cbc5-2baf-4bb7-8d06-a514d19ab24a.jpg?v=1586628547000" target="_blank">Vue.js Fast Crash Course</a></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-c68a67b2-19d5-4534-a764-96bc36feea44.jpg?v=1585428978000" target="_blank">Git Started with GitHub Course</a></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-acba41b5-a59b-4fef-bae2-e105f1ed5681.jpg?v=1585128111000" target="_blank">React Basic Course</a></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-f949ed50-77e8-4b5a-b6af-ca50018693dc.jpg?v=1584808203000" target="_blank">Vue.js Crash Course</a></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-d40ad945-51f8-46d2-a185-f6ab24f8515f.jpg?v=1584714659000" target="_blank">The Ultimate Vue 2 Crash Course</a></li>
-      <li class="udem">Udemy <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-CP36CDTE.jpg?v=1538746070000" target="_blank">Sass: From Beginner to Advanced Course</a></li>
-      <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1092-489871/pdf/" target="_blank">Angular + NestJS Course</a></li>
-      <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1097-489871/pdf/" target="_blank">React + Redux Course</a></li>
-      <li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1089-489871/pdf/" target="_blank">C Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1080-489871/pdf/" target="_blank">C# Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1075-489871/pdf/" target="_blank">Swift Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1073-489871/pdf/" target="_blank">Python 3 Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1081-489871/pdf/" target="_blank">Ruby Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1051-489871/pdf/" target="_blank">C++ Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1082-489871/pdf/" target="_blank">jQuery Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1060-489871/pdf/" target="_blank">SQL Fundamentals</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1024-489871/pdf/" target="_blank">JavaScript Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1059-489871/pdf/" target="_blank">PHP Course</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1023-489871/pdf/" target="_blank">CSS Fundamentals</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1014-489871/pdf/" target="_blank">HTML Fundamentals</a></li>
-			<li class="solol">SoloLearn <a href="https://www.sololearn.com/Certificate/1068-489871/pdf/" target="_blank">Java Course</a></li>
-            <li class="solol">SoloLearn community courses in <b>Kotlin, Git, Node.js, Angular JS, Bootstrap, ECMAScript 6, Machine Learning</b></li>
-			<li class="duol">Duolingo German Fluency: <a href="https://www.duolingo.com/Rafal_Mucha" target="_blank">Intermediate (Estimated)</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p class="mb-0"><ul class="fa-ul mb-0">
-<li><i class="fa-li fa fa-heart"></i> Electronics &amp; new technologies: VR, AR, artificial intelligence, machine leraning, smart home...</li>
-<li><i class="fa-li fa fa-heart"></i> Sports: gym, dancing, mountain walking</li>
-<li><i class="fa-li fa fa-heart"></i> Music, mostly instrumental &amp; classical</li>
-<li><i class="fa-li fa fa-heart"></i> Music equipment: headphones &amp; speakers</li>
-<li><i class="fa-li fa fa-heart"></i> Learning languages,currently <i class="em em-de"></i> German</li>
-<li><i class="fa-li fa fa-heart"></i> Coding, exploring new languages, FrontEnd frameworks, libraries &amp; APIs</li>
-<li><i class="fa-li fa fa-heart"></i> Card games: Magic: The Gathering &amp; Poker</li>
-<li><i class="fa-li fa fa-heart"></i> Personal development literature</li>
-</ul></p>
-        </div>
-    </div>
-    </section>
-<footer class="resume-section p-3" id="footer">
-  Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do przeprowadzenia rekrutacji (ustawa z 29 sierpnia 1997 r. o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, ze zm.).
-</footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </section>
+  <footer class="resume-section p-3" id="footer">
+    Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do przeprowadzenia rekrutacji (ustawa
+    z 29 sierpnia 1997 r. o ochronie danych osobowych, tekst jednolity: Dz.U. z 2002 r. nr 101, poz. 926, ze zm.).
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-    <script>
-      function playSaber(url) {
-        var sound = new Audio(url);
-        sound.play();
-        sound.volume = 0.3;
-      }
-      </script>
-    <!--Photo change on scroll-->
-<script>
-$(function () {
-    $(window).scroll(function () {
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+  <script>
+    function playSaber(url) {
+      var sound = new Audio(url);
+      sound.play();
+      sound.volume = 0.3;
+    }
+  </script>
+  <!--Photo change on scroll-->
+  <script>
+    $(function () {
+      $(window).scroll(function () {
         if ($(this).scrollTop() > 7000) {
           var face2 = $('.img-profile');
-            face2.attr("src","img/FACE2.jpg");
+          face2.attr("src", "img/FACE2.jpg");
         }
         if ($(this).scrollTop() < 7000) {
           var face1 = $('.img-profile');
-            face1.attr("src","img/profile.jpg");
+          face1.attr("src", "img/profile.jpg");
         }
-    })
-    $("#darkMode").on("click", function() {
-      $('html').addClass('hack-bar');
-      $('#sideNav').removeClass("bg-primary").addClass("bg-dark");
-      $("#darkMode").hide();
-      $("#lightMode").show();
-      $("body").addClass("darkness");
-      $("#infoAlert").addClass("sabre");
-      $(".list-group-flush .list-group-item").addClass("darkness3");
-      $("#pokaSkillsy").css("background-color", "#222");
-      $("li .btn").removeClass("btn-light").addClass("btn-dark");
-      $(".badge-dark").addClass("badge-light").removeClass("badge-dark");
-      $("h1,h2,h3").addClass("darkness2");
-      $(".badge-info").addClass("badge-danger").removeClass("badge-info");
-      $(".text-primary").addClass("text-danger").removeClass("text-primary");
-      $("#Raf").css("color", "#ddd");
-      $(".fa-ul a, .subheading a").css("color", "#c20404");
-      $(".bg-info").addClass("bg-danger").removeClass("bg-info");      
-      $("#guzik").css("background-color", "#c20404");
-      $("h4 .text-info").addClass("text-danger").removeClass("text-info");
-      $("h4 .text-form").addClass("text-form-dark").removeClass("text-form");
-      $("i.devicons, i.newIcon, .fa-stack.fa-lg").addClass("hovCol");
-      $('.img-profile').addClass("Sith").removeClass("Jedi");
-      $("#guzikBug").css("background-color", "#ba8b00");
-      $("#guzikChat").css("background-color", "#fd7e14");
-      $('.modImg').addClass("modImgSith");
-      $(".chatSend").removeClass("btn-outline-info").addClass("btn-outline-danger");
-      $(".chatHead, .chatHolder").css("background-color", "#343a40");
-      $(".chatInput").css("background-color", "#111");
+      })
+      $("#darkMode").on("click", function () {
+        $('html').addClass('hack-bar');
+        $('#sideNav').removeClass("bg-primary").addClass("bg-dark");
+        $("#darkMode").hide();
+        $("#lightMode").show();
+        $("body").addClass("darkness");
+        $("#infoAlert").addClass("sabre");
+        $(".list-group-flush .list-group-item").addClass("darkness3");
+        $("#pokaSkillsy").css("background-color", "#222");
+        $("li .btn").removeClass("btn-light").addClass("btn-dark");
+        $(".badge-dark").addClass("badge-light").removeClass("badge-dark");
+        $("h1,h2,h3").addClass("darkness2");
+        $(".badge-info").addClass("badge-danger").removeClass("badge-info");
+        $(".text-primary").addClass("text-danger").removeClass("text-primary");
+        $("#Raf").css("color", "#ddd");
+        $(".fa-ul a, .subheading a").css("color", "#c20404");
+        $(".bg-info").addClass("bg-danger").removeClass("bg-info");
+        $("#guzik").css("background-color", "#c20404");
+        $("h4 .text-info").addClass("text-danger").removeClass("text-info");
+        $("h4 .text-form").addClass("text-form-dark").removeClass("text-form");
+        $("i.devicons, i.newIcon, .fa-stack.fa-lg").addClass("hovCol");
+        $('.img-profile').addClass("Sith").removeClass("Jedi");
+        $("#guzikBug").css("background-color", "#ba8b00");
+        $("#guzikChat").css("background-color", "#fd7e14");
+        $('.modImg').addClass("modImgSith");
+        $(".chatSend").removeClass("btn-outline-info").addClass("btn-outline-danger");
+        $(".chatHead, .chatHolder").css("background-color", "#343a40");
+        $(".chatInput").css("background-color", "#111");
+      });
+      $("#lightMode").on("click", function () {
+        $('html').removeClass('hack-bar');
+        $('#sideNav').removeClass("bg-dark").addClass("bg-primary");
+        $("#lightMode").hide();
+        $("#darkMode").show();
+        $("body").removeClass("darkness");
+        $("#infoAlert").removeClass("sabre");
+        $(".list-group-flush .list-group-item").removeClass("darkness3");
+        $("#pokaSkillsy").css("background-color", "#fff");
+        $("li .btn").removeClass("btn-dark").addClass("btn-light");
+        $(".badge-light").addClass("badge-dark").removeClass("badge-light");
+        $("h1,h2,h3").removeClass("darkness2");
+        $(".badge-danger").addClass("badge-info").removeClass("badge-danger");
+        $(".text-danger").addClass("text-primary").removeClass("text-danger");
+        $("#Raf").css("color", "#343a40");
+        $(".fa-ul a, .subheading a").css("color", "#389bbd");
+        $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
+        $("#guzik").css("background-color", "#389bbd");
+        $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
+        $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
+        $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
+        $('.img-profile').removeClass("Sith").addClass("Jedi");
+        $("#guzikBug").css("background-color", "#ffc107");
+        $("#guzikChat").css("background-color", "#20c997");
+        $('.modImg').removeClass("modImgSith");
+        $(".chatSend").removeClass("btn-outline-danger").addClass("btn-outline-info");
+        $(".chatHead, .chatHolder, .chatInput").css("background-color", "#fff");
+      });
     });
-    $("#lightMode").on("click", function() {
-      $('html').removeClass('hack-bar');
-      $('#sideNav').removeClass("bg-dark").addClass("bg-primary");
-      $("#lightMode").hide();
-      $("#darkMode").show();
-      $("body").removeClass("darkness");
-      $("#infoAlert").removeClass("sabre");
-      $(".list-group-flush .list-group-item").removeClass("darkness3");
-      $("#pokaSkillsy").css("background-color", "#fff");
-      $("li .btn").removeClass("btn-dark").addClass("btn-light");
-      $(".badge-light").addClass("badge-dark").removeClass("badge-light");
-      $("h1,h2,h3").removeClass("darkness2");
-      $(".badge-danger").addClass("badge-info").removeClass("badge-danger");
-      $(".text-danger").addClass("text-primary").removeClass("text-danger");
-      $("#Raf").css("color", "#343a40");
-      $(".fa-ul a, .subheading a").css("color", "#389bbd");
-      $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
-      $("#guzik").css("background-color", "#389bbd");
-      $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
-      $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
-      $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
-      $('.img-profile').removeClass("Sith").addClass("Jedi");
-      $("#guzikBug").css("background-color", "#ffc107");
-      $("#guzikChat").css("background-color", "#20c997");
-      $('.modImg').removeClass("modImgSith");
-      $(".chatSend").removeClass("btn-outline-danger").addClass("btn-outline-info");
-      $(".chatHead, .chatHolder, .chatInput").css("background-color", "#fff");
-    });
-});
-</script>
+  </script>
 </body>
+
 </html>
