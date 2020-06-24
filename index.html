@@ -437,10 +437,14 @@
     .de {
       list-style-image: url("img/flag-GR.png");
     }
-    #Figma:hover,
-    #Figma:focus {
-  filter: saturate(150%) hue-rotate(350deg) brightness(150%) contrast(300%);
-}
+    .blueChange:hover,
+    .blueChange:focus {
+      filter: invert(12%) sepia(77%) saturate(4957%) hue-rotate(251deg) brightness(55%) contrast(120%);
+    }    
+    .redChange:hover,
+    .redChange:focus {
+    filter: invert(12%) sepia(96%) saturate(7451%) hue-rotate(359deg) brightness(96%) contrast(115%);
+    }
     .formLabel {
       font-variant: small-caps;
       font-weight: 600;
@@ -1472,6 +1476,17 @@
             </div>
           </li>
           <li class="list-inline-item">
+            <img type="button" data-toggle="modal" data-target="#portM" class="colored blueChange" id="Materialize" src="./img/materialize.svg" alt="Materialize"></img>
+            <div class="modal fade bd-example-modal-lg" id="portM" tabindex="-1" role="dialog"
+              aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content site">
+                  <iframe src="https://ravmucha.netlify.app/" class="site" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item">
             <i class="devicons devicons-angular"></i>
           </li>
           <li class="list-inline-item">
@@ -1535,7 +1550,7 @@
             <i class="newIcon devicon-webpack-plain"></i>
           </li>
           <li class="list-inline-item">
-            <img type="button" data-toggle="modal" data-target="#portF" class="colored" id="Figma" src="./img/Figma-logo.svg" alt="Figma"></img>
+            <img type="button" data-toggle="modal" data-target="#portF" class="colored blueChange" id="Figma" src="./img/Figma-logo.svg" alt="Figma"></img>
             <div class="modal fade bd-example-modal-lg" id="portF" tabindex="-1" role="dialog"
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -2301,6 +2316,7 @@
         $("#guzik").css("background-color", "#c20404");
         $("h4 .text-info").addClass("text-danger").removeClass("text-info");
         $("h4 .text-form").addClass("text-form-dark").removeClass("text-form");
+        $(".blueChange").addClass("redChange").removeClass("blueChange");
         $("i.devicons, i.newIcon, .fa-stack.fa-lg").addClass("hovCol");
         $('.img-profile').addClass("Sith").removeClass("Jedi");
         $("#guzikBug").css("background-color", "#ba8b00");
@@ -2330,6 +2346,7 @@
         $("#guzik").css("background-color", "#389bbd");
         $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
         $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
+        $(".redChange").addClass("blueChange").removeClass("redChange");
         $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
         $('.img-profile').removeClass("Sith").addClass("Jedi");
         $("#guzikBug").css("background-color", "#ffc107");
