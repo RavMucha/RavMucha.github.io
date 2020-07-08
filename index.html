@@ -802,6 +802,18 @@
         opacity: 1;
       }
     }
+    .up-button {
+      transform: scale(1.0);
+      transition-property: transform;
+      transition-duration: 100ms;
+      transition-delay: 5ms;
+    }
+    .up-button:active {
+      transform: scale(1.1) translateY(1px);
+      transition-property: transform;
+      transition-duration: 100ms;
+      transition-delay: 5ms;
+    }
   </style>
 </head>
 
@@ -829,8 +841,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk"
-                        autofocus autocomplete="name" required>
+                      <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk" autocomplete="name" required>
                       <label for="name" class="formLabel">your name</label>
                     </div>
                   </div>
@@ -885,7 +896,7 @@
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start</span>
+        <span class="d-block d-lg-none up-button" style="opacity: 0.7; font-variant: small-caps; font-weight: 500;">START</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
