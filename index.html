@@ -93,16 +93,29 @@
       color: var(--gray-dark);
     }
 
-    .list-inline-item .colored,
+    .list-inline-item .colored {
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-delay: 50ms;
+    }
+
+    .list-inline-item:hover .colored {
+      transform: scale(1.4) rotateZ(360deg);
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-delay: 1ms;
+    }
+
+    .list-inline-item .link,
     .flip {
       transition-property: transform;
       transition-duration: 500ms;
       transition-delay: 50ms;
     }
 
-    .list-inline-item:hover .colored,
+    .list-inline-item:hover .link,
     .flip:hover {
-      transform: scale(1.4) rotateZ(360deg);
+      transform: scale(0.8) rotateY(360deg);
       transition-property: transform;
       transition-duration: 500ms;
       transition-delay: 1ms;
@@ -1507,13 +1520,17 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-angular"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-angularjs-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-react"></i>
           </li>
           <li class="list-inline-item">
-            <i class="newIcon devicon-typescript-plain"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-typescript-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-jquery_ui"></i>
@@ -1522,13 +1539,19 @@
             <i class="devicons devicons-dotnet"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-nodejs_small"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-nodejs-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-npm"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicons devicons-npm link" style="color:#cb3837"></i>
+            </a>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-sass"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-sass-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-python"></i>
@@ -1537,7 +1560,9 @@
             <i class="devicons devicons-mysql"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-postgresql"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-postgresql-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-mongodb"></i>
@@ -1549,19 +1574,28 @@
             <i class="devicons devicons-terminal"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-git"></i>
+            <a href="http://github.com/RavMucha" target="_blank">
+              <i type="button" class="newIcon devicon-git-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-github_badge"></i>
+            <a href="http://github.com/RavMucha" target="_blank">
+              <i type="button" class="newIcon devicon-github-plain colored link" style="color:#335"></i>
+            </a>
           </li>
           <li class="list-inline-item">
             <i class="newIcon devicon-gitlab-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicons devicons-stackoverflow"></i>
+            <a href="https://stackoverflow.com/users/9130721/ravmucha" target="_blank">
+              <img type="button" class="colored link blueChange" id="StackOverflow" src="./img/SO-logo.svg"
+                alt="StackOverflow" />
+            </a>
           </li>
           <li class="list-inline-item">
-            <i class="newIcon devicon-docker-plain"></i>
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-docker-plain colored link"></i>
+            </a>
           </li>
           <li class="list-inline-item">
             <i class="newIcon devicon-babel-plain"></i>
@@ -1571,7 +1605,7 @@
           </li>
           <li class="list-inline-item">
             <img type="button" data-toggle="modal" data-target="#portF" class="colored blueChange" id="Figma"
-              src="./img/Figma-logo.svg" alt="Figma"></img>
+              src="./img/Figma-logo.svg" alt="Figma" />
             <div class="modal fade bd-example-modal-lg" id="portF" tabindex="-1" role="dialog"
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
