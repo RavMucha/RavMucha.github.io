@@ -37,809 +37,14 @@
   </script>
   <!-- Stylesheets / rest's on the bottom for faster loads -->
   <link href="css/resume.min.css" rel="stylesheet">
-  <style>
-    @media only screen {
-      @-ms-viewport {
-        width: device-width;
-      }
-    }
-
-    body::-webkit-scrollbar {
-      width: 0.7rem;
-    }
-
-    body::-webkit-scrollbar-track {
-      background: rgb(253, 253, 253, 0.7);
-      box-shadow: inset 1px 0px 5px rgb(150, 150, 150);
-    }
-
-    .hack-bar ::-webkit-scrollbar-track {
-      background: #343a40 !important;
-      box-shadow: none;
-    }
-
-    .hack-bar ::-webkit-scrollbar-thumb {
-      background: rgb(255, 0, 0, 0.7);
-      box-shadow: inset 0 0 5px #90000c;
-    }
-
-    .hack-bar ::-webkit-scrollbar-thumb:hover {
-      background: rgba(163, 0, 14, 0.7);
-      box-shadow: inset 0 0 5px #520007;
-    }
-
-    body::-webkit-scrollbar-thumb {
-      background: rgba(73, 80, 87, 0.7);
-      box-shadow: inset 0 0 7px rgb(70, 70, 70);
-      border-radius: 0px 25px 25px 0px;
-    }
-
-    body::-webkit-scrollbar-thumb:hover {
-      background: rgba(52, 58, 64, 0.8);
-      box-shadow: inset 0 0 7px rgb(20, 20, 20);
-    }
-
-    .site {
-      width: 100%;
-      height: 500px;
-      border-radius: 15px;
-    }
-
-    iframe.site {
-      border-radius: 13px;
-    }
-
-    .flipLink:visited {
-      color: var(--gray-dark);
-    }
-
-    .list-inline-item .colored {
-      transition-property: transform;
-      transition-duration: 500ms;
-      transition-delay: 50ms;
-    }
-
-    .list-inline-item:hover .colored {
-      transform: scale(1.4) rotateZ(360deg);
-      transition-property: transform;
-      transition-duration: 500ms;
-      transition-delay: 1ms;
-    }
-
-    .list-inline-item .link,
-    .flip {
-      transition-property: transform;
-      transition-duration: 500ms;
-      transition-delay: 50ms;
-    }
-
-    .list-inline-item:hover .link,
-    .flip:hover {
-      transform: scale(0.8) rotateY(360deg);
-      transition-property: transform;
-      transition-duration: 500ms;
-      transition-delay: 1ms;
-    }
-
-    #footer {
-      backdrop-filter: invert(4%);
-      letter-spacing: 1px;
-      text-align: center;
-      border-bottom: none;
-    }
-
-    .Sith {
-      filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(0px 0px 5px red) drop-shadow(3px 3px 8px #111);
-      animation: redGlow 1500ms linear 0s 1 normal, redGlowConst 3s linear 2s infinite alternate-reverse;
-    }
-
-    @keyframes redGlow {
-      from {
-        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
-      }
-
-      to {
-        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
-      }
-    }
-
-    @keyframes redGlow {
-      from {
-        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
-      }
-
-      to {
-        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
-      }
-    }
-
-    @-webkit-keyframes redGlow {
-      from {
-        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
-      }
-
-      to {
-        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
-      }
-    }
-
-    /* FireFox */
-    @-moz-keyframes redGlow {
-      from {
-        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
-      }
-
-      to {
-        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
-      }
-    }
-
-    /* Internet Explorer ...;-( */
-    @-ms-keyframes redGlow {
-      from {
-        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
-      }
-
-      to {
-        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
-      }
-    }
-
-    /* Opera, wersje 12+ */
-    @-o-keyframes redGlow {
-      from {
-        filter: drop-shadow(0 0 6px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 20px #111)drop-shadow(0 0 30px #57141a)drop-shadow(0 0 50px #c13d3d)drop-shadow(0 0 60px red)drop-shadow(0 0 70px #57141a)drop-shadow(0 0 80px #c13d3d);
-      }
-
-      to {
-        filter: drop-shadow(0 0 3px #111)drop-shadow(0 0 5px #111)drop-shadow(0 0 10px #111)drop-shadow(0 0 15px #57141a)drop-shadow(0 0 25px #c13d3d)drop-shadow(0 0 30px red)drop-shadow(0 0 35px #57141a)drop-shadow(0 0 50px #c13d3d);
-      }
-    }
-
-    @keyframes redGlowConstBTN {
-      from {
-        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
-      }
-
-      to {
-        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-      }
-    }
-
-    @-webkit-keyframes redGlowConstBTN {
-      from {
-        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
-      }
-
-      to {
-        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-      }
-    }
-
-    @-moz-keyframes redGlowConstBTN {
-      from {
-        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
-      }
-
-      to {
-        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-      }
-    }
-
-    @-ms-keyframes redGlowConstBTN {
-      from {
-        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
-      }
-
-      to {
-        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-      }
-    }
-
-    @-o-keyframes redGlowConstBTN {
-      from {
-        filter: drop-shadow(3px 3px 7px #111) drop-shadow(0px 0px 3px red);
-      }
-
-      to {
-        filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-      }
-    }
-
-    @keyframes redGlowConst {
-      from {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
-      }
-
-      to {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
-      }
-    }
-
-    @-webkit-keyframes redGlowConst {
-      from {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
-      }
-
-      to {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
-      }
-    }
-
-    /* FireFox */
-    @-moz-keyframes redGlowConst {
-      from {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
-      }
-
-      to {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
-      }
-    }
-
-    /* Internet Explorer ...;-( */
-    @-ms-keyframes redGlowConst {
-      from {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
-      }
-
-      to {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
-      }
-    }
-
-    /* Opera, wersje 12+ */
-    @-o-keyframes redGlowConst {
-      from {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0px 0px 5px red);
-      }
-
-      to {
-        filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(1px 1px 8px #57141a);
-      }
-    }
-
-    .Jedi {
-      animation: greenGlow 1s linear 10ms reverse;
-    }
-
-    @keyframes greenGlow {
-      from {
-        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
-      }
-
-      to {
-        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
-      }
-    }
-
-    @-webkit-keyframes greenGlow {
-      from {
-        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
-      }
-
-      to {
-        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
-      }
-    }
-
-    /* FireFox */
-    @-moz-keyframes greenGlow {
-      from {
-        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
-      }
-
-      to {
-        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
-      }
-    }
-
-    /* Internet Explorer ...;-( */
-    @-ms-keyframes greenGlow {
-      from {
-        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
-      }
-
-      to {
-        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
-      }
-    }
-
-    /* Opera, wersje 12+ */
-    @-o-keyframes greenGlow {
-      from {
-        filter: drop-shadow(0 0 6px white)drop-shadow(0 0 10px #ddd)drop-shadow(0 0 20px #ddd)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 50px darkgreen)drop-shadow(0 0 60px green)drop-shadow(0 0 70px lightgreen)drop-shadow(0 0 80px darkgreen);
-      }
-
-      to {
-        filter: drop-shadow(0 0 2px white)drop-shadow(0 0 3px #ddd)drop-shadow(0 0 7px #ddd)drop-shadow(0 0 10px lightgreen)drop-shadow(0 0 20px darkgreen)drop-shadow(0 0 25px green)drop-shadow(0 0 30px lightgreen)drop-shadow(0 0 40px darkgreen);
-      }
-    }
-
-    .langList {
-      list-style-type: square;
-      margin: 10px;
-    }
-
-    .langList li {
-      margin: 5px;
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
-
-    .sabre {
-      color: #ddd;
-      background-color: #57141a;
-      box-shadow: inset -2px -2px 10px #24090b, inset 2px 2px 10px #24090b;
-    }
-
-    .modImgSith {
-      filter: contrast(120%) saturate(90%) grayscale(50%);
-      background-color: #223;
-    }
-
-    .hovCol:focus {
-      color: #57141a !important;
-    }
-
-    .hovCol:hover {
-      color: red !important;
-    }
-
-    .hovCol:active {
-      color: #57141a !important;
-    }
-
-    .darkness {
-      color: #ddd;
-      background-color: #111;
-    }
-
-    .darkness2 {
-      color: #c13d3d;
-      background-color: #111;
-      text-shadow: 0px 0px 1px red;
-    }
-
-    .darkness3 {
-      color: #ddd;
-      background-color: #111;
-      border: 1px solid rgba(250, 250, 250, .125)
-    }
-
-    .solol {
-      list-style-image: url("img/SL.PNG");
-    }
-
-    .m1m0 {
-      list-style-image: url("img/M1M0.png");
-    }
-
-    .prohub {
-      list-style-image: url("img/PHlog.png");
-    }
-
-    .udem {
-      list-style-image: url("img/udemy.png");
-    }
-
-    .duol {
-      list-style-image: url("img/DL.png");
-    }
-
-    .googl {
-      list-style-image: url("img/GL.png");
-    }
-
-    .grass {
-      list-style-image: url("img/GH.png");
-    }
-
-    .sixsigma {
-      list-style-image: url("img/SixS.png");
-    }
-
-    .uk {
-      list-style-image: url("img/flag-UK.png");
-    }
-
-    .pl {
-      list-style-image: url("img/flag-PL.png");
-    }
-
-    .de {
-      list-style-image: url("img/flag-GR.png");
-    }
-
-    .blueChange:hover,
-    .blueChange:focus {
-      filter: invert(12%) sepia(77%) saturate(4957%) hue-rotate(251deg) brightness(55%) contrast(120%);
-    }
-
-    .redChange:hover,
-    .redChange:focus {
-      filter: invert(12%) sepia(96%) saturate(7451%) hue-rotate(359deg) brightness(96%) contrast(115%);
-    }
-
-    .formLabel {
-      font-variant: small-caps;
-      font-weight: 600;
-      transform: translateX(0px) translateY(0px) scale(1);
-      transition-property: transform;
-      transition-duration: 200ms;
-      transition-delay: 5ms;
-    }
-
-    .formLabel:hover {
-      transform: translateX(6px) translateY(-3px) scale(1.2);
-      transition-property: transform;
-      transition-duration: 200ms;
-      transition-delay: 5ms;
-    }
-
-    #guzik {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: #389bbd;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 16px;
-      opacity: 0.7;
-    }
-
-    #darkMode:hover,
-    #lightMode:hover,
-    #guzik:hover,
-    #guzikChat:hover,
-    #guzikBug:hover {
-      background-color: #495057;
-      opacity: 0.9;
-      transform: scale(1.05) translateX(-1px) translateY(-1px);
-      transition-property: transform;
-      transition-duration: 200ms;
-      transition-delay: 5ms;
-    }
-
-    .text-form {
-      color: #14c08c;
-    }
-
-    .text-form-dark {
-      color: rgb(253, 126, 20);
-    }
-
-    #guzik .guzikhint {
-      visibility: hidden;
-      position: absolute;
-      z-index: 99;
-      top: 2px;
-      right: 115%;
-      background-color: #495057;
-      width: 140px;
-      color: #fefefe;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-    }
-
-    #guzik:hover .guzikhint {
-      visibility: visible;
-      -webkit-animation: Fejder 1s;
-      -moz-animation: Fejder 1s;
-      -ms-animation: Fejder 1s;
-      -o-animation: Fejder 1s;
-      animation: Fejder 1s;
-    }
-
-    #guzikBug {
-      position: fixed;
-      bottom: 70px;
-      right: 15px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: #ffc107;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 16px;
-      opacity: 0.7;
-    }
-
-    #guzikBug .guzikhint {
-      visibility: hidden;
-      position: absolute;
-      z-index: 99;
-      top: 2px;
-      right: 115%;
-      background-color: #495057;
-      width: 140px;
-      color: #fefefe;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-    }
-
-    #guzikBug:hover .guzikhint {
-      visibility: visible;
-      -webkit-animation: Fejder 1s;
-      -moz-animation: Fejder 1s;
-      -ms-animation: Fejder 1s;
-      -o-animation: Fejder 1s;
-      animation: Fejder 1s;
-    }
-
-    #guzikChat {
-      position: fixed;
-      bottom: 125px;
-      right: 15px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: #20c997;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 16px;
-      opacity: 0.7;
-    }
-
-    #guzikChat .guzikhint {
-      visibility: hidden;
-      position: absolute;
-      z-index: 99;
-      top: 2px;
-      right: 115%;
-      background-color: #495057;
-      width: 140px;
-      color: #fefefe;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-    }
-
-    #guzikChat:hover .guzikhint {
-      visibility: visible;
-      -webkit-animation: Fejder 1s;
-      -moz-animation: Fejder 1s;
-      -ms-animation: Fejder 1s;
-      -o-animation: Fejder 1s;
-      animation: Fejder 1s;
-    }
-
-    #lightMode {
-      position: fixed;
-      bottom: 180px;
-      right: 15px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: #b5bec7;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 16px;
-      opacity: 0.7;
-      animation: clicker .1s reverse;
-    }
-
-    #lightMode .guzikhint {
-      visibility: hidden;
-      position: absolute;
-      z-index: 99;
-      top: 2px;
-      right: 115%;
-      background-color: #495057;
-      width: 140px;
-      color: #fefefe;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-    }
-
-    #lightMode:hover .guzikhint {
-      visibility: visible;
-      -webkit-animation: Fejder 1s;
-      -moz-animation: Fejder 1s;
-      -ms-animation: Fejder 1s;
-      -o-animation: Fejder 1s;
-      animation: Fejder 1s;
-    }
-
-    #darkMode {
-      position: fixed;
-      bottom: 180px;
-      right: 15px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: #24272b;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 16px;
-      opacity: 0.7;
-      animation: clicker .1s reverse;
-    }
-
-    #darkMode .guzikhint {
-      visibility: hidden;
-      position: absolute;
-      z-index: 99;
-      top: 2px;
-      right: 115%;
-      background-color: #495057;
-      width: 140px;
-      color: #fefefe;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-    }
-
-    #darkMode:hover .guzikhint {
-      visibility: visible;
-      -webkit-animation: Fejder 1s;
-      -moz-animation: Fejder 1s;
-      -ms-animation: Fejder 1s;
-      -o-animation: Fejder 1s;
-      animation: Fejder 1s;
-    }
-
-    @keyframes clicker {
-      0% {
-        transform: scale(0.9);
-      }
-
-      50% {
-        transform: scale(0.8);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @-webkit-keyframes clicker {
-      0% {
-        transform: scale(0.9);
-      }
-
-      50% {
-        transform: scale(0.8);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @-moz-keyframes clicker {
-      0% {
-        transform: scale(0.9);
-      }
-
-      50% {
-        transform: scale(0.8);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @-ms-keyframes clicker {
-      0% {
-        transform: scale(0.9);
-      }
-
-      50% {
-        transform: scale(0.8);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @-o-keyframes clicker {
-      0% {
-        transform: scale(0.9);
-      }
-
-      50% {
-        transform: scale(0.8);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @keyframes Fejder {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* Chrome, Safari i Opera */
-    @-webkit-keyframes Fejder {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* FireFox */
-    @-moz-keyframes Fejder {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* Internet Explorer ...;-( */
-    @-ms-keyframes Fejder {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* Opera, wersje 12+ */
-    @-o-keyframes Fejder {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    .up-button {
-      transform: scale(1.0);
-      transition-property: transform;
-      transition-duration: 100ms;
-      transition-delay: 5ms;
-    }
-
-    .up-button:active {
-      transform: scale(1.1) translateY(1px);
-      transition-property: transform;
-      transition-duration: 100ms;
-      transition-delay: 5ms;
-    }
-  </style>
+  <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-  <a href="CV 2.0 Rafal Mucha.pdf" id="guzik" style="box-shadow: 1px 1px 4px #666;" download><img src="img/DTray.png"
+  <a href="CV 2.0 Rafal Mucha.pdf" id="guzik" class="floatBtn" download><img src="img/DTray.png" class="floatImg"
       style="width: 25px; height: 25px" /><span class="guzikhint subheading">download my cv</span></a>
-  <a data-toggle="modal" data-target="#chatForm" style="box-shadow: 1px 1px 4px #666;" id="guzikChat"><img
-      src="img/chat.png" style="width: 25px; height: 25px" /><span class="guzikhint subheading">contact form</span></a>
+  <a data-toggle="modal" data-target="#chatForm" class="floatBtn" id="guzikChat"><img
+      src="img/chat.png" class="floatImg" style="width: 25px; height: 25px" /><span class="guzikhint subheading">contact form</span></a>
   <div class="modal fade bd-example-modal-lg" id="chatForm" tabindex="-1" role="dialog"
     aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -902,14 +107,14 @@
       </div>
     </div>
   </div>
-  <a href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" style="box-shadow: 1px 1px 4px #666;"
-    id="guzikBug"><img src="img/Bug.png" style="width: 25px; height: 25px" /><span class="guzikhint subheading">report a
+  <a href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" class="floatBtn"
+    id="guzikBug"><img src="img/Bug.png" class="floatImg" style="width: 25px; height: 25px" /><span class="guzikhint subheading">report a
       bug</span></a>
-  <a id="lightMode" style="display: none; box-shadow: 1px 1px 4px #666;"
-    onclick="playSaber('./media/saberOff.mp3')"><img src="img/Rebel.png" style="width: 25px; height: 25px" /><span
+  <a id="lightMode" class="floatBtn" style="display: none;"
+    onclick="playSaber('./media/saberOff.mp3')"><img src="img/Rebel.png" class="floatImg" style="width: 25px; height: 25px" /><span
       class="guzikhint subheading">light mode</span></a>
-  <a id="darkMode" style="box-shadow: 1px 1px 4px #666;" onclick="playSaber('./media/saberOn.mp3')"><img
-      src="img/Empire.png"
+  <a id="darkMode"  class="floatBtn" onclick="playSaber('./media/saberOn.mp3')"><img
+      src="img/Empire.png" class="floatImg"
       style="animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse; width: 25px; height: 25px" /><span
       class="guzikhint subheading">dark mode</span></a>
   <div class="container-fluid p-0">
@@ -1481,10 +686,10 @@
           <li class="list-inline-item">
             <i class="devicons devicons-javascript"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroupCV">
             <i type="button" data-toggle="modal" data-target="#port2" class="newIcon devicon-jquery-plain colored"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroupCV">
             <i type="button" data-toggle="modal" data-target="#port2"
               class="newIcon devicon-bootstrap-plain colored"></i>
             <div class="modal fade bd-example-modal-lg" id="port2" tabindex="-1" role="dialog"
@@ -1520,49 +725,51 @@
             </div>
           </li>
           <li class="list-inline-item">
+            <i class="devicons devicons-react"></i>
+          </li>
+          <li class="list-inline-item hoverGroup">
             <a href="https://github.com/tranquilitybase-io" target="_blank">
               <i type="button" class="newIcon devicon-angularjs-plain colored link"></i>
             </a>
           </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-react"></i>
-          </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroup">
             <a href="https://github.com/tranquilitybase-io" target="_blank">
               <i type="button" class="newIcon devicon-typescript-plain colored link"></i>
             </a>
           </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-jquery_ui"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-dotnet"></i>
-          </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroup">
             <a href="https://github.com/tranquilitybase-io" target="_blank">
               <i type="button" class="newIcon devicon-nodejs-plain colored link"></i>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroup">
             <a href="https://github.com/tranquilitybase-io" target="_blank">
               <i type="button" class="newIcon devicons devicons-npm link" style="color:#cb3837"></i>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroup">
             <a href="https://github.com/tranquilitybase-io" target="_blank">
               <i type="button" class="newIcon devicon-sass-plain colored link"></i>
             </a>
+          </li>
+          <li class="list-inline-item hoverGroup">
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-postgresql-plain colored link"></i>
+            </a>
+          </li>
+          <li class="list-inline-item hoverGroup">
+            <a href="https://github.com/tranquilitybase-io" target="_blank">
+              <i type="button" class="newIcon devicon-docker-plain colored link"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-dotnet"></i>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-python"></i>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-mysql"></i>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/tranquilitybase-io" target="_blank">
-              <i type="button" class="newIcon devicon-postgresql-plain colored link"></i>
-            </a>
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-mongodb"></i>
@@ -1573,30 +780,25 @@
           <li class="list-inline-item">
             <i class="devicons devicons-terminal"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroupGit">
             <a href="http://github.com/RavMucha" target="_blank">
               <i type="button" class="newIcon devicon-git-plain colored link"></i>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item hoverGroupGit">
             <a href="http://github.com/RavMucha" target="_blank">
-              <i type="button" class="newIcon devicon-github-plain colored link" style="color:#335"></i>
+              <i type="button" class="newIcon devicon-github-plain colored link" id="GH"></i>
             </a>
           </li>
           <li class="list-inline-item">
             <i class="newIcon devicon-gitlab-plain"></i>
           </li>
-          <li class="list-inline-item">
+          <!-- <li class="list-inline-item">
             <a href="https://stackoverflow.com/users/9130721/ravmucha" target="_blank">
               <img type="button" class="colored link blueChange" id="StackOverflow" src="./img/SO-logo.svg"
                 alt="StackOverflow" />
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/tranquilitybase-io" target="_blank">
-              <i type="button" class="newIcon devicon-docker-plain colored link"></i>
-            </a>
-          </li>
+          </li> -->
           <li class="list-inline-item">
             <i class="newIcon devicon-babel-plain"></i>
           </li>
@@ -1632,9 +834,6 @@
           </li>
           <li class="list-inline-item">
             <i class="devicons devicons-chrome"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-firefox"></i>
           </li>
         </ul>
         <button class="btn btn btn-secondary subheading" type="button" data-toggle="collapse" data-target="#pokaSkillsy"
@@ -1843,6 +1042,18 @@
               </div>
             </div>
           </div><span class="badge badge-info">JavaScript</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certIon">Programming Hub
+            <b>Ionic app development</b> course <span class="badge badge-pill badge-dark">CLICK</span></button>
+          <div class="modal fade bd-example-modal-lg" id="certIon" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="modImg" width="100%" src="img/RM_Ionic app development.jpg" />
+              </div>
+            </div>
+          </div>
         </li>
         <li class="prohub">
           <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certERP">Programming Hub
@@ -2376,80 +1587,6 @@
       sound.volume = 0.3;
     }
   </script>
-  <!--Photo change on scroll-->
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 7000) {
-          var face2 = $('.img-profile');
-          face2.attr("src", "img/FACE2.jpg");
-        }
-        if ($(this).scrollTop() < 7000) {
-          var face1 = $('.img-profile');
-          face1.attr("src", "img/profile.jpg");
-        }
-      })
-      $("#darkMode").on("click", function () {
-        $('html').addClass('hack-bar');
-        $('#sideNav').removeClass("bg-primary").addClass("bg-dark");
-        $("#darkMode").hide();
-        $("#lightMode").show();
-        $("body").addClass("darkness");
-        $("#infoAlert").addClass("sabre");
-        $(".list-group-flush .list-group-item").addClass("darkness3");
-        $("#pokaSkillsy").css("background-color", "#222");
-        $("li .btn").removeClass("btn-light").addClass("btn-dark");
-        $(".badge-dark").addClass("badge-light").removeClass("badge-dark");
-        $("h1,h2,h3").addClass("darkness2");
-        $(".badge-info").addClass("badge-danger").removeClass("badge-info");
-        $(".text-primary").addClass("text-danger").removeClass("text-primary");
-        $("#Raf").css("color", "#ddd");
-        $(".fa-ul a, .subheading a").css("color", "#c20404");
-        $(".bg-info").addClass("bg-danger").removeClass("bg-info");
-        $("#guzik").css("background-color", "#c20404");
-        $("h4 .text-info").addClass("text-danger").removeClass("text-info");
-        $("h4 .text-form").addClass("text-form-dark").removeClass("text-form");
-        $(".blueChange").addClass("redChange").removeClass("blueChange");
-        $("i.devicons, i.newIcon, .fa-stack.fa-lg").addClass("hovCol");
-        $('.img-profile').addClass("Sith").removeClass("Jedi");
-        $("#guzikBug").css("background-color", "#ba8b00");
-        $("#guzikChat").css("background-color", "#fd7e14");
-        $('.modImg').addClass("modImgSith");
-        $(".chatSend").removeClass("btn-outline-info").addClass("btn-outline-danger");
-        $(".chatHead, .chatHolder").css("background-color", "#343a40");
-        $(".chatInput").css("background-color", "#111");
-      });
-      $("#lightMode").on("click", function () {
-        $('html').removeClass('hack-bar');
-        $('#sideNav').removeClass("bg-dark").addClass("bg-primary");
-        $("#lightMode").hide();
-        $("#darkMode").show();
-        $("body").removeClass("darkness");
-        $("#infoAlert").removeClass("sabre");
-        $(".list-group-flush .list-group-item").removeClass("darkness3");
-        $("#pokaSkillsy").css("background-color", "#fff");
-        $("li .btn").removeClass("btn-dark").addClass("btn-light");
-        $(".badge-light").addClass("badge-dark").removeClass("badge-light");
-        $("h1,h2,h3").removeClass("darkness2");
-        $(".badge-danger").addClass("badge-info").removeClass("badge-danger");
-        $(".text-danger").addClass("text-primary").removeClass("text-danger");
-        $("#Raf").css("color", "#343a40");
-        $(".fa-ul a, .subheading a").css("color", "#389bbd");
-        $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
-        $("#guzik").css("background-color", "#389bbd");
-        $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
-        $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
-        $(".redChange").addClass("blueChange").removeClass("redChange");
-        $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
-        $('.img-profile').removeClass("Sith").addClass("Jedi");
-        $("#guzikBug").css("background-color", "#ffc107");
-        $("#guzikChat").css("background-color", "#20c997");
-        $('.modImg').removeClass("modImgSith");
-        $(".chatSend").removeClass("btn-outline-danger").addClass("btn-outline-info");
-        $(".chatHead, .chatHolder, .chatInput").css("background-color", "#fff");
-      });
-    });
-  </script>
+  <script src="js/DarkMode.js"></script>
 </body>
-
 </html>
