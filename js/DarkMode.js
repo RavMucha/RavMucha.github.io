@@ -1,13 +1,15 @@
 // Photo change on scroll
 $(function () {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 7000) {
+      if ($(this).scrollTop() > 9000) {
         var face2 = $('.img-profile');
-        face2.attr("src", "img/FACE2.jpg");
+        face2.attr("src", "img/FACE2.png");
+        face2.addClass("godForm");
       }
-      if ($(this).scrollTop() < 7000) {
+      if ($(this).scrollTop() < 9000) {
         var face1 = $('.img-profile');
         face1.attr("src", "img/profile.jpg");
+        face1.removeClass("godForm");
       }
     })
 // Dark mode
