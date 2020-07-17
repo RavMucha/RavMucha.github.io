@@ -27,6 +27,7 @@ $(function () {
       $("h1,h2,h3").addClass("darkness2");
       $(".badge-info").addClass("badge-danger").removeClass("badge-info");
       $(".text-primary").addClass("text-danger").removeClass("text-primary");
+      $(".flipLink").addClass("hovCol");
       $("#Raf").css("color", "#ddd");
       $(".fa-ul a, .subheading a").css("color", "#c20404");
       $(".bg-info").addClass("bg-danger").removeClass("bg-info");
@@ -58,6 +59,7 @@ $(function () {
       $("h1,h2,h3").removeClass("darkness2");
       $(".badge-danger").addClass("badge-info").removeClass("badge-danger");
       $(".text-danger").addClass("text-primary").removeClass("text-danger");
+      $(".flipLink").removeClass("hovCol");
       $("#Raf").css("color", "#343a40");
       $(".fa-ul a, .subheading a").css("color", "#389bbd");
       $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
