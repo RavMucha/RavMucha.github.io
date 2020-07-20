@@ -39,6 +39,10 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: inset 0 0 7px rgb(20, 20, 20);
 }
 
+body {
+  user-select: none;
+}
+
 .godForm {
   filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
 }
