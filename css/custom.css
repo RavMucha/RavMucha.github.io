@@ -5,7 +5,7 @@
 }
 
 body::-webkit-scrollbar {
-  width: 0.7rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -39,7 +39,11 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: inset 0 0 7px rgb(20, 20, 20);
 }
 
-body {
+#navbarSupportedContent,
+#about,
+#skills,
+#awards,
+footer {
   user-select: none;
 }
 
