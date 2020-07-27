@@ -1,3 +1,15 @@
+if (navigator.userAgent.indexOf("Chrome") != -1) {
+} else {
+  alert(
+    "Please use Google Chrome, optionally MS Edge for best experience.\n\nInternet Explorer and Firefox tend to lose some styling elements at render.\nOpera and Safari were not tested as of yet."
+  );
+}
+
+function playSaber(url) {
+  var sound = new Audio(url);
+  sound.play();
+  sound.volume = 0.3;
+}
 // Photo change on scroll
 $(function () {
   $(window).scroll(function () {
