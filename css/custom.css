@@ -57,6 +57,10 @@ footer {
   border-radius: 15px;
 }
 
+.cert-section {
+  line-height: 200%;
+}
+
 iframe.site {
   border-radius: 13px;
 }
