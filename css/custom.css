@@ -118,7 +118,8 @@ iframe.site {
 }
 
 .hoverGroup:hover ~ .hoverGroup,
-.hoverGroupGit:hover ~ .hoverGroupGit {
+.hoverGroupGit:hover ~ .hoverGroupGit,
+.hoverGroup2Do:hover ~ .hoverGroup2Do {
   transform: scale(0.8) rotateY(360deg);
   transition-property: transform;
   transition-duration: 500ms;
@@ -126,7 +127,7 @@ iframe.site {
 }
 
 .hoverGroup,
-.hoverGroupGit {
+.hoverGroupGit, .hoverGroup2Do {
   transition-property: transform;
   transition-duration: 500ms;
   transition-delay: 50ms;
