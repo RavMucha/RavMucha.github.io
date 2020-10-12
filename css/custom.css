@@ -89,14 +89,15 @@ iframe.site {
   transition-delay: 1ms;
 }
 
-.hoverGroupCV:hover ~ .hoverGroupCV {
+.hoverGroupCV:hover ~ .hoverGroupCV,
+.hoverGroupApp:hover ~ .hoverGroupApp {
   transform: scale(1.3) rotateZ(360deg);
   transition-property: transform;
   transition-duration: 500ms;
   transition-delay: 1ms;
 }
 
-.hoverGroupCV {
+.hoverGroupCV, .hoverGroupApp {
   transition-property: transform;
   transition-duration: 500ms;
   transition-delay: 50ms;
