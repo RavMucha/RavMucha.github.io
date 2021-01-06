@@ -35,7 +35,7 @@ $(function () {
     $("#darkMode").hide();
     $("#lightMode").show();
     $("body").addClass("darkness");
-    $("#infoAlert").addClass("sabre");
+    $("#infoAlert").removeClass("inset").addClass("sabre");
     $(".list-group-flush .list-group-item").addClass("darkness3");
     $("#pokaSkillsy").css("background-color", "#222");
     $("li .btn").removeClass("btn-light").addClass("btn-dark");
@@ -70,7 +70,7 @@ $(function () {
     $("#lightMode").hide();
     $("#darkMode").show();
     $("body").removeClass("darkness");
-    $("#infoAlert").removeClass("sabre");
+    $("#infoAlert").removeClass("sabre").addClass("inset");
     $(".list-group-flush .list-group-item").removeClass("darkness3");
     $("#pokaSkillsy").css("background-color", "#fff");
     $("li .btn").removeClass("btn-dark").addClass("btn-light");
