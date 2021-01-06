@@ -56,6 +56,7 @@ $(function () {
     $("#guzikBug").css("background-color", "#ba8b00");
     $("#guzikChat").css("background-color", "#fd7e14");
     $(".modImg").addClass("modImgSith");
+    $("#loading-wrapper").addClass("inverted");
     $(".chatSend")
       .removeClass("btn-outline-info")
       .addClass("btn-outline-danger");
@@ -90,6 +91,7 @@ $(function () {
     $("#guzikBug").css("background-color", "#ffc107");
     $("#guzikChat").css("background-color", "#20c997");
     $(".modImg").removeClass("modImgSith");
+    $("#loading-wrapper").removeClass("inverted");
     $(".chatSend")
       .removeClass("btn-outline-danger")
       .addClass("btn-outline-info");
