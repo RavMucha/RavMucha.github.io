@@ -31,15 +31,22 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
   <style>
+    #loading-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1234;
+  border-left: 390px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 390px solid #868e9675;
+}
 #loading-wrapper {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
+	width: 220px;
+	height: 220px;
+  right: 0;
   top: 0;
-  background-color: #fff;
   opacity: 0.8;
-  z-index: 1234;
 }
 
 #loading-text {
@@ -62,9 +69,9 @@
   position: relative;
   left: 50%;
   top: 50%;
-  width: 300px;
-  height: 300px;
-  margin: -150px 0 0 -150px;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
   border: 3px solid rgb(253, 126, 20);
 }
 
@@ -150,10 +157,12 @@
 </head>
 
 <body id="page-top">
+  <div id="loading-container">
   <div id="loading-wrapper">
     <div id="loading-text">LOADING</div>
     <div id="loading-content"></div>
   </div>
+</div>
   <a href="CV 2.0 Rafal Mucha.pdf" id="guzik" class="floatBtn" download><img src="img/DTray.png" class="floatImg"
       style="width: 25px; height: 25px" /><span class="guzikhint subheading">download my cv</span></a>
   <a data-toggle="modal" data-target="#chatForm" class="floatBtn" id="guzikChat"><img src="img/chat.png"
@@ -1885,7 +1894,7 @@
   <script src="js/DarkMode.js"></script>
   <script>
     window.onload = function() {
-      document.getElementById('loading-wrapper').style.display = "none";
+      document.getElementById('loading-container').style.display = "none";
     }
   </script>
 </body>

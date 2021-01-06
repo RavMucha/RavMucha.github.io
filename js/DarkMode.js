@@ -5,6 +5,10 @@ if (navigator.userAgent.indexOf("Chrome") != -1) {
   );
 }
 
+window.onload = function() {
+  document.getElementById('loading-container').style.display = "none";
+}
+
 function playSaber(url) {
   var sound = new Audio(url);
   sound.play();
