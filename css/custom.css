@@ -534,6 +534,10 @@ li b::before {
   background-image: url("../img/udemy.png");
 }
 
+.ssoft b::before {
+  background-image: url("../img/SS.png");
+}
+
 .duol b::before {
   background-image: url("../img/DL.png");
 }
