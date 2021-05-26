@@ -863,15 +863,21 @@ filter: invert(100%);
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
-                  <iframe src="https://fly-landing.netlify.app/" class="site" frameborder="0"></iframe>
+                  <iframe src="https://ref-card.netlify.app/" class="site" frameborder="0"></iframe>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-inline-item hoverGroup2Do">
-            <a href="https://a2do.netlify.app/" target="_blank">
-              <i type="button" class="newIcon devicon-css3-plain colored link"></i>
-            </a>
+          <li class="list-inline-item">
+            <i type="button" data-toggle="modal" data-target="#portCSS" class="newIcon devicon-css3-plain colored"></i>
+            <div class="modal fade bd-example-modal-lg" id="portCSS" tabindex="-1" role="dialog"
+              aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content site">
+                  <iframe src="https://fly-landing.netlify.app/" class="site" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="list-inline-item hoverGroupApp">
             <i type="button" data-toggle="modal" data-target="#portJS"
@@ -911,6 +917,11 @@ filter: invert(100%);
               </div>
             </div>
           </div>
+          <li class="list-inline-item hoverGroup2Do">
+            <a href="https://a2do.netlify.app/" target="_blank">
+              <img type="button" class="blueChange link" src="./img/PWA.svg" alt="PWA"></img>
+            </a>
+          </li>
           <li class="list-inline-item">
             <i type="button" data-toggle="modal" data-target="#port1" class="newIcon devicon-vuejs-plain colored"></i>
             <div class="modal fade bd-example-modal-lg" id="port1" tabindex="-1" role="dialog"
@@ -929,17 +940,6 @@ filter: invert(100%);
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
                   <iframe src="https://gta-xo.netlify.app/" class="site" frameborder="0"></iframe>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="list-inline-item">
-            <i type="button" data-toggle="modal" data-target="#portInk" class="newIcon devicon-inkscape-plain colored" style="filter:drop-shadow(0 0 1px #aaa);"></i>
-            <div class="modal fade bd-example-modal-lg" id="portInk" tabindex="-1" role="dialog"
-              aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content site">
-                  <iframe src="https://ref-card.netlify.app/" class="site" frameborder="0"></iframe>
                 </div>
               </div>
             </div>
@@ -1040,6 +1040,9 @@ filter: invert(100%);
                 </div>
               </div>
             </div>
+          </li>
+          <li class="list-inline-item">
+            <i class="newIcon devicon-inkscape-plain"></i>
           </li>
           <li class="list-inline-item">
             <i class="newIcon devicon-gimp-plain"></i>
