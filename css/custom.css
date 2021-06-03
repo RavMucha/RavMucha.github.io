@@ -625,6 +625,54 @@ li b::before {
   opacity: 0.7;
 }
 
+.siteLink {
+  position: absolute;
+  bottom: -49px;
+  left: calc(50% - 25px);
+  /* transform: translate(50%); */
+  z-index: -1;
+  border: none;
+  outline: none;
+  background-color: #fefefe;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 1px 1px 50% 50%;
+  font-size: 16px;
+  opacity: 0.95;
+}
+.siteLink .guzikhint {
+  visibility: hidden;
+  position: absolute;
+  z-index: 99;
+  top: 6px;
+  left: 115%;
+  background-color: #495057;
+  width: 140px;
+  color: #fefefe;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.siteLink:hover .guzikhint {
+  visibility: visible;
+  -webkit-animation: Fejder 1s;
+  -moz-animation: Fejder 1s;
+  -ms-animation: Fejder 1s;
+  -o-animation: Fejder 1s;
+  animation: Fejder 1s;
+}
+
+.siteLink:hover {
+  background-color: #495057;
+  opacity: 0.99;
+  transform: scale(1.01) translateX(-1px);
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-delay: 5ms;
+}
+
 #darkMode:hover,
 #lightMode:hover,
 #guzik:hover,
