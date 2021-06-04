@@ -638,6 +638,14 @@ li b::before {
   padding: 0 5px !important;
 }
 
+.mapImgClose {
+  position: absolute;
+  transform: scale(1.2);
+  top: 1px;
+  right: 10px;
+  z-index: 100;
+}
+
 @media (max-width: 576px) {
   .modalClose {
     top: -5px;

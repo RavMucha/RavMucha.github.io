@@ -32,171 +32,176 @@
   <link href="css/custom.css" rel="stylesheet">
   <style>
     #loading-container {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1234;
-  border-left: 280px solid transparent;
-	border-right: 0px solid transparent;
-  border-top: 280px solid #868e9675;
-  pointer-events: none;
-}
-#loading-wrapper {
-  position: fixed;
-	width: 160px;
-	height: 160px;
-  right: 0;
-  top: 0;
-  opacity: 0.8;
-}
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 1234;
+      border-left: 280px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 280px solid #868e9675;
+      pointer-events: none;
+    }
 
-#loading-text {
-  display: block;
-  position: absolute;
-  font-family: Impact, Tahoma, sans-serif;
-  top: 50%;
-  left: 0;
-  color: #389bbd;
-  width: 100%;
-  height: 100%;
-  margin-top: -15px;
-  text-align: center;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-}
+    #loading-wrapper {
+      position: fixed;
+      width: 160px;
+      height: 160px;
+      right: 0;
+      top: 0;
+      opacity: 0.8;
+    }
 
-#loading-content {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 3px solid rgb(253, 126, 20);
-}
+    #loading-text {
+      display: block;
+      position: absolute;
+      font-family: Impact, Tahoma, sans-serif;
+      top: 50%;
+      left: 0;
+      color: #389bbd;
+      width: 100%;
+      height: 100%;
+      margin-top: -15px;
+      text-align: center;
+      font-size: 1.2em;
+      letter-spacing: 2px;
+    }
 
-.inverted {
-filter: invert(100%);
-}
+    #loading-content {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border: 3px solid rgb(253, 126, 20);
+    }
 
-@media (max-width:992px){
-#loading-container {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: auto;
-  top: auto;
-  z-index: 1234;
-  border-left: 0px solid transparent;
-  border-top: 0px solid transparent;
-	border-right: 0px solid transparent;
-  border-bottom: 0px solid transparent;
-}
-#loading-wrapper {
-  position: fixed;
-	width: 120px;
-	height: 120px;
-  left: 5px;
-  bottom: 5px;
-  right: auto;
-  top: auto;
-  opacity: 0.9;
-  background-color: #eeeeee;
-  border-radius: 50%;
-}
-#loading-text {
-  font-size: 0.85em;
-  letter-spacing: 0;
-  margin-top: -10px;
-}
-#loading-content {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 120px;
-  height: 120px;
-  margin: -60px 0 0 -60px;
-  border: 3px solid rgb(253, 126, 20);
-}
-}
+    .inverted {
+      filter: invert(100%);
+    }
 
-#loading-content:after {
-  content: "";
-  position: absolute;
-  border: 3px solid #14c08c;
-  left: 15px;
-  right: 15px;
-  top: 15px;
-  bottom: 15px;
-}
+    @media (max-width:992px) {
+      #loading-container {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: auto;
+        top: auto;
+        z-index: 1234;
+        border-left: 0px solid transparent;
+        border-top: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+      }
 
-#loading-content:before {
-  content: "";
-  position: absolute;
-  border: 3px solid #389bbd;
-  left: 5px;
-  right: 5px;
-  top: 5px;
-  bottom: 5px;
-}
+      #loading-wrapper {
+        position: fixed;
+        width: 120px;
+        height: 120px;
+        left: 5px;
+        bottom: 5px;
+        right: auto;
+        top: auto;
+        opacity: 0.9;
+        background-color: #eeeeee;
+        border-radius: 50%;
+      }
 
-#loading-content {
-  border: 8px solid transparent;
-  border-top-color:#389bbd;
-  border-bottom-color: #389bbd;
-  border-radius: 50%;
-  -webkit-animation: loader 2s linear infinite;
-  -moz-animation: loader 2s linear infinite;
-  -o-animation: loader 2s linear infinite;
-  animation: loader 2s linear infinite;
-}
+      #loading-text {
+        font-size: 0.85em;
+        letter-spacing: 0;
+        margin-top: -10px;
+      }
 
-#loading-content:before {
-  border: 6px solid transparent;
-  border-top-color:  #14c08c;
-  border-bottom-color: #14c08c;
-  border-radius: 50%;
-  -webkit-animation: loader 3s linear infinite;
-    -moz-animation: loader 2s linear infinite;
-  -o-animation: loader 2s linear infinite;
-  animation: loader 3s linear infinite;
-}
+      #loading-content {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        margin: -60px 0 0 -60px;
+        border: 3px solid rgb(253, 126, 20);
+      }
+    }
 
-#loading-content:after {
-  border: 4px solid transparent;
-  border-top-color:   #495057;
-  border-bottom-color:  #495057;
-  border-radius: 50%;
-  -webkit-animation: loader 1.5s linear infinite;
-  animation: loader 1.5s linear infinite;
-    -moz-animation: loader 2s linear infinite;
-  -o-animation: loader 2s linear infinite;
-}
+    #loading-content:after {
+      content: "";
+      position: absolute;
+      border: 3px solid #14c08c;
+      left: 15px;
+      right: 15px;
+      top: 15px;
+      bottom: 15px;
+    }
 
-@keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
+    #loading-content:before {
+      content: "";
+      position: absolute;
+      border: 3px solid #389bbd;
+      left: 5px;
+      right: 5px;
+      top: 5px;
+      bottom: 5px;
+    }
+
+    #loading-content {
+      border: 8px solid transparent;
+      border-top-color: #389bbd;
+      border-bottom-color: #389bbd;
+      border-radius: 50%;
+      -webkit-animation: loader 2s linear infinite;
+      -moz-animation: loader 2s linear infinite;
+      -o-animation: loader 2s linear infinite;
+      animation: loader 2s linear infinite;
+    }
+
+    #loading-content:before {
+      border: 6px solid transparent;
+      border-top-color: #14c08c;
+      border-bottom-color: #14c08c;
+      border-radius: 50%;
+      -webkit-animation: loader 3s linear infinite;
+      -moz-animation: loader 2s linear infinite;
+      -o-animation: loader 2s linear infinite;
+      animation: loader 3s linear infinite;
+    }
+
+    #loading-content:after {
+      border: 4px solid transparent;
+      border-top-color: #495057;
+      border-bottom-color: #495057;
+      border-radius: 50%;
+      -webkit-animation: loader 1.5s linear infinite;
+      animation: loader 1.5s linear infinite;
+      -moz-animation: loader 2s linear infinite;
+      -o-animation: loader 2s linear infinite;
+    }
+
+    @keyframes loader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 
 <body id="page-top">
   <div id="loading-container">
-  <div id="loading-wrapper">
-    <div id="loading-text">LOADING</div>
-    <div id="loading-content"></div>
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
   </div>
-</div>
   <a href="CV 2.0 Rafal Mucha.pdf" id="guzik" class="floatBtn" download><img src="img/DTray.png" class="floatImg"
       style="width: 25px; height: 25px" /><span class="guzikhint subheading">download my cv</span></a>
   <a data-toggle="modal" data-target="#chatForm" class="floatBtn" id="guzikChat"><img src="img/chat.png"
@@ -323,12 +328,17 @@ filter: invert(100%);
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
+                <button type="button" class="close mapImgClose" title="Close"
+                  data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
                 <iframe id="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.156110345693!2d20.002538803666585!3d50.08093989726195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645337160b089%3A0x84a5709cc373db92!2z8J-PoQ!5e0!3m2!1spl!2spl!4v1532419377895"
                   frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
-          </div> · <i class="fa fa-user"></i> 1987 · <i class="fa fa-phone-square"></i> <a href="tel:+48794534604">Phone</a> · <i class="fa fa-inbox"></i>
+          </div> · <i class="fa fa-user"></i> 1987 · <i class="fa fa-phone-square"></i> <a
+            href="tel:+48794534604">Phone</a> · <i class="fa fa-inbox"></i>
           <a href="mailto:r.p.mucha@gmail.com?subject=Response2CV&Body=Hello!">e-mail</a>
         </div>
         <p class="mb-5">Economics master's degree graduate, working in the corporate IT sector. People focused,
@@ -402,16 +412,16 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/10.png')"> ZenSar Technologies Ltd.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Web development, maintenance, new features, testing and improvements using:
-                  <ul class="langList">
-                    <li>HTML, CSS, JavaScript, Bootstrap, jQuery,</li>
-                    <li>React, Angular, AngularJS,</li>
-                    <li>LitElement, Salesforce, Lightning Design System,</li>
-                    <li>Git, GitLab, Figma</li>
-                  </ul>
-                </li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Web development, maintenance, new features, testing and improvements using:
+                <ul class="langList">
+                  <li>HTML, CSS, JavaScript, Bootstrap, jQuery,</li>
+                  <li>React, Angular, AngularJS,</li>
+                  <li>LitElement, Salesforce, Lightning Design System,</li>
+                  <li>Git, GitLab, Figma</li>
+                </ul>
+              </li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -426,28 +436,28 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/00.png')"> GFT Poland Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Web development, maintenance and improvements, administration, access
-                  control, FrontEnd & BackEnd maintenance using:
-                  <ul class="langList">
-                    <li>HTML, CSS, JavaScript,</li>
-                    <li>React, Vue.js, Bootstrap, jQuery,</li>
-                    <li>Angular, Angular Material, </li>
-                    <li>Node.js, Express, PostgreSQL, Docker,</li>
-                    <li>TypeScript, SASS</li>
-                  </ul>
-                </li>
-                <li class="list-group-item">Designing and implementation of solutions according to customer
-                  requirements, documentation of work and mentoring. 
-                </li>
-                <li class="list-group-item">Building modern Single Page Applications
-                </li>
-                <li class="list-group-item">Version control using <strong>Git, GitHub, GitLab</strong>
-                </li>
-                <li class="list-group-item">Working in <strong>Scrum</strong> methodology, <strong>Figma</strong>
-                  designs
-                </li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Web development, maintenance and improvements, administration, access
+                control, FrontEnd & BackEnd maintenance using:
+                <ul class="langList">
+                  <li>HTML, CSS, JavaScript,</li>
+                  <li>React, Vue.js, Bootstrap, jQuery,</li>
+                  <li>Angular, Angular Material, </li>
+                  <li>Node.js, Express, PostgreSQL, Docker,</li>
+                  <li>TypeScript, SASS</li>
+                </ul>
+              </li>
+              <li class="list-group-item">Designing and implementation of solutions according to customer
+                requirements, documentation of work and mentoring. 
+              </li>
+              <li class="list-group-item">Building modern Single Page Applications
+              </li>
+              <li class="list-group-item">Version control using <strong>Git, GitHub, GitLab</strong>
+              </li>
+              <li class="list-group-item">Working in <strong>Scrum</strong> methodology, <strong>Figma</strong>
+                designs
+              </li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -463,39 +473,39 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">E2E web development, maintenance and improvements, administration, access
-                  control, FrontEnd & BackEnd maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript,
-                    jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React, TypeScript</strong>
-                </li>
-                <li class="list-group-item">Automations & RPA/robotics consultancy
-                </li>
-                <li class="list-group-item">Automations (Excel, macros, scripting solutions) design & implementation
-                </li>
-                <li class="list-group-item">Business Intelligence Dashboard reporting
-                </li>
-                <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
-                </li>
-                <li class="list-group-item">Support engagements in identifying CI opportunities
-                </li>
-                <li class="list-group-item">Driving Continuous Improvement projects to achieve overall objectives of the
-                  Organization and engagement
-                </li>
-                <li class="list-group-item">Promoting continuous improvement methodology
-                </li>
-                <li class="list-group-item">Generating demand for automation (through different tools and focus
-                  workshops)
-                </li>
-                <li class="list-group-item">Sharing knowledge and awareness proactively
-                </li>
-                <li class="list-group-item">Provide training and knowledge sharing to the business
-                </li>
-              </ul>
-              <br />
-              <span class="badge badge-info">Additionally:</span>
-              <p><b>Web Development basics trainer</b> <span style="font-size: 0.9em;">(conducting trainings for
-                  employees on the basics of FrontEnd development -
-                  HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap & SharePoints as servers)</span></p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">E2E web development, maintenance and improvements, administration, access
+                control, FrontEnd & BackEnd maintenance using: <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript,
+                  jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React, TypeScript</strong>
+              </li>
+              <li class="list-group-item">Automations & RPA/robotics consultancy
+              </li>
+              <li class="list-group-item">Automations (Excel, macros, scripting solutions) design & implementation
+              </li>
+              <li class="list-group-item">Business Intelligence Dashboard reporting
+              </li>
+              <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
+              </li>
+              <li class="list-group-item">Support engagements in identifying CI opportunities
+              </li>
+              <li class="list-group-item">Driving Continuous Improvement projects to achieve overall objectives of the
+                Organization and engagement
+              </li>
+              <li class="list-group-item">Promoting continuous improvement methodology
+              </li>
+              <li class="list-group-item">Generating demand for automation (through different tools and focus
+                workshops)
+              </li>
+              <li class="list-group-item">Sharing knowledge and awareness proactively
+              </li>
+              <li class="list-group-item">Provide training and knowledge sharing to the business
+              </li>
+            </ul>
+            <br />
+            <span class="badge badge-info">Additionally:</span>
+            <p><b>Web Development basics trainer</b> <span style="font-size: 0.9em;">(conducting trainings for
+                employees on the basics of FrontEnd development -
+                HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap & SharePoints as servers)</span></p>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -511,48 +521,48 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/01.png')"> Capgemini Polska Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Active website development, maintenance and improvements (<strong>HTML, CSS,
-                    JavaScript, jQuery, ASP.NET, Bootstrap, Google Charts</strong>), administration, access control,
-                  FrontEnd & some occasional BackEnd maintenance
-                </li>
-                <li class="list-group-item">Preparation of daily/monthly reports in MS Excel
-                </li>
-                <li class="list-group-item">Preparation of monthly dashboards in SAP BusinessObjects & MS Power BI
-                </li>
-                <li class="list-group-item">Preparation of monthly service review PPT decks
-                </li>
-                <li class="list-group-item">General IT support for Citrix, Cisco telephony, VPN, Office Suite software,
-                  ERPs, server issues,
-                  ticketing on ServiceNOW, BMC Remedy and various ITSM systems
-                </li>
-                <li class="list-group-item">Calculation of process metrics data based on agreed definitions
-                </li>
-                <li class="list-group-item">Data collection plan control
-                </li>
-                <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
-                </li>
-                <li class="list-group-item">Coordination with engagement team in getting data
-                </li>
-                <li class="list-group-item">Updating required process documentation (procedures) and other documentation
-                  within agreed
-                  timeframes
-                </li>
-                <li class="list-group-item">Creation of project plans
-                </li>
-                <li class="list-group-item">Coordination of MS SQL database structure creation
-                </li>
-                <li class="list-group-item">Integration of data and information
-                </li>
-                <li class="list-group-item">Implementation of interfaces for data input and data output
-                </li>
-                <li class="list-group-item">Enhancements of service reporting tool sets</li>
-              </ul>
-              <br />
-              <span class="badge badge-info">Additionally:</span>
-              <p><b>Risk & Compliance Coordinator</b> <span style="font-size: 0.9em;">(auditing, creation, preparation
-                  and updates of a BCP, R&C logs,
-                  operational and Disaster Recovery-related documentation)</span></p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Active website development, maintenance and improvements (<strong>HTML, CSS,
+                  JavaScript, jQuery, ASP.NET, Bootstrap, Google Charts</strong>), administration, access control,
+                FrontEnd & some occasional BackEnd maintenance
+              </li>
+              <li class="list-group-item">Preparation of daily/monthly reports in MS Excel
+              </li>
+              <li class="list-group-item">Preparation of monthly dashboards in SAP BusinessObjects & MS Power BI
+              </li>
+              <li class="list-group-item">Preparation of monthly service review PPT decks
+              </li>
+              <li class="list-group-item">General IT support for Citrix, Cisco telephony, VPN, Office Suite software,
+                ERPs, server issues,
+                ticketing on ServiceNOW, BMC Remedy and various ITSM systems
+              </li>
+              <li class="list-group-item">Calculation of process metrics data based on agreed definitions
+              </li>
+              <li class="list-group-item">Data collection plan control
+              </li>
+              <li class="list-group-item">SharePoint administration and maintenance via SharePoint Designer
+              </li>
+              <li class="list-group-item">Coordination with engagement team in getting data
+              </li>
+              <li class="list-group-item">Updating required process documentation (procedures) and other documentation
+                within agreed
+                timeframes
+              </li>
+              <li class="list-group-item">Creation of project plans
+              </li>
+              <li class="list-group-item">Coordination of MS SQL database structure creation
+              </li>
+              <li class="list-group-item">Integration of data and information
+              </li>
+              <li class="list-group-item">Implementation of interfaces for data input and data output
+              </li>
+              <li class="list-group-item">Enhancements of service reporting tool sets</li>
+            </ul>
+            <br />
+            <span class="badge badge-info">Additionally:</span>
+            <p><b>Risk & Compliance Coordinator</b> <span style="font-size: 0.9em;">(auditing, creation, preparation
+                and updates of a BCP, R&C logs,
+                operational and Disaster Recovery-related documentation)</span></p>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -568,19 +578,19 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/02.png')"> ABB Global Business Services</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Performing general accounting activities</li>
-                <li class="list-group-item">Execution of assigned accounting analyses and reports</li>
-                <li class="list-group-item">Ensuring the production of reports, statement of accounts, reconciliations,
-                  statements of sourcing and application of funds (SAP FI, Excel, Oracle HFM, ServiceNOW)</li>
-                <li class="list-group-item">Conduction of investigations and reconciliations of accounts</li>
-                <li class="list-group-item">Application of accounting techniques and standard practices to the
-                  classification and recording of financial transactions</li>
-                <li class="list-group-item">Participation in internal control testing and preparation of relevant
-                  documentation</li>
-                <li class="list-group-item">Support of management with financial aspects of project funding and risk
-                  assessment</li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Performing general accounting activities</li>
+              <li class="list-group-item">Execution of assigned accounting analyses and reports</li>
+              <li class="list-group-item">Ensuring the production of reports, statement of accounts, reconciliations,
+                statements of sourcing and application of funds (SAP FI, Excel, Oracle HFM, ServiceNOW)</li>
+              <li class="list-group-item">Conduction of investigations and reconciliations of accounts</li>
+              <li class="list-group-item">Application of accounting techniques and standard practices to the
+                classification and recording of financial transactions</li>
+              <li class="list-group-item">Participation in internal control testing and preparation of relevant
+                documentation</li>
+              <li class="list-group-item">Support of management with financial aspects of project funding and risk
+                assessment</li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -595,30 +605,30 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">SAP system & Desktop Housekeeping</li>
-                <li class="list-group-item">Month end journal processing</li>
-                <li class="list-group-item">Timesheet and Expenses Administration, including issuing missing timesheet
-                  reports and chasing missing timesheets</li>
-                <li class="list-group-item">Setup of new projects in line with approved PIDs or WSAs, including input of
-                  initial income & expenditure forecasts</li>
-                <li class="list-group-item">Assistance with the updating/maintenance of project forecasts in liaison
-                  with Project Managers</li>
-                <li class="list-group-item">Invoice Processing (Accounts receivable and payable)</li>
-                <li class="list-group-item">Assistance with Co-ordination of Annual Business Plan and monthly forecasts
-                </li>
-                <li class="list-group-item">Processing and facilitating timely approval of supplier invoices</li>
-                <li class="list-group-item">Creating Purchase Orders and adminstration of the end to end PO process</li>
-                <li class="list-group-item">Generating various financial and timesheet reports in SAP to Excel</li>
-                <li class="list-group-item">SalesForce Opportunities creation, maintenance and revenue scheduling</li>
-              </ul>
-              <br />
-              <span class="badge badge-info">Additionally:</span>
-              <ul>
-                <li>Lead trainer of accounting and bookkeeping basics,</li>
-                <li>Head of the office's Social Fund Committee,</li>
-                <li>Member of the office's Charity Team.</li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">SAP system & Desktop Housekeeping</li>
+              <li class="list-group-item">Month end journal processing</li>
+              <li class="list-group-item">Timesheet and Expenses Administration, including issuing missing timesheet
+                reports and chasing missing timesheets</li>
+              <li class="list-group-item">Setup of new projects in line with approved PIDs or WSAs, including input of
+                initial income & expenditure forecasts</li>
+              <li class="list-group-item">Assistance with the updating/maintenance of project forecasts in liaison
+                with Project Managers</li>
+              <li class="list-group-item">Invoice Processing (Accounts receivable and payable)</li>
+              <li class="list-group-item">Assistance with Co-ordination of Annual Business Plan and monthly forecasts
+              </li>
+              <li class="list-group-item">Processing and facilitating timely approval of supplier invoices</li>
+              <li class="list-group-item">Creating Purchase Orders and adminstration of the end to end PO process</li>
+              <li class="list-group-item">Generating various financial and timesheet reports in SAP to Excel</li>
+              <li class="list-group-item">SalesForce Opportunities creation, maintenance and revenue scheduling</li>
+            </ul>
+            <br />
+            <span class="badge badge-info">Additionally:</span>
+            <ul>
+              <li>Lead trainer of accounting and bookkeeping basics,</li>
+              <li>Head of the office's Social Fund Committee,</li>
+              <li>Member of the office's Charity Team.</li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -633,22 +643,22 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Resolving access related reqests via SAP within agreed SLAs</li>
-                <li class="list-group-item">Test system changes and upgrades</li>
-                <li class="list-group-item">First line support for internal customers (via mail and phone)</li>
-                <li class="list-group-item">Performing system administration tasks</li>
-                <li class="list-group-item">Solving complex issues related to customers’ queries</li>
-              </ul>
-              <br />
-              <span class="badge badge-info">Additionally:</span>
-              <ul>
-                <li>Lead trainer of accounting and bookkeeping basics,</li>
-                <li>Head of the office's Social Fund Committee,</li>
-                <li>Member of the office's Charity Team,</li>
-                <li>Supporting recruitment (screening candidates), project management, internal marketing, maintenance
-                  and updates of a database of employees in MS Access.</li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Resolving access related reqests via SAP within agreed SLAs</li>
+              <li class="list-group-item">Test system changes and upgrades</li>
+              <li class="list-group-item">First line support for internal customers (via mail and phone)</li>
+              <li class="list-group-item">Performing system administration tasks</li>
+              <li class="list-group-item">Solving complex issues related to customers’ queries</li>
+            </ul>
+            <br />
+            <span class="badge badge-info">Additionally:</span>
+            <ul>
+              <li>Lead trainer of accounting and bookkeeping basics,</li>
+              <li>Head of the office's Social Fund Committee,</li>
+              <li>Member of the office's Charity Team,</li>
+              <li>Supporting recruitment (screening candidates), project management, internal marketing, maintenance
+                and updates of a database of employees in MS Access.</li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -663,25 +673,25 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Responding to incoming requests made via a variety of channels (email, web,
-                  voice), against thresholds in line with the contracted SLAs</li>
-                <li class="list-group-item">Logging (via Hornbill SupportWorks and BMC Remedy), categorising and
-                  prioritising all 1st level calls according to the agreed SLA</li>
-                <li class="list-group-item">First Time Fix calls where appropriate via LANDesk, remote access and admin
-                  consoles</li>
-                <li class="list-group-item">Active Directory user and domain maintenance</li>
-                <li class="list-group-item">Monitoring of servers</li>
-                <li class="list-group-item">Resolving tickets relating to AD group accesses, new starter and leaver
-                  requests, issues with MVS telephony, servers, Exchange, Sharepoint and MS Office, CRM plug-ins, Remote
-                  Desktop Software, Cisco VPN, WebEx and proprietary corporate software</li>
-              </ul>
-              <br />
-              <span class="badge badge-info">Additionally:</span>
-              <ul>
-                <li>Lead trainer of accounting and bookkeeping basics</li>
-                <li>Head of the office's Social Fund Committee</li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Responding to incoming requests made via a variety of channels (email, web,
+                voice), against thresholds in line with the contracted SLAs</li>
+              <li class="list-group-item">Logging (via Hornbill SupportWorks and BMC Remedy), categorising and
+                prioritising all 1st level calls according to the agreed SLA</li>
+              <li class="list-group-item">First Time Fix calls where appropriate via LANDesk, remote access and admin
+                consoles</li>
+              <li class="list-group-item">Active Directory user and domain maintenance</li>
+              <li class="list-group-item">Monitoring of servers</li>
+              <li class="list-group-item">Resolving tickets relating to AD group accesses, new starter and leaver
+                requests, issues with MVS telephony, servers, Exchange, Sharepoint and MS Office, CRM plug-ins, Remote
+                Desktop Software, Cisco VPN, WebEx and proprietary corporate software</li>
+            </ul>
+            <br />
+            <span class="badge badge-info">Additionally:</span>
+            <ul>
+              <li>Lead trainer of accounting and bookkeeping basics</li>
+              <li>Head of the office's Social Fund Committee</li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -697,18 +707,18 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/03.png')"> Capita (Polska) Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Handling and processing data supplied by the customer, expert and/or
-                  provider ensuring the data is accurately input and complete in the CRM system and Excel spreadsheet
-                  database</li>
-                <li class="list-group-item">Keeping case notes up to date, concise and relevant to ensure colleagues can
-                  interpret correctly and actions are clear</li>
-                <li class="list-group-item">Making outbound calling, chasing medical providers for medical records</li>
-                <li class="list-group-item">Operating within own area of accountability, proactively escalating critical
-                  points that may affect a case and act upon them in a timely manner to resolve</li>
-                <li class="list-group-item">Achieve targets for quality and utilisation including Service Standards and
-                  applying the Data Protection Act precautions</li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Handling and processing data supplied by the customer, expert and/or
+                provider ensuring the data is accurately input and complete in the CRM system and Excel spreadsheet
+                database</li>
+              <li class="list-group-item">Keeping case notes up to date, concise and relevant to ensure colleagues can
+                interpret correctly and actions are clear</li>
+              <li class="list-group-item">Making outbound calling, chasing medical providers for medical records</li>
+              <li class="list-group-item">Operating within own area of accountability, proactively escalating critical
+                points that may affect a case and act upon them in a timely manner to resolve</li>
+              <li class="list-group-item">Achieve targets for quality and utilisation including Service Standards and
+                applying the Data Protection Act precautions</li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -736,13 +746,13 @@ filter: invert(100%);
               <li style="list-style: square inside url('img/05.png')"> Medicover Sp. z o.o.</li>
             </div>
             <p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Telephone customer service in Polish and English</li>
-                <li class="list-group-item">Training new joiners</li>
-                <li class="list-group-item">Transcription of phone calls</li>
-                <li class="list-group-item">Supervisory of work in a team of 4 staff as team leader of a special side
-                  project lasting 3 months.</li>
-              </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Telephone customer service in Polish and English</li>
+              <li class="list-group-item">Training new joiners</li>
+              <li class="list-group-item">Transcription of phone calls</li>
+              <li class="list-group-item">Supervisory of work in a team of 4 staff as team leader of a special side
+                project lasting 3 months.</li>
+            </ul>
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -783,7 +793,8 @@ filter: invert(100%);
               <p><span class="badge badge-info">Specialty:</span> Economics of industry and services
                 <br />
                 <span class="badge badge-info">Activities and Societies:</span>
-                Group's foreman</p>
+                Group's foreman
+              </p>
             </div>
           </div>
           <div class="resume-date text-md-right">
@@ -801,7 +812,8 @@ filter: invert(100%);
               <p><span class="badge badge-info">Specialty:</span> Economics of finance and banking
                 <br />
                 <span class="badge badge-info">Activities and Societies:</span>
-                Group's foreman</p>
+                Group's foreman
+              </p>
             </div>
           </div>
           <div class="resume-date text-md-right">
@@ -824,14 +836,17 @@ filter: invert(100%);
             <div class="modal fade bd-example-modal-lg" id="portHTM" tabindex="-1" role="dialog"
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
-                
+
                 <div class="modal-content site">
-                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <a href="https://ref-card.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                    style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
-                  <iframe src="https://ref-card.netlify.app/" class="site" style="position: relative;" frameborder="0"></iframe>
+                  <a href="https://ref-card.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                      src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                      class="guzikhint subheading">go to site</span></a>
+                  <iframe src="https://ref-card.netlify.app/" class="site" style="position: relative;"
+                    frameborder="0"></iframe>
                 </div>
               </div>
             </div>
@@ -842,11 +857,13 @@ filter: invert(100%);
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
-                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <a href="https://fly-landing.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                    style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
+                  <a href="https://fly-landing.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                      src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                      class="guzikhint subheading">go to site</span></a>
                   <iframe src="https://fly-landing.netlify.app/" class="site" frameborder="0"></iframe>
                 </div>
               </div>
@@ -857,34 +874,38 @@ filter: invert(100%);
               class="newIcon devicon-javascript-plain colored"></i>
           </li>
           <div class="modal fade bd-example-modal-lg" id="portJS" tabindex="-1" role="dialog"
-          aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content site">
-              <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <a href="https://nes-coins.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
-              <iframe src="https://nes-coins.netlify.app/" class="site" frameborder="0"></iframe>
-            </div>
-          </div>
-        </div>
-        <li class="list-inline-item">
-          <i type="button" data-toggle="modal" data-target="#portJQ" class="newIcon devicon-jquery-plain colored"></i>
-          <div class="modal fade bd-example-modal-lg" id="portJQ" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content site">
-                <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                  aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <a href="https://madzia-liczy.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                  style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
-                <iframe src="https://madzia-liczy.netlify.app/" class="site" frameborder="0"></iframe>
+                <a href="https://nes-coins.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                    src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                    class="guzikhint subheading">go to site</span></a>
+                <iframe src="https://nes-coins.netlify.app/" class="site" frameborder="0"></iframe>
               </div>
             </div>
           </div>
-        </li>
+          <li class="list-inline-item">
+            <i type="button" data-toggle="modal" data-target="#portJQ" class="newIcon devicon-jquery-plain colored"></i>
+            <div class="modal fade bd-example-modal-lg" id="portJQ" tabindex="-1" role="dialog"
+              aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content site">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <a href="https://madzia-liczy.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                      src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                      class="guzikhint subheading">go to site</span></a>
+                  <iframe src="https://madzia-liczy.netlify.app/" class="site" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="list-inline-item hoverGroupCV">
             <i type="button" data-toggle="modal" data-target="#port2" class="newIcon devicon-sass-plain colored"></i>
           </li>
@@ -896,7 +917,8 @@ filter: invert(100%);
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content site">
-                <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                  aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <iframe src="https://rafal-mucha.netlify.app/" class="site" frameborder="0"></iframe>
@@ -914,11 +936,13 @@ filter: invert(100%);
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
-                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <a href="https://v-convert.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                    style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
+                  <a href="https://v-convert.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                      src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                      class="guzikhint subheading">go to site</span></a>
                   <iframe src="https://v-convert.netlify.app/" class="site" frameborder="0"></iframe>
                 </div>
               </div>
@@ -930,11 +954,13 @@ filter: invert(100%);
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
-                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <a href="https://gta-xo.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                    style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
+                  <a href="https://gta-xo.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                      src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                      class="guzikhint subheading">go to site</span></a>
                   <iframe src="https://gta-xo.netlify.app/" class="site" frameborder="0"></iframe>
                 </div>
               </div>
@@ -947,11 +973,13 @@ filter: invert(100%);
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
-                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <a href="https://ravmucha.netlify.app/" class="siteLink modalAddon" target="_blank"><img src="img/Link.png" class="floatImg"
-                    style="width: 20px; height: 20px" /><span class="guzikhint subheading">go to site</span></a>
+                  <a href="https://ravmucha.netlify.app/" class="siteLink modalAddon" target="_blank"><img
+                      src="img/Link.png" class="floatImg" style="width: 20px; height: 20px" /><span
+                      class="guzikhint subheading">go to site</span></a>
                   <iframe src="https://ravmucha.netlify.app/" class="site" frameborder="0"></iframe>
                 </div>
               </div>
@@ -1037,6 +1065,10 @@ filter: invert(100%);
               aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content site">
+                  <button type="button" class="close modalClose modalAddon" title="Close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                   <iframe src="./media/SoundBasse.pdf" class="site" frameborder="0"></iframe>
                 </div>
               </div>
@@ -1125,860 +1157,1085 @@ filter: invert(100%);
           <div class="modal fade bd-example-modal-lg" id="m3c" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/mediCert3.gif" />
-              </div>
+              <button type="button" class="close mapImgClose" title="Close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <img class="modImg" width="100%" src="img/mediCert3.gif" />
             </div>
           </div><span class="badge badge-info">2012 | Awarded by the Deputy Director for Medical Quality</span>
-        </li>
-        <li>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m5c"><i
-              class="fa fa-star fa-lg text-warning"></i> Scholarship for best
-            students</button>
-          <div class="modal fade bd-example-modal-lg" id="m5c" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/ujkCert.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">2013 | University scholarship</span>
-        </li>
-        <li>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m1c"><i
-              class="fa fa-star fa-lg text-warning"></i> Most ideas in 2013
-          </button>
-          <div class="modal fade bd-example-modal-lg" id="m1c" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/mediCert4.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">2013 | Medicover Call Center award</span>
-        </li>
-        <li>
-
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m2c"><i
-              class="fa fa-star fa-lg text-warning"></i> Accounting and
-            bookkeeping basics training</button>
-          <div class="modal fade bd-example-modal-lg" id="m2c" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/capiCert.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Created the training for CAPITA | main trainer for 1.5 years</span>
-        </li>
-
-        <li class="googl">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m4c"><b></b>Google
-            Internet
-            Revolutions</button>
-          <div class="modal fade bd-example-modal-lg" id="m4c" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/GooCert.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">SEO | SEM | e-commerce | online marketing</span>
-        </li>
-        <li class="sixsigma">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert6"><b></b>Six Sigma
-            <span class="badge badge-success">Green Belt</span> certified</button>
-          <div class="modal fade bd-example-modal-lg" id="cert6" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/SixSigma.png" />
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="grass">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg6"><b></b>Animations
-            II</button>
-          <div class="modal fade bd-example-modal-lg" id="certg6" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/Grass6.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certg5"><b></b>Animations</button>
-          <div class="modal fade bd-example-modal-lg" id="certg5" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/Grass5.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg4"><b></b>Array
-            Methods</button>
-          <div class="modal fade bd-example-modal-lg" id="certg4" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/Grass4.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg3"><b></b>Intro to
-            Interviewing</button>
-          <div class="modal fade bd-example-modal-lg" id="certg3" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/Grass3.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certg2"><b></b>Fundamentals
-            II</button>
-          <div class="modal fade bd-example-modal-lg" id="certg2" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/Grass2.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certg1"><b></b>Fundamentals</button>
-          <div class="modal fade bd-example-modal-lg" id="certg1" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/Grass1.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">JavaScript | SVG | D3 library</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certNext"><b></b>Next JS</button>
-          <div class="modal fade bd-example-modal-lg" id="certNext" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_NextJS.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certGatsby"><b></b>Gatsby</button>
-          <div class="modal fade bd-example-modal-lg" id="certGatsby" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Gatsby.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certType"><b></b>TypeScript</button>
-          <div class="modal fade bd-example-modal-lg" id="certType" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Typescript.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBootstrap"><b></b>Bootstrap 4</button>
-          <div class="modal fade bd-example-modal-lg" id="certBootstrap" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Bootstrap.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVue"><b></b>Vue
-            JS</button>
-          <div class="modal fade bd-example-modal-lg" id="certVue" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Vue.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certSvelte"><b></b>Svelte</button>
-          <div class="modal fade bd-example-modal-lg" id="certSvelte" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Svelte.jepg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certMCSS"><b></b>MaterializeCSS</button>
-          <div class="modal fade bd-example-modal-lg" id="certMCSS" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_MD.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certEmber"><b></b>Ember
-            JS</button>
-          <div class="modal fade bd-example-modal-lg" id="certEmber" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Ember.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certRD"><b></b>React</button>
-          <div class="modal fade bd-example-modal-lg" id="certRD" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_React Development.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAJS"><b></b>AngularJS
-            & Karma</button>
-          <div class="modal fade bd-example-modal-lg" id="certAJS" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_AJS.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certjQ"><b></b>jQuery</button>
-          <div class="modal fade bd-example-modal-lg" id="certjQ" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_JQ.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#cert5"><b></b>JavaScript</button>
-          <div class="modal fade bd-example-modal-lg" id="cert5" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/Mucha_JS.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certJSA"><b></b>JavaScript Advanced</button>
-          <div class="modal fade bd-example-modal-lg" id="certJSA" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/JSA.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#cert2"><b></b>CSS</button>
-          <div class="modal fade bd-example-modal-lg" id="cert2" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/Mucha_CSS.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#cert1"><b></b>HTML</button>
-          <div class="modal fade bd-example-modal-lg" id="cert1" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/Mucha_HTML.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certHTMLA"><b></b>HTML
-            Advanced</button>
-          <div class="modal fade bd-example-modal-lg" id="certHTMLA" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/HTMLA.png" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBaW"><b></b>Building
-            a Website</button>
-          <div class="modal fade bd-example-modal-lg" id="certBaW" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_BaW.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">FrontEnd Development</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-          data-target="#certReactN"><b></b>React Native</button>
-        <div class="modal fade bd-example-modal-lg" id="certReactN" tabindex="-1" role="dialog"
-          aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img class="modImg" width="100%" src="img/RM_ReactNative.jpg" />
-            </div>
+    </li>
+    <li>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m5c"><i
+          class="fa fa-star fa-lg text-warning"></i> Scholarship for best
+        students</button>
+      <div class="modal fade bd-example-modal-lg" id="m5c" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/ujkCert.png" />
           </div>
         </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certFlutter"><b></b>Flutter</button>
-          <div class="modal fade bd-example-modal-lg" id="certFlutter" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Flutter.jpg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certIon"><b></b>Ionic</button>
-          <div class="modal fade bd-example-modal-lg" id="certIon" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Ionic app development.jepg" />
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDart"><b></b>Dart &
-            Flutter</button>
-          <div class="modal fade bd-example-modal-lg" id="certDart" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Dart.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Progressive Web Apps</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-          data-target="#certGraphQL"><b></b>GraphQL</button>
-        <div class="modal fade bd-example-modal-lg" id="certGraphQL" tabindex="-1" role="dialog"
-          aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img class="modImg" width="100%" src="img/RM_GraphQL.jpg" />
-            </div>
+      </div><span class="badge badge-info">2013 | University scholarship</span>
+    </li>
+    <li>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m1c"><i
+          class="fa fa-star fa-lg text-warning"></i> Most ideas in 2013
+      </button>
+      <div class="modal fade bd-example-modal-lg" id="m1c" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/mediCert4.jpg" />
           </div>
         </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certDeno"><b></b>Deno</button>
-          <div class="modal fade bd-example-modal-lg" id="certDeno" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Deno.jpg" />
-              </div>
-            </div>
+      </div><span class="badge badge-info">2013 | Medicover Call Center award</span>
+    </li>
+    <li>
+
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m2c"><i
+          class="fa fa-star fa-lg text-warning"></i> Accounting and
+        bookkeeping basics training</button>
+      <div class="modal fade bd-example-modal-lg" id="m2c" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/capiCert.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certLaravel"><b></b>Laravel PHP</button>
-          <div class="modal fade bd-example-modal-lg" id="certLaravel" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Laravel.jpg" />
-              </div>
-            </div>
+        </div>
+      </div><span class="badge badge-info">Created the training for CAPITA | main trainer for 1.5 years</span>
+    </li>
+
+    <li class="googl">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#m4c"><b></b>Google
+        Internet
+        Revolutions</button>
+      <div class="modal fade bd-example-modal-lg" id="m4c" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/GooCert.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certNode"><b></b>Node
-            JS</button>
-          <div class="modal fade bd-example-modal-lg" id="certNode" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Node.jpg" />
-              </div>
-            </div>
+        </div>
+      </div><span class="badge badge-info">SEO | SEM | e-commerce | online marketing</span>
+    </li>
+    <li class="sixsigma">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert6"><b></b>Six Sigma
+        <span class="badge badge-success">Green Belt</span> certified</button>
+      <div class="modal fade bd-example-modal-lg" id="cert6" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/SixSigma.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certExpress"><b></b>Express JS</button>
-          <div class="modal fade bd-example-modal-lg" id="certExpress" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Express.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">BackEnd Development</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certRDBMS"><b></b>RDBMS</button>
-          <div class="modal fade bd-example-modal-lg" id="certRDBMS" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_RDBMS.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+    </li>
+    <li class="grass">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg6"><b></b>Animations
+        II</button>
+      <div class="modal fade bd-example-modal-lg" id="certg6" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/Grass6.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certSQL"><b></b>SQL</button>
-          <div class="modal fade bd-example-modal-lg" id="certSQL" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_SQL.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certg5"><b></b>Animations</button>
+      <div class="modal fade bd-example-modal-lg" id="certg5" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/Grass5.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certMongo"><b></b>MongoDB</button>
-          <div class="modal fade bd-example-modal-lg" id="certMongo" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Mongo.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Databases</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certFire"><b></b>Firebase</button>
-          <div class="modal fade bd-example-modal-lg" id="certFire" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Firebase.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg4"><b></b>Array
+        Methods</button>
+      <div class="modal fade bd-example-modal-lg" id="certg4" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/Grass4.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAWS"><b></b>Amazon
-            Web Services</button>
-          <div class="modal fade bd-example-modal-lg" id="certAWS" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_AWS.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg3"><b></b>Intro to
+        Interviewing</button>
+      <div class="modal fade bd-example-modal-lg" id="certg3" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/Grass3.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCloud"><b></b>Cloud
-            Computing</button>
-          <div class="modal fade bd-example-modal-lg" id="certCloud" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_CC.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Cloud</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certSelenium"><b></b>Selenium Automated Testing</button>
-          <div class="modal fade bd-example-modal-lg" id="certSelenium" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Selenium.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certg2"><b></b>Fundamentals
+        II</button>
+      <div class="modal fade bd-example-modal-lg" id="certg2" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/Grass2.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certTesting"><b></b>Software Testing</button>
-          <div class="modal fade bd-example-modal-lg" id="certTesting" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Testing.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Tests</span>
-        </li>
-        <li class="prohub">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certKot"><b></b>Kotlin for Android</button>
-          <div class="modal fade bd-example-modal-lg" id="certKot" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_KotlinA.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certg1"><b></b>Fundamentals</button>
+      <div class="modal fade bd-example-modal-lg" id="certg1" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/Grass1.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certTab"><b></b>Tableau</button>
-          <div class="modal fade bd-example-modal-lg" id="certTab" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Tableau.jpg" />
-              </div>
-            </div>
+        </div>
+      </div><span class="badge badge-info">JavaScript | SVG | D3 library</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certNext"><b></b>Next
+        JS</button>
+      <div class="modal fade bd-example-modal-lg" id="certNext" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_NextJS.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certGH"><b></b>Git &amp; GitHub</button>
-          <div class="modal fade bd-example-modal-lg" id="certGH" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Git.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certGatsby"><b></b>Gatsby</button>
+      <div class="modal fade bd-example-modal-lg" id="certGatsby" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Gatsby.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certFlask"><b></b>Flask
-            using Python</button>
-          <div class="modal fade bd-example-modal-lg" id="certFlask" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Flask.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certType"><b></b>TypeScript</button>
+      <div class="modal fade bd-example-modal-lg" id="certType" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Typescript.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert4"><b></b>Python
-            2</button>
-          <div class="modal fade bd-example-modal-lg" id="cert4" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/Mucha_Python 2.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certBootstrap"><b></b>Bootstrap 4</button>
+      <div class="modal fade bd-example-modal-lg" id="certBootstrap" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Bootstrap.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certScala"><b></b>Scala</button>
-          <div class="modal fade bd-example-modal-lg" id="certScala" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Scala.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVue"><b></b>Vue
+        JS</button>
+      <div class="modal fade bd-example-modal-lg" id="certVue" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Vue.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certElm">
-            <b></b>Elm</button>
-          <div class="modal fade bd-example-modal-lg" id="certElm" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Elm.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certSvelte"><b></b>Svelte</button>
+      <div class="modal fade bd-example-modal-lg" id="certSvelte" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Svelte.jepg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certERP"><b></b>ERP
-            Systems</button>
-          <div class="modal fade bd-example-modal-lg" id="certERP" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_ERP.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certMCSS"><b></b>MaterializeCSS</button>
+      <div class="modal fade bd-example-modal-lg" id="certMCSS" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_MD.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certIP"><b></b>IPv4 &
-            Networking</button>
-          <div class="modal fade bd-example-modal-lg" id="certIP" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_IPv4.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certEmber"><b></b>Ember
+        JS</button>
+      <div class="modal fade bd-example-modal-lg" id="certEmber" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Ember.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certMATLAB"><b></b>MATLAB</button>
-          <div class="modal fade bd-example-modal-lg" id="certMATLAB" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_MATLAB.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRD"><b></b>React</button>
+      <div class="modal fade bd-example-modal-lg" id="certRD" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_React Development.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDM"><b></b>Digital
-            Marketing</button>
-          <div class="modal fade bd-example-modal-lg" id="certDM" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_DM.jepg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAJS"><b></b>AngularJS
+        & Karma</button>
+      <div class="modal fade bd-example-modal-lg" id="certAJS" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_AJS.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRPA"><b></b>Robotic
-            Process Automation</button>
-          <div class="modal fade bd-example-modal-lg" id="certRPA" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_RPA.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certjQ"><b></b>jQuery</button>
+      <div class="modal fade bd-example-modal-lg" id="certjQ" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_JQ.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certSEO"><b></b>SEO</button>
-          <div class="modal fade bd-example-modal-lg" id="certSEO" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_SEO.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#cert5"><b></b>JavaScript</button>
+      <div class="modal fade bd-example-modal-lg" id="cert5" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/Mucha_JS.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certVBN"><b></b>VB.Net</button>
-          <div class="modal fade bd-example-modal-lg" id="certVBN" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_VBNet.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certJSA"><b></b>JavaScript
+        Advanced</button>
+      <div class="modal fade bd-example-modal-lg" id="certJSA" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/JSA.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVB"><b></b>VB
-            6</button>
-          <div class="modal fade bd-example-modal-lg" id="certVB" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_VB 6.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert2"><b></b>CSS</button>
+      <div class="modal fade bd-example-modal-lg" id="cert2" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/Mucha_CSS.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCN"><b></b>Computer
-            Networks</button>
-          <div class="modal fade bd-example-modal-lg" id="certCN" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_CN.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert1"><b></b>HTML</button>
+      <div class="modal fade bd-example-modal-lg" id="cert1" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/Mucha_HTML.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certITB"><b></b>IT
-            Basics</button>
-          <div class="modal fade bd-example-modal-lg" id="certITB" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/ITB.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certHTMLA"><b></b>HTML
+        Advanced</button>
+      <div class="modal fade bd-example-modal-lg" id="certHTMLA" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/HTMLA.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#certBC"><b></b>Blockchain</button>
-          <div class="modal fade bd-example-modal-lg" id="certBC" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_Blockchain.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certBaW"><b></b>Building
+        a Website</button>
+      <div class="modal fade bd-example-modal-lg" id="certBaW" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_BaW.png" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAI"><b></b>Artificial
-            Intelligence</button>
-          <div class="modal fade bd-example-modal-lg" id="certAI" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/RM_AI.png" />
-              </div>
-            </div>
+        </div>
+      </div><span class="badge badge-info">FrontEnd Development</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certReactN"><b></b>React
+        Native</button>
+      <div class="modal fade bd-example-modal-lg" id="certReactN" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_ReactNative.jpg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-            data-target="#cert3"><b></b>Java</button>
-          <div class="modal fade bd-example-modal-lg" id="cert3" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/Mucha_Java.jpg" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certFlutter"><b></b>Flutter</button>
+      <div class="modal fade bd-example-modal-lg" id="certFlutter" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Flutter.jpg" />
           </div>
-          <span class="badge badge-info">Other</span>
-        </li>
-        <li class="m1m0">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert04"><b></b>Build an
-            iOS App</button>
-          <div class="modal fade bd-example-modal-lg" id="cert04" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/MimoCert5.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Swift | Xcode</span>
-        </li>
-        <li class="m1m0">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert03"><b></b>Make an
-            Android App</button>
-          <div class="modal fade bd-example-modal-lg" id="cert03" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" height="100%" width="100%" src="img/MimoCert4.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Kotlin | Android Studio</span>
-        </li>
-        <li class="m1m0">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert02"><b></b>Make a
-            game</button>
-          <div class="modal fade bd-example-modal-lg" id="cert02" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/MimoCS.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">C# | Unity</span>
-        </li>
-        <li class="m1m0">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert01"><b></b>Become a
-            Hacker</button>
-          <div class="modal fade bd-example-modal-lg" id="cert01" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/MimoCert3.png" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">Cryptography | SQL | White Hat Hacking</span>
-        </li>
-        <li class="m1m0">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert00"><b></b>Learn to
-            Code</button>
-          <div class="modal fade bd-example-modal-lg" id="cert00" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/MimoCert2.png" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certIon"><b></b>Ionic</button>
+      <div class="modal fade bd-example-modal-lg" id="certIon" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Ionic app development.jepg" />
           </div>
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert0"><b></b>Make a
-            website</button>
-          <div class="modal fade bd-example-modal-lg" id="cert0" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img class="modImg" width="100%" src="img/MimoCert.jpg" />
-              </div>
-            </div>
-          </div><span class="badge badge-info">HTML | CSS | JS | GitHub</span>
-        </li>
-        <li class="udem"><a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-68f8cbc5-2baf-4bb7-8d06-a514d19ab24a.jpg?v=1586628547000"
-            target="_blank"><b></b> Vue.js Fast Crash Course</a> | <a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-f949ed50-77e8-4b5a-b6af-ca50018693dc.jpg?v=1584808203000"
-            target="_blank"><b></b> Vue.js Crash Course</a> | <a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-d40ad945-51f8-46d2-a185-f6ab24f8515f.jpg?v=1584714659000"
-            target="_blank"><b></b> The Ultimate Vue 2 Crash Course</a> <span class="badge badge-info">Vue.js</span>
-        </li>
-        <li class="udem"><a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-38929dc3-ff92-4093-b9c0-64630caabe23.jpg?v=1588366963000"
-            target="_blank"><b></b> Essentials in JavaScript ES6 Course</a></li>
-        <li class="udem"><a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-c68a67b2-19d5-4534-a764-96bc36feea44.jpg?v=1585428978000"
-            target="_blank"><b></b> Git Started with GitHub Course</a></li>
-        <li class="udem"><a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-acba41b5-a59b-4fef-bae2-e105f1ed5681.jpg?v=1585128111000"
-            target="_blank"><b></b> React Basic Course</a></li>
-        <li class="udem"><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-CP36CDTE.jpg?v=1538746070000"
-            target="_blank"><b></b> Sass: From Beginner to Advanced Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/9e0e43af-e932-435d-9491-618975dbabbc"
-              target="_blank"><b></b> Getting Started with REST &amp; .NET Core Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/b866f842-b4f1-475c-af42-11998a034d8f"
-              target="_blank"><b></b> Databases, Bootstrap, &amp; jQuery in Web Design Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/5618b696-e926-4fb5-bd09-eda732fbf145"
-              target="_blank"><b></b> REST API: Exploring the Basic Features Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/c6ffff42-effd-47d9-bfc9-7d7c7dd7eb62"
-              target="_blank"><b></b> Working with CSS Layouts &amp; the Ionic Framework CLI Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/ca69beeb-6c11-413f-b3e2-306fb634ee65"
-              target="_blank"><b></b> Responsive Web Design Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/15a72034-65d2-485f-b1ca-4c99d0d54c55"
-              target="_blank"><b></b> WordPress Installation &amp; Configuration Course</a></li>
-            <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/3ff9900c-ffcc-41e7-ad93-7a4809a1a306"
-              target="_blank"><b></b> SOLID &amp; GRASP - Object-Oriented Programming Course</a></li>
-        <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/da69b721-6d85-4d51-b10f-6bbacddaf3a1"
-            target="_blank"><b></b> AJAX Data Requests &amp; Responses Course</a></li>
-        <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/9852c437-546d-4213-9aa1-952fe7d21096"
-              target="_blank"><b></b> Accessibility &amp; Design Course</a></li>
-        <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/7c0b4a02-320e-4cfc-a144-c0aff2351bb1"
-              target="_blank"><b></b> Advanced Visualizations &amp; Dashboards: Visualization Using Python</a></li>
-        <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/d0532007-a775-414f-8727-cad30a57d4ac"
-              target="_blank"><b></b> Azure SQL Database Course</a></li>
-        <li class="solol"><a href="https://www.sololearn.com/Certificate/1162-489871/jpg" target="_blank"><b></b> Responsive Web Design</a> | 
-          <a href="./img/RM_JS2.jpg" target="_blank"><b></b> JavaScript w. practices</a> | 
-          <a href="https://www.sololearn.com/Certificate/1092-489871/pdf/" target="_blank"><b></b>
-            Angular + NestJS</a> | <a href="https://www.sololearn.com/Certificate/1097-489871/pdf/"
-            target="_blank"><b></b> React + Redux</a> | <a href="https://www.sololearn.com/Certificate/1082-489871/pdf/"
-            target="_blank"><b></b> jQuery</a> | <a href="https://www.sololearn.com/Certificate/1024-489871/pdf/"
-            target="_blank"><b></b> JavaScript</a> | <a href="https://www.sololearn.com/Certificate/1023-489871/pdf/"
-            target="_blank"><b></b> CSS</a> | <a href="https://www.sololearn.com/Certificate/1014-489871/pdf/"
-            target="_blank"><b></b> HTML</a> | <a href="https://www.sololearn.com/Certificate/1059-489871/pdf/"
-            target="_blank"><b></b> PHP</a> <span class="badge badge-info">Web Development</span></li>
-        <li class="solol">
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1093/landscape/png" target="_blank"><b></b> Data Science w. practices</a> |
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1094/landscape/png" target="_blank"><b></b> Machine Learning w. practices</a> |
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1161/landscape/png" target="_blank"><b></b> Python for Data Science</a> |
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1159/landscape/png" target="_blank"><b></b> Python Data Structures</a> |
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1158/landscape/png" target="_blank"><b></b> Intermediate Python</a> |
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1157/landscape/png" target="_blank"><b></b> Python for Beginners</a> |
-          <a href="./img/RM_P3_practice.jpg" target="_blank"><b></b> Python 3 w. practices</a> |
-          <a href="https://www.sololearn.com/Certificate/1073-489871/pdf/" target="_blank"><b></b> Python 3</a> |
-          <a href="https://www.sololearn.com/Certificate/1093-489871/pdf/" target="_blank"><b></b> Data Science with
-            Python</a> |
-          <a href="https://www.sololearn.com/Certificate/1094-489871/pdf/" target="_blank"><b></b> Machine Learning</a>
-          <span class="badge badge-info">Python</span></li>
-        <li class="solol">
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1164/landscape/png" target="_blank"><b></b> Go</a> |
-          <a href="./img/RM_Cpp2.png" target="_blank"><b></b> C++ w. practices</a> |
-          <a href="./img/RM_Cs2.png" target="_blank"><b></b> C# w. practices</a> |
-          <a href="https://www.sololearn.com/certificates/course/en/489871/1160/landscape/png" target="_blank"><b></b> Kotlin</a> |
-          <a href="./img/RM_SQL2.jpg" target="_blank"><b></b> SQL w. practices</a> |
-          <a href="./img/RM_Java2.jpg" target="_blank"><b></b> JAVA w. practices</a> |
-          <a href="https://www.sololearn.com/Certificate/1060-489871/pdf/" target="_blank"><b></b> SQL</a> |
-          <a href="https://www.sololearn.com/Certificate/1068-489871/pdf/" target="_blank"><b></b> Java</a> |
-          <a href="https://www.sololearn.com/Certificate/1080-489871/pdf/" target="_blank"><b></b> C#</a> |
-          <a href="https://www.sololearn.com/Certificate/1051-489871/pdf/" target="_blank"><b></b> C++</a> |
-          <a href="https://www.sololearn.com/Certificate/1089-489871/pdf/" target="_blank"><b></b> C</a> |
-          <a href="https://www.sololearn.com/Certificate/1075-489871/pdf/" target="_blank"><b></b> Swift</a> |
-          <a href="https://www.sololearn.com/Certificate/1081-489871/pdf/" target="_blank"><b></b> Ruby</a>
-          <span class="badge badge-info">Other</span>
-        </li>
-        <li class="duol"><b></b>Duolingo German Fluency: <a href="https://www.duolingo.com/Rafal_Mucha"
-            target="_blank">Intermediate (Estimated)</a></li>
-      </ul>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDart"><b></b>Dart &
+        Flutter</button>
+      <div class="modal fade bd-example-modal-lg" id="certDart" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Dart.jpg" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Progressive Web Apps</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certGraphQL"><b></b>GraphQL</button>
+      <div class="modal fade bd-example-modal-lg" id="certGraphQL" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_GraphQL.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certDeno"><b></b>Deno</button>
+      <div class="modal fade bd-example-modal-lg" id="certDeno" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Deno.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certLaravel"><b></b>Laravel
+        PHP</button>
+      <div class="modal fade bd-example-modal-lg" id="certLaravel" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Laravel.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certNode"><b></b>Node
+        JS</button>
+      <div class="modal fade bd-example-modal-lg" id="certNode" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Node.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certExpress"><b></b>Express
+        JS</button>
+      <div class="modal fade bd-example-modal-lg" id="certExpress" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Express.jpg" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">BackEnd Development</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certRDBMS"><b></b>RDBMS</button>
+      <div class="modal fade bd-example-modal-lg" id="certRDBMS" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_RDBMS.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSQL"><b></b>SQL</button>
+      <div class="modal fade bd-example-modal-lg" id="certSQL" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_SQL.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certMongo"><b></b>MongoDB</button>
+      <div class="modal fade bd-example-modal-lg" id="certMongo" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Mongo.jpg" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Databases</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certFire"><b></b>Firebase</button>
+      <div class="modal fade bd-example-modal-lg" id="certFire" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Firebase.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAWS"><b></b>Amazon
+        Web Services</button>
+      <div class="modal fade bd-example-modal-lg" id="certAWS" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_AWS.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCloud"><b></b>Cloud
+        Computing</button>
+      <div class="modal fade bd-example-modal-lg" id="certCloud" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_CC.jpg" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Cloud</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSelenium"><b></b>Selenium
+        Automated Testing</button>
+      <div class="modal fade bd-example-modal-lg" id="certSelenium" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Selenium.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certTesting"><b></b>Software
+        Testing</button>
+      <div class="modal fade bd-example-modal-lg" id="certTesting" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Testing.jpg" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Tests</span>
+    </li>
+    <li class="prohub">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certKot"><b></b>Kotlin for
+        Android</button>
+      <div class="modal fade bd-example-modal-lg" id="certKot" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_KotlinA.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certTab"><b></b>Tableau</button>
+      <div class="modal fade bd-example-modal-lg" id="certTab" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Tableau.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certGH"><b></b>Git &amp;
+        GitHub</button>
+      <div class="modal fade bd-example-modal-lg" id="certGH" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Git.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certFlask"><b></b>Flask
+        using Python</button>
+      <div class="modal fade bd-example-modal-lg" id="certFlask" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Flask.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert4"><b></b>Python
+        2</button>
+      <div class="modal fade bd-example-modal-lg" id="cert4" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/Mucha_Python 2.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certScala"><b></b>Scala</button>
+      <div class="modal fade bd-example-modal-lg" id="certScala" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Scala.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certElm">
+        <b></b>Elm</button>
+      <div class="modal fade bd-example-modal-lg" id="certElm" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Elm.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certERP"><b></b>ERP
+        Systems</button>
+      <div class="modal fade bd-example-modal-lg" id="certERP" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_ERP.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certIP"><b></b>IPv4 &
+        Networking</button>
+      <div class="modal fade bd-example-modal-lg" id="certIP" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_IPv4.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certMATLAB"><b></b>MATLAB</button>
+      <div class="modal fade bd-example-modal-lg" id="certMATLAB" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_MATLAB.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certDM"><b></b>Digital
+        Marketing</button>
+      <div class="modal fade bd-example-modal-lg" id="certDM" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_DigM.jpeg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certRPA"><b></b>Robotic
+        Process Automation</button>
+      <div class="modal fade bd-example-modal-lg" id="certRPA" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_RPA.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certSEO"><b></b>SEO</button>
+      <div class="modal fade bd-example-modal-lg" id="certSEO" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_SEO.jpg" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certVBN"><b></b>VB.Net</button>
+      <div class="modal fade bd-example-modal-lg" id="certVBN" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_VBNet.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certVB"><b></b>VB
+        6</button>
+      <div class="modal fade bd-example-modal-lg" id="certVB" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_VB 6.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certCN"><b></b>Computer
+        Networks</button>
+      <div class="modal fade bd-example-modal-lg" id="certCN" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_CN.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certITB"><b></b>IT
+        Basics</button>
+      <div class="modal fade bd-example-modal-lg" id="certITB" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/ITB.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+        data-target="#certBC"><b></b>Blockchain</button>
+      <div class="modal fade bd-example-modal-lg" id="certBC" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_Blockchain.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#certAI"><b></b>Artificial
+        Intelligence</button>
+      <div class="modal fade bd-example-modal-lg" id="certAI" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/RM_AI.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert3"><b></b>Java</button>
+      <div class="modal fade bd-example-modal-lg" id="cert3" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/Mucha_Java.jpg" />
+          </div>
+        </div>
+      </div>
+      <span class="badge badge-info">Other</span>
+    </li>
+    <li class="m1m0">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert04"><b></b>Build an
+        iOS App</button>
+      <div class="modal fade bd-example-modal-lg" id="cert04" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/MimoCert5.png" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Swift | Xcode</span>
+    </li>
+    <li class="m1m0">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert03"><b></b>Make an
+        Android App</button>
+      <div class="modal fade bd-example-modal-lg" id="cert03" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" height="100%" width="100%" src="img/MimoCert4.png" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Kotlin | Android Studio</span>
+    </li>
+    <li class="m1m0">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert02"><b></b>Make a
+        game</button>
+      <div class="modal fade bd-example-modal-lg" id="cert02" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/MimoCS.png" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">C# | Unity</span>
+    </li>
+    <li class="m1m0">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert01"><b></b>Become a
+        Hacker</button>
+      <div class="modal fade bd-example-modal-lg" id="cert01" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/MimoCert3.png" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">Cryptography | SQL | White Hat Hacking</span>
+    </li>
+    <li class="m1m0">
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert00"><b></b>Learn to
+        Code</button>
+      <div class="modal fade bd-example-modal-lg" id="cert00" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/MimoCert2.png" />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#cert0"><b></b>Make a
+        website</button>
+      <div class="modal fade bd-example-modal-lg" id="cert0" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"> <button type="button" class="close mapImgClose" title="Close"
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="modImg" width="100%" src="img/MimoCert.jpg" />
+          </div>
+        </div>
+      </div><span class="badge badge-info">HTML | CSS | JS | GitHub</span>
+    </li>
+    <li class="udem"><a
+        href="https://udemy-certificate.s3.amazonaws.com/image/UC-68f8cbc5-2baf-4bb7-8d06-a514d19ab24a.jpg?v=1586628547000"
+        target="_blank"><b></b> Vue.js Fast Crash Course</a> | <a
+        href="https://udemy-certificate.s3.amazonaws.com/image/UC-f949ed50-77e8-4b5a-b6af-ca50018693dc.jpg?v=1584808203000"
+        target="_blank"><b></b> Vue.js Crash Course</a> | <a
+        href="https://udemy-certificate.s3.amazonaws.com/image/UC-d40ad945-51f8-46d2-a185-f6ab24f8515f.jpg?v=1584714659000"
+        target="_blank"><b></b> The Ultimate Vue 2 Crash Course</a> <span class="badge badge-info">Vue.js</span>
+    </li>
+    <li class="udem"><a
+        href="https://udemy-certificate.s3.amazonaws.com/image/UC-38929dc3-ff92-4093-b9c0-64630caabe23.jpg?v=1588366963000"
+        target="_blank"><b></b> Essentials in JavaScript ES6 Course</a></li>
+    <li class="udem"><a
+        href="https://udemy-certificate.s3.amazonaws.com/image/UC-c68a67b2-19d5-4534-a764-96bc36feea44.jpg?v=1585428978000"
+        target="_blank"><b></b> Git Started with GitHub Course</a></li>
+    <li class="udem"><a
+        href="https://udemy-certificate.s3.amazonaws.com/image/UC-acba41b5-a59b-4fef-bae2-e105f1ed5681.jpg?v=1585128111000"
+        target="_blank"><b></b> React Basic Course</a></li>
+    <li class="udem"><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-CP36CDTE.jpg?v=1538746070000"
+        target="_blank"><b></b> Sass: From Beginner to Advanced Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/9e0e43af-e932-435d-9491-618975dbabbc"
+        target="_blank"><b></b> Getting Started with REST &amp; .NET Core Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/b866f842-b4f1-475c-af42-11998a034d8f"
+        target="_blank"><b></b> Databases, Bootstrap, &amp; jQuery in Web Design Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/5618b696-e926-4fb5-bd09-eda732fbf145"
+        target="_blank"><b></b> REST API: Exploring the Basic Features Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/c6ffff42-effd-47d9-bfc9-7d7c7dd7eb62"
+        target="_blank"><b></b> Working with CSS Layouts &amp; the Ionic Framework CLI Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/ca69beeb-6c11-413f-b3e2-306fb634ee65"
+        target="_blank"><b></b> Responsive Web Design Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/15a72034-65d2-485f-b1ca-4c99d0d54c55"
+        target="_blank"><b></b> WordPress Installation &amp; Configuration Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/3ff9900c-ffcc-41e7-ad93-7a4809a1a306"
+        target="_blank"><b></b> SOLID &amp; GRASP - Object-Oriented Programming Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/da69b721-6d85-4d51-b10f-6bbacddaf3a1"
+        target="_blank"><b></b> AJAX Data Requests &amp; Responses Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/9852c437-546d-4213-9aa1-952fe7d21096"
+        target="_blank"><b></b> Accessibility &amp; Design Course</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/7c0b4a02-320e-4cfc-a144-c0aff2351bb1"
+        target="_blank"><b></b> Advanced Visualizations &amp; Dashboards: Visualization Using Python</a></li>
+    <li class="ssoft"><a href="https://skillsoft.digitalbadges.skillsoft.com/d0532007-a775-414f-8727-cad30a57d4ac"
+        target="_blank"><b></b> Azure SQL Database Course</a></li>
+    <li class="solol"><a href="https://www.sololearn.com/Certificate/1162-489871/jpg" target="_blank"><b></b> Responsive
+        Web Design</a> |
+      <a href="./img/RM_JS2.jpg" target="_blank"><b></b> JavaScript w. practices</a> |
+      <a href="https://www.sololearn.com/Certificate/1092-489871/pdf/" target="_blank"><b></b>
+        Angular + NestJS</a> | <a href="https://www.sololearn.com/Certificate/1097-489871/pdf/" target="_blank"><b></b>
+        React + Redux</a> | <a href="https://www.sololearn.com/Certificate/1082-489871/pdf/" target="_blank"><b></b>
+        jQuery</a> | <a href="https://www.sololearn.com/Certificate/1024-489871/pdf/" target="_blank"><b></b>
+        JavaScript</a> | <a href="https://www.sololearn.com/Certificate/1023-489871/pdf/" target="_blank"><b></b>
+        CSS</a> | <a href="https://www.sololearn.com/Certificate/1014-489871/pdf/" target="_blank"><b></b> HTML</a> | <a
+        href="https://www.sololearn.com/Certificate/1059-489871/pdf/" target="_blank"><b></b> PHP</a> <span
+        class="badge badge-info">Web Development</span>
+    </li>
+    <li class="solol">
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1093/landscape/png" target="_blank"><b></b> Data
+        Science w. practices</a> |
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1094/landscape/png" target="_blank"><b></b>
+        Machine Learning w. practices</a> |
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1161/landscape/png" target="_blank"><b></b>
+        Python for Data Science</a> |
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1159/landscape/png" target="_blank"><b></b>
+        Python Data Structures</a> |
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1158/landscape/png" target="_blank"><b></b>
+        Intermediate Python</a> |
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1157/landscape/png" target="_blank"><b></b>
+        Python for Beginners</a> |
+      <a href="./img/RM_P3_practice.jpg" target="_blank"><b></b> Python 3 w. practices</a> |
+      <a href="https://www.sololearn.com/Certificate/1073-489871/pdf/" target="_blank"><b></b> Python 3</a> |
+      <a href="https://www.sololearn.com/Certificate/1093-489871/pdf/" target="_blank"><b></b> Data Science with
+        Python</a> |
+      <a href="https://www.sololearn.com/Certificate/1094-489871/pdf/" target="_blank"><b></b> Machine Learning</a>
+      <span class="badge badge-info">Python</span>
+    </li>
+    <li class="solol">
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1164/landscape/png" target="_blank"><b></b>
+        Go</a> |
+      <a href="./img/RM_Cpp2.png" target="_blank"><b></b> C++ w. practices</a> |
+      <a href="./img/RM_Cs2.png" target="_blank"><b></b> C# w. practices</a> |
+      <a href="https://www.sololearn.com/certificates/course/en/489871/1160/landscape/png" target="_blank"><b></b>
+        Kotlin</a> |
+      <a href="./img/RM_SQL2.jpg" target="_blank"><b></b> SQL w. practices</a> |
+      <a href="./img/RM_Java2.jpg" target="_blank"><b></b> JAVA w. practices</a> |
+      <a href="https://www.sololearn.com/Certificate/1060-489871/pdf/" target="_blank"><b></b> SQL</a> |
+      <a href="https://www.sololearn.com/Certificate/1068-489871/pdf/" target="_blank"><b></b> Java</a> |
+      <a href="https://www.sololearn.com/Certificate/1080-489871/pdf/" target="_blank"><b></b> C#</a> |
+      <a href="https://www.sololearn.com/Certificate/1051-489871/pdf/" target="_blank"><b></b> C++</a> |
+      <a href="https://www.sololearn.com/Certificate/1089-489871/pdf/" target="_blank"><b></b> C</a> |
+      <a href="https://www.sololearn.com/Certificate/1075-489871/pdf/" target="_blank"><b></b> Swift</a> |
+      <a href="https://www.sololearn.com/Certificate/1081-489871/pdf/" target="_blank"><b></b> Ruby</a>
+      <span class="badge badge-info">Other</span>
+    </li>
+    <li class="duol"><b></b>Duolingo German Fluency: <a href="https://www.duolingo.com/Rafal_Mucha"
+        target="_blank">Intermediate (Estimated)</a></li>
+    </ul>
     </div>
   </section>
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
     <div class="my-auto">
       <h2 class="mb-5">Interests</h2>
       <p class="mb-0">
-        <ul class="fa-ul mb-0">
-          <li><i class="fa-li fa fa-heart"></i> Electronics &amp; new technologies: VR, AR, artificial intelligence,
-            machine leraning, smart home...</li>
-          <li><i class="fa-li fa fa-heart"></i> Sports: gym, dancing, mountain walking</li>
-          <li><i class="fa-li fa fa-heart"></i> Music, mostly instrumental &amp; classical</li>
-          <li><i class="fa-li fa fa-heart"></i> Music equipment: headphones &amp; speakers</li>
-          <li><i class="fa-li fa fa-heart"></i> Learning languages,currently <i class="em em-de"></i> German</li>
-          <li><i class="fa-li fa fa-heart"></i> Coding, exploring new languages, FrontEnd frameworks, libraries &amp;
-            APIs</li>
-          <li><i class="fa-li fa fa-heart"></i> Card games: Magic: The Gathering &amp; Poker</li>
-          <li><i class="fa-li fa fa-heart"></i> Personal development literature</li>
-        </ul>
+      <ul class="fa-ul mb-0">
+        <li><i class="fa-li fa fa-heart"></i> Electronics &amp; new technologies: VR, AR, artificial intelligence,
+          machine leraning, smart home...</li>
+        <li><i class="fa-li fa fa-heart"></i> Sports: gym, dancing, mountain walking</li>
+        <li><i class="fa-li fa fa-heart"></i> Music, mostly instrumental &amp; classical</li>
+        <li><i class="fa-li fa fa-heart"></i> Music equipment: headphones &amp; speakers</li>
+        <li><i class="fa-li fa fa-heart"></i> Learning languages,currently <i class="em em-de"></i> German</li>
+        <li><i class="fa-li fa fa-heart"></i> Coding, exploring new languages, FrontEnd frameworks, libraries &amp;
+          APIs</li>
+        <li><i class="fa-li fa fa-heart"></i> Card games: Magic: The Gathering &amp; Poker</li>
+        <li><i class="fa-li fa fa-heart"></i> Personal development literature</li>
+      </ul>
       </p>
     </div>
     </div>
@@ -1996,7 +2253,7 @@ filter: invert(100%);
   <script src="js/resume.min.js"></script>
   <script src="js/DarkMode.js"></script>
   <script>
-    window.onload = function() {
+    window.onload = function () {
       document.getElementById('loading-container').style.display = "none";
     }
   </script>
