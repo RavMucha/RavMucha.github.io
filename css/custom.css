@@ -631,18 +631,25 @@ li b::before {
   position: absolute;
   top: -10px;
   left: -10px;
-  border-radius: 50% 50% 1px 50% !important;
+  border-radius: 50% 50% 1px 50%;
   background-color: #fefefe !important;
-  border-radius: 50%;
   z-index: 100;
   opacity: 0.95;
   padding: 0 5px !important;
 }
 
+@media (max-width: 576px) {
+  .modalClose {
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+  }
+}
+
 .siteLink {
   position: absolute;
-  bottom: -49px;
-  left: calc(50% - 25px);
+  bottom: -40px;
+  left: calc(50% - 20px);
   /* transform: translate(50%); */
   z-index: -1;
   border: none;
@@ -661,20 +668,20 @@ li b::before {
 }
 
 .modalAddon:hover {
-  background-color: #495057!important;
+  background-color: #495057 !important;
 }
 
 .siteLink .guzikhint {
   visibility: hidden;
   position: absolute;
   z-index: 99;
-  top: 6px;
+  top: 7px;
   left: 115%;
   background-color: #495057;
-  width: 140px;
+  width: 100px;
   color: #fefefe;
   text-align: center;
-  padding: 5px 0;
+  padding: 2px 0;
   border-radius: 6px;
 }
 
