@@ -641,7 +641,7 @@ li b::before {
 .mapImgClose {
   position: absolute;
   transform: scale(1.2);
-  top: 1px;
+  top: 2px;
   right: 10px;
   z-index: 100;
 }
