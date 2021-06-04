@@ -690,7 +690,7 @@ li b::before {
   color: #fefefe;
   text-align: center;
   padding: 2px 0;
-  border-radius: 0 6px 6px 6px;
+  border-radius: 1px 12px 12px 12px;
 }
 
 .siteLink:hover .guzikhint {
