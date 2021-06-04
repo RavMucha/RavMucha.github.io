@@ -55,6 +55,7 @@ $(function () {
     $(".img-profile").addClass("Sith").removeClass("Jedi");
     $("#guzikBug").css("background-color", "#ba8b00");
     $("#guzikChat").css("background-color", "#fd7e14");
+    $(".modalAddon").addClass("invertedBtn");
     $(".modImg").addClass("modImgSith");
     $("#loading-wrapper").addClass("inverted");
     $(".secHeading").addClass("subDark");
@@ -91,6 +92,7 @@ $(function () {
     $(".img-profile").removeClass("Sith").addClass("Jedi");
     $("#guzikBug").css("background-color", "#ffc107");
     $("#guzikChat").css("background-color", "#20c997");
+    $(".modalAddon").removeClass("invertedBtn");
     $(".modImg").removeClass("modImgSith");
     $("#loading-wrapper").removeClass("inverted");
     $(".secHeading").removeClass("subDark");
