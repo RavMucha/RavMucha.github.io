@@ -57,6 +57,10 @@ footer {
   border-radius: 15px;
 }
 
+.edu.darkness2 li {
+  filter: drop-shadow(0 0 1px #b6000f);
+}
+
 .cert-section {
   line-height: 200%;
 }
