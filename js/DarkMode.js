@@ -1,7 +1,7 @@
 if (navigator.userAgent.indexOf("Chrome") != -1) {
 } else {
   alert(
-    "Please use Google Chrome, optionally MS Edge for best experience.\n\nInternet Explorer and Firefox tend to lose some styling elements at render.\nOpera and Safari were not tested as of yet."
+    "Please use Google Chrome or Microsoft Edge for best experience.\n\nFirefox and Internet Explorer can lose some styling elements; Safari was not tested."
   );
 }
 
