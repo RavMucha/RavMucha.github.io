@@ -5,6 +5,10 @@ if (navigator.userAgent.indexOf("Chrome") != -1) {
   );
 }
 
+function addSrc(id) {
+  document.getElementById(id).src= "https://" + id;
+}
+
 window.onload = function() {
   document.getElementById('loading-container').style.display = "none";
 }
