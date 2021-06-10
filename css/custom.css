@@ -141,6 +141,10 @@ iframe.site {
   transition-delay: 50ms;
 }
 
+.list-inline-item .colored {
+  display: inline-block;
+}
+
 .list-inline-item:hover .link,
 .flip:hover {
   transform: scale(0.8) rotateY(360deg);
@@ -639,7 +643,7 @@ li b::before {
 
 .siteLink:hover img {
   -webkit-filter: invert(99%);
-          filter: invert(99%);
+  filter: invert(99%);
 }
 
 .invertedBtn {
