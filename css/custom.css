@@ -399,7 +399,7 @@ iframe.site {
   font-weight: 600;
 }
 
-li a:hover {
+.list-inline-item a:hover {
   text-decoration: none;
 }
 
