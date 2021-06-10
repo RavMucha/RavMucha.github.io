@@ -635,10 +635,11 @@ li b::before {
 .siteLink:hover {
   background-color: #495057;
   opacity: 0.99;
-  transform: scale(1.01) translateX(-1px);
-  transition-property: transform;
-  transition-duration: 200ms;
-  transition-delay: 5ms;
+}
+
+.siteLink:hover img {
+  -webkit-filter: invert(99%);
+          filter: invert(99%);
 }
 
 .invertedBtn {
