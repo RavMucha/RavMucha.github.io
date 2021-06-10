@@ -61,6 +61,10 @@ footer {
   filter: drop-shadow(0 0 1px #b6000f);
 }
 
+.darkness .apps {
+  filter: invert(1) hue-rotate(170deg);
+}
+
 .cert-section {
   line-height: 200%;
 }
