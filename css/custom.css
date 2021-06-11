@@ -55,6 +55,11 @@ footer {
   filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
 }
 
+.browserModal {
+  border: 2px solid #f1b706;
+  border-radius: 7px;
+}
+
 .site {
   width: 100%;
   height: 80vh;
