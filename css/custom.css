@@ -55,6 +55,12 @@ footer {
   filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
 }
 
+.interests > li {
+  vertical-align: top;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
 .browserModal {
   border: 2px solid #f1b706;
   border-radius: 7px;
