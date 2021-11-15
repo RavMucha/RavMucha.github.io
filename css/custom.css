@@ -432,7 +432,7 @@ i {
   color: #ddd;
   background-color: #57141a;
   border: 1px solid #343a40;
-  border-radius: 0;
+  border-radius: 3px;
   box-shadow: inset -2px -2px 10px #24090b, inset 2px 2px 10px #24090b;
 }
 
@@ -849,12 +849,22 @@ li b::before {
   animation: Fejder 1s;
 }
 
+.subtitle span {
+  color: #868e96;
+  font-size: 1.1em;
+  text-shadow: 0 0 0.5px #343a40;
+}
+
 .inset {
   border: none;
-  border-radius: 0;
-  background-color: #fcfcfc;
-  box-shadow: inset -2px -2px 5px rgb(165, 165, 165),
-    inset 2px 2px 5px rgb(165, 165, 165);
+  background-color: #fafafa;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.inset:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.22), 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes clicker {
