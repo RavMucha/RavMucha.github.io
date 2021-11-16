@@ -418,16 +418,6 @@ iframe.site {
   text-decoration: none;
 }
 
-/* li {
-position: relative;
-}
-
-i {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
 .sabre {
   color: #ddd;
   background-color: #57141a;
@@ -594,11 +584,18 @@ li b::before {
   z-index: 100;
 }
 
+.bio {
+  width: 75%;
+}
+
 @media (max-width: 576px) {
   .modalClose {
     top: -5px;
     left: -5px;
     border-radius: 50%;
+  }
+  .bio {
+    width: 90%;
   }
 }
 
@@ -680,7 +677,7 @@ li b::before {
 }
 
 .text-form-dark {
-  color: rgb(253, 126, 20);
+  color: #fd7e14;
 }
 
 #guzik .guzikhint {
@@ -850,9 +847,48 @@ li b::before {
 }
 
 .subtitle span {
-  color: #868e96;
-  font-size: 1.1em;
-  text-shadow: 0 0 0.5px #343a40;
+  color: #ffc107;
+  text-shadow: 0 0 0 #111;
+  font-size: 0.95em;
+}
+
+.subtitle.darkness2 span {
+  color: #fafafa;
+}
+
+.pointer-arrows {
+  color: #ffc107;
+  text-shadow: 0 0 0 #111;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    color: #fd7e14;
+    text-shadow: 0 0 2px #ffc107;
+  }
+  to {
+    color: #ffc107;
+    text-shadow: 0 0 0 #111;
+  }
+}
+
+@keyframes pulse {
+  from {
+    color: #fd7e14;
+    text-shadow: 0 0 2px #ffc107;
+  }
+  to {
+    color: #ffc107;
+    text-shadow: 0 0 0 #111;
+  }
 }
 
 .inset {
