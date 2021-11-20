@@ -96,7 +96,7 @@ footer {
 
 .cert-section {
   line-height: 200%;
-  margin-left: 0.5rem;
+  margin-left: 1px;
 }
 
 iframe.site {
@@ -203,10 +203,9 @@ iframe.site {
   -webkit-backdrop-filter: invert(2%);
   backdrop-filter: invert(2%);
   letter-spacing: 1px;
-  /* text-align: center; */
   border-bottom: none;
   box-shadow: inset 0 1.5px 3px hsla(0, 0%, 50%, 0.5);
-  padding: 2rem 4rem 2rem 2rem !important;
+  padding: 2rem 4rem 2rem 3rem !important;
 }
 
 .darkness #footer {
@@ -616,6 +615,12 @@ li b::before {
   }
   .bio {
     width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  #footer {
+    padding-left: 2rem !important;
   }
 }
 
