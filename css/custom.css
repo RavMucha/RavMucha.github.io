@@ -4,6 +4,10 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -53,6 +57,14 @@ footer {
 .godForm {
   -webkit-filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
   filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
+}
+
+.apps {
+  margin-left: 0 !important;
+}
+
+#pokaSkillsy {
+  padding: 0.7rem;
 }
 
 .interests > li {
