@@ -187,8 +187,8 @@ iframe.site {
 }
 
 #footer {
-  -webkit-backdrop-filter: invert(4%);
-  backdrop-filter: invert(4%);
+  -webkit-backdrop-filter: invert(2%);
+  backdrop-filter: invert(2%);
   letter-spacing: 1px;
   /* text-align: center; */
   border-bottom: none;
