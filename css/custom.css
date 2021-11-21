@@ -199,6 +199,19 @@ iframe.site {
   color: #335 !important;
 }
 
+#alert-container {
+  margin-left: 2px;
+}
+
+#infoAlert {
+  margin-top: 3.5rem;
+  max-width: 650px;
+}
+
+#infoAlert .alert-dismissible {
+  padding-right: 3.5rem;
+}
+
 #footer {
   -webkit-backdrop-filter: invert(2%);
   backdrop-filter: invert(1%);
