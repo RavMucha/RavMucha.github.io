@@ -434,11 +434,52 @@ iframe.site {
       drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
   }
 }
+#interests {
+  position: relative;
+}
+.watermark {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 10rem;
+  color: white;
+  z-index: -1;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  opacity: 0.2;
+  text-shadow: 6px -2px 20px #969696;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.darkness .watermark {
+  color: #000;
+  text-shadow: 1px -1px 3px #000;
+}
 
 .langList {
-  list-style-type: square;
+  list-style-type: disc;
   margin: 10px 0 10px 0;
   padding-left: 20px;
+}
+
+.additional-info {
+  margin-left: 20px;
+}
+
+.additional-list li {
+  margin: 5px;
+}
+
+.additional-badge {
+  margin-bottom: 10px;
+}
+
+.additional-list li::marker,
+.langList li::marker {
+  color: rgba(134, 142, 150, 0.45);
 }
 
 .langList li {
