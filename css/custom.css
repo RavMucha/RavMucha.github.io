@@ -437,12 +437,13 @@ iframe.site {
 
 .langList {
   list-style-type: square;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
+  padding-left: 20px;
 }
 
 .langList li {
   margin: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 600;
 }
 
