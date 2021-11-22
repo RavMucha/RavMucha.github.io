@@ -16,6 +16,10 @@ function addSrc(id) {
   document.getElementById(id).src = "https://" + id;
 }
 
+function addSrcImg(id) {
+  document.getElementById(id).src = id;
+}
+
 window.onload = function () {
   document.getElementById("loading-container").style.display = "none";
 };
