@@ -507,7 +507,7 @@ iframe.site {
 
 .darkness .modImgUI {
   -webkit-filter: contrast(90%) saturate(90%) brightness(0.95);
-          filter: contrast(90%) saturate(90%) brightness(0.95);
+  filter: contrast(90%) saturate(90%) brightness(0.95);
 }
 
 .modImgSith {
