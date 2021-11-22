@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .modal::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.5rem;
 }
 
 .modal::-webkit-scrollbar-track {
