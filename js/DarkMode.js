@@ -1,4 +1,8 @@
-if (navigator.userAgent.indexOf("Chrome") != -1) {
+if (
+  navigator.userAgent.indexOf("Chrome") != -1 ||
+  navigator.userAgent.indexOf("Edg") != -1 ||
+  navigator.userAgent.indexOf("Firefox") != -1
+) {
   console.log(
     "%c Good browser!",
     "font-weight: bold; font-family:monospace; font-size: 30px; color: gold; text-shadow: 1px 1px 0 rgb(226,91,14), 2px 2px 0 red, 3px 3px 0 rgb(5,148,68), 4px 4px 0 rgb(42,21,113)"
