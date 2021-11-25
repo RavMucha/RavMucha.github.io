@@ -12,6 +12,11 @@ if (
   $("#browserSupport").modal("show");
 }
 
+if (sessionStorage.getItem("dismiss") === "true") {
+  document.getElementById("infoAlert").style.display = "none";
+  $('#infoAlert').alert('close');
+}
+
 function addSrc(id) {
   document.getElementById(id).src = "https://" + id;
 }
