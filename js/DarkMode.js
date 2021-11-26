@@ -12,9 +12,10 @@ if (
   $("#browserSupport").modal("show");
 }
 
+// Closing the alert until session end
 if (sessionStorage.getItem("dismiss") === "true") {
   document.getElementById("infoAlert").style.display = "none";
-  $('#infoAlert').alert('close');
+  $("#infoAlert").alert("close");
 }
 
 function addSrc(id) {
@@ -33,6 +34,7 @@ function playSaber(url) {
   var sound = new Audio(url);
   sound.play();
   sound.volume = 0.3;
+  localStorage.setItem("dark", "true");
 }
 // Photo change on scroll
 $(function () {
@@ -48,8 +50,11 @@ $(function () {
       face1.removeClass("godForm");
     }
   });
+
   // Dark mode
-  $("#darkMode").on("click", function () {
+  $("#darkMode").on("click", dark);
+
+  function dark() {
     $("html").addClass("hack-bar");
     $("#sideNav").removeClass("bg-primary").addClass("bg-dark");
     $("#darkMode").hide();
@@ -84,9 +89,11 @@ $(function () {
       .addClass("btn-outline-danger");
     $(".chatHead, .chatHolder").css("background-color", "#343a40");
     $(".chatInput").css("background-color", "#111");
-  });
+  }
   // Light mode
-  $("#lightMode").on("click", function () {
+  $("#lightMode").on("click", light);
+
+  function light() {
     $("html").removeClass("hack-bar");
     $("#sideNav").removeClass("bg-dark").addClass("bg-primary");
     $("#lightMode").hide();
@@ -120,5 +127,11 @@ $(function () {
       .removeClass("btn-outline-danger")
       .addClass("btn-outline-info");
     $(".chatHead, .chatHolder, .chatInput").css("background-color", "#fff");
-  });
+    localStorage.clear();
+  }
+
+  // Setting DarkMode via localStorage
+  if (localStorage.getItem("dark") === "true") {
+    dark();
+  }
 });
