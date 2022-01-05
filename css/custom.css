@@ -124,12 +124,12 @@ footer {
 }
 
 .clearBtn {
-  margin-right: 5px;
+  margin-right: 26px;
 }
 
 .darkness .clearBtn {
-          -webkit-filter: saturate(0.5) brightness(1.1);
-                  filter: saturate(0.5) brightness(1.1);
+  -webkit-filter: saturate(0.5) brightness(1.1);
+  filter: saturate(0.5) brightness(1.1);
 }
 
 .cert-section {
