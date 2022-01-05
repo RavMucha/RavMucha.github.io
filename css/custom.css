@@ -119,6 +119,19 @@ footer {
   filter: invert(1) hue-rotate(170deg);
 }
 
+.darkness .form-control {
+  color: #eee;
+}
+
+.clearBtn {
+  margin-right: 5px;
+}
+
+.darkness .clearBtn {
+          -webkit-filter: saturate(0.5) brightness(1.1);
+                  filter: saturate(0.5) brightness(1.1);
+}
+
 .cert-section {
   line-height: 200%;
   margin-left: 2px;
