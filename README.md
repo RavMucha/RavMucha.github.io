@@ -1,1 +1,1 @@
-# MyCV
+# My CV / portfolio project.
