@@ -501,6 +501,13 @@ iframe.site {
   padding-left: 20px;
 }
 
+.de-icon {
+  height: 0.75em;
+  width: 0.75em;
+  vertical-align: initial;
+  margin-left: 3px;
+}
+
 .RODO {
   line-height: 1.7;
 }
