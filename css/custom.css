@@ -652,7 +652,25 @@ li b::before {
   list-style-image: url("../img/flag-GR.png");
 }
 
-.blueChange:hover,
+.sabre #recruiter-link {
+  -webkit-filter: hue-rotate(175deg) saturate(1.5) contrast(300%)
+    brightness(95%);
+  filter: hue-rotate(175deg) saturate(1.5) contrast(300%) brightness(95%);
+}
+
+#recruiter-link {
+  font-weight: 600;
+  text-shadow: 0 0.5px 0.5px #194757;
+}
+
+.blueChangeGSAP:hover,
+.blueChangeGSAP:focus {
+  -webkit-filter: sepia(100%) brightness(50%) hue-rotate(170deg) saturate(300%)
+    contrast(1500%);
+  filter: sepia(100%) brightness(50%) hue-rotate(170deg) saturate(300%)
+    contrast(1500%);
+}
+.redC .blueChange:hover,
 .blueChange:focus {
   -webkit-filter: invert(12%) sepia(77%) saturate(4957%) hue-rotate(251deg)
     brightness(55%) contrast(120%);
