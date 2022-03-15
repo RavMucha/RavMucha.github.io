@@ -76,7 +76,7 @@ $(function () {
     $("h4 .text-info").addClass("text-danger").removeClass("text-info");
     $("h4 .text-form").addClass("text-form-dark").removeClass("text-form");
     $(".blueChange").addClass("redChange").removeClass("blueChange");
-    $(".blueChangeGSAP").addClass("redChange").removeClass("blueChangeGSAP");
+    $("#GSAP").addClass("redChange").removeClass("blueChangeGSAP");
     $("i.devicons, i.newIcon, .fa-stack.fa-lg").addClass("hovCol");
     $(".img-profile").addClass("Sith").removeClass("Jedi");
     $("#guzikBug").css("background-color", "#ba8b00");
@@ -116,7 +116,10 @@ $(function () {
     $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
     $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
     $(".redChange").addClass("blueChange").removeClass("redChange");
-    $("#GSAP").addClass("blueChangeGSAP").removeClass("redChange");
+    $("#GSAP")
+      .addClass("blueChangeGSAP")
+      .removeClass("redChange")
+      .removeClass("blueChange");
     $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
     $(".img-profile").removeClass("Sith").addClass("Jedi");
     $("#guzikBug").css("background-color", "#ffc107");
