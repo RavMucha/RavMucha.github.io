@@ -110,16 +110,13 @@ $(function () {
     $(".text-danger").addClass("text-primary").removeClass("text-danger");
     $(".flipLink").removeClass("hovCol");
     $("#Raf").css("color", "#343a40");
+    $("#GSAP").addClass("blueChangeGSAP").removeClass("redChange");
     $(".fa-ul a, .subheading a").css("color", "#389bbd");
     $(".bg-danger").addClass("bg-info").removeClass("bg-danger");
     $("#guzik").css("background-color", "#389bbd");
     $("h4 .text-muted").addClass("text-info").removeClass("text-muted");
     $("h4 .text-form-dark").addClass("text-form").removeClass("text-form-dark");
     $(".redChange").addClass("blueChange").removeClass("redChange");
-    $("#GSAP")
-      .addClass("blueChangeGSAP")
-      .removeClass("redChange")
-      .removeClass("blueChange");
     $("i.devicons, i.newIcon, .fa-stack.fa-lg").removeClass("hovCol");
     $(".img-profile").removeClass("Sith").addClass("Jedi");
     $("#guzikBug").css("background-color", "#ffc107");
