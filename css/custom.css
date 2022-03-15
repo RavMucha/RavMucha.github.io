@@ -670,7 +670,7 @@ li b::before {
   filter: sepia(100%) brightness(50%) hue-rotate(170deg) saturate(300%)
     contrast(1500%);
 }
-.redC .blueChange:hover,
+.blueChange:hover,
 .blueChange:focus {
   -webkit-filter: invert(12%) sepia(77%) saturate(4957%) hue-rotate(251deg)
     brightness(55%) contrast(120%);
