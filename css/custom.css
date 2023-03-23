@@ -1,5 +1,5 @@
 @media only screen {
-  @-ms-viewport {
+  @viewport {
     width: device-width;
   }
 }
@@ -117,9 +117,9 @@ div li u {
   border-radius: 10px;
 }
 
-.edu.darkness2 li {
-  -webkit-filter: drop-shadow(0 0 1px #b6000f);
-  filter: drop-shadow(0 0 1px #b6000f);
+.edu.darkness2 img {
+  -webkit-filter: drop-shadow(0.5px 0.5px 0 #b6000f);
+  filter: drop-shadow(0.5px 0.5px 0 #b6000f);
 }
 
 .darkness .apps {
