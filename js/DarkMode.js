@@ -28,6 +28,14 @@ function addSrcImg(id) {
 
 window.onload = function () {
   document.getElementById("loading-container").style.display = "none";
+  if ($(this).scrollTop() > 9000) {
+    let f2 = $(".img-profile");
+    f2.attr("src", "img/FACE2.png");
+  }
+  if ($(this).scrollTop() < 9000) {
+    let f1 = $(".img-profile");
+    f1.attr("src", "img/profile.png");
+  }
 };
 
 function playSaber(url) {
@@ -42,12 +50,10 @@ $(function () {
     if ($(this).scrollTop() > 9000) {
       var face2 = $(".img-profile");
       face2.attr("src", "img/FACE2.png");
-      face2.addClass("godForm");
     }
     if ($(this).scrollTop() < 9000) {
       var face1 = $(".img-profile");
       face1.attr("src", "img/profile.png");
-      face1.removeClass("godForm");
     }
   });
 

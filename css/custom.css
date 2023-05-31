@@ -74,11 +74,6 @@ footer {
   user-select: none;
 }
 
-.godForm {
-  -webkit-filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
-  filter: drop-shadow(0 0 1px #b5bec7) brightness(1.1);
-}
-
 .apps {
   margin-left: 0 !important;
 }
