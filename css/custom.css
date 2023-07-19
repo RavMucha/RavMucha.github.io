@@ -8,6 +8,10 @@ html {
   overflow-x: hidden;
 }
 
+html:has(body.modal-open) {
+  overflow-y: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 0.8rem;
 }
