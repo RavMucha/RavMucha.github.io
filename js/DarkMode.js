@@ -7,9 +7,6 @@ if (
     "%c Good browser!",
     "font-weight: bold; font-family:monospace; font-size: 30px; color: gold; text-shadow: 1px 1px 0 rgb(226,91,14), 2px 2px 0 red, 3px 3px 0 rgb(5,148,68), 4px 4px 0 rgb(42,21,113)"
   );
-} else {
-  //alert("Please use Google Chrome or Microsoft Edge for best experience.\n\nFirefox and Internet Explorer can lose some styling elements.\nSafari should be OK, thou not tested.");
-  $("#browserSupport").modal("show");
 }
 
 // Closing the alert until session end
@@ -29,12 +26,10 @@ function addSrcImg(id) {
 window.onload = function () {
   document.getElementById("loading-container").style.display = "none";
   if ($(this).scrollTop() > 9000) {
-    let f2 = $(".img-profile");
-    f2.attr("src", "img/FACE2.png");
+    $(".img-profile").attr("src", "img/FACE2.png");
   }
   if ($(this).scrollTop() < 9000) {
-    let f1 = $(".img-profile");
-    f1.attr("src", "img/profile.png");
+    $(".img-profile").attr("src", "img/profile.png");
   }
 };
 
@@ -48,12 +43,10 @@ function playSaber(url) {
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 9000) {
-      var face2 = $(".img-profile");
-      face2.attr("src", "img/FACE2.png");
+      $(".img-profile").attr("src", "img/FACE2.png");
     }
     if ($(this).scrollTop() < 9000) {
-      var face1 = $(".img-profile");
-      face1.attr("src", "img/profile.png");
+      $(".img-profile").attr("src", "img/profile.png");
     }
   });
 
