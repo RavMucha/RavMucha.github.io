@@ -1244,6 +1244,15 @@ a:active {
       hsl(195, 54%, 48%) 100%
     );
   }
+
+  #sideNav.bg-dark {
+    background-color: #343a40 !important;
+    background: linear-gradient(
+      45deg,
+      hsl(210deg 10.34% 15%) 10%,
+      #343a40 100%
+    );
+  }
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
