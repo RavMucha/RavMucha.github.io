@@ -1237,6 +1237,12 @@ a:active {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    background-color: #389bbd !important;
+    background: linear-gradient(
+      45deg,
+      hsl(195, 100%, 20%) 10%,
+      hsl(195, 54%, 48%) 100%
+    );
   }
   #sideNav .navbar-brand {
     display: flex;
