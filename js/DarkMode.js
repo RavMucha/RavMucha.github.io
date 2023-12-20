@@ -51,10 +51,9 @@ $(function () {
   });
 
   // Dark mode
-  $("#darkMode").on("click", dark);
-
+  document.getElementById("darkMode").addEventListener("click", dark);
   function dark() {
-    $("html").addClass("hack-bar");
+    $("html").addClass("dark_mode_on");
     $("#sideNav").removeClass("bg-primary").addClass("bg-dark");
     $("#darkMode").hide();
     $("#lightMode").show();
@@ -94,7 +93,7 @@ $(function () {
   $("#lightMode").on("click", light);
 
   function light() {
-    $("html").removeClass("hack-bar");
+    $("html").removeClass("dark_mode_on");
     $("#sideNav").removeClass("bg-dark").addClass("bg-primary");
     $("#lightMode").hide();
     $("#darkMode").show();

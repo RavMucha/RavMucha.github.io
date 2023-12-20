@@ -36,15 +36,15 @@ body::-webkit-scrollbar-thumb:hover {
   background: rgba(52, 58, 64, 0.8);
   box-shadow: inset 0 0 7px rgb(20, 20, 20);
 }
-.hack-bar::-webkit-scrollbar-track {
+.dark_mode_on::-webkit-scrollbar-track {
   background: #343a40 !important;
   box-shadow: none;
 }
-.hack-bar::-webkit-scrollbar-thumb {
+.dark_mode_on::-webkit-scrollbar-thumb {
   background: rgb(255, 0, 0, 0.7);
   box-shadow: inset 0 0 5px #90000c;
 }
-.hack-bar::-webkit-scrollbar-thumb:hover {
+.dark_mode_on::-webkit-scrollbar-thumb:hover {
   background: rgba(163, 0, 14, 0.7);
   box-shadow: inset 0 0 5px #520007;
 }
