@@ -81,8 +81,14 @@ div u.via {
   margin-right: 26px;
 }
 .cert-section {
-  line-height: 200%;
+  line-height: 230%;
   margin-left: 2px;
+}
+.cert-section .btn-light {
+  outline: 0.5px solid #ddd;
+}
+.cert-section .bg-secondary {
+  margin-left: 4px;
 }
 iframe.site {
   border-radius: 13px;
