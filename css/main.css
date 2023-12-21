@@ -1301,17 +1301,18 @@ a:active {
   background-color: #111;
   text-shadow: 0 0 1px red;
 }
-.dark_mode .list-group-item,
-.dark_mode .list-group-flush {
+.dark_mode .list-group-flush * {
   color: #ddd !important;
-  background-color: #111;
+  background-color: #111 !important;
   border: 1px solid rgba(250, 250, 250, 0.125);
   border-width: 0 0 1px 0;
 }
 .dark_mode .list-group-flush {
   border-bottom-width: 0 !important;
 }
-
+.dark_mode #skillsAccordion .list-group-item.list-group-item {
+  color: #000000 !important;
+}
 .dark_mode #infoAlert {
   color: #ddd !important;
   background-color: #57141a;
