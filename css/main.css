@@ -1298,7 +1298,6 @@ a:active {
 .dark_mode h2 .text-primary,
 .dark_mode h3 .text-primary {
   color: #c13d3d !important;
-  background-color: #111;
   text-shadow: 0 0 1px red;
 }
 .dark_mode .list-group-flush * {
