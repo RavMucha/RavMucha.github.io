@@ -506,7 +506,7 @@ li b::before {
   padding: 10px;
   border-radius: 50%;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .modalClose {
   position: absolute;
@@ -515,8 +515,21 @@ li b::before {
   border-radius: 50% 50% 1px 50%;
   background-color: #fefefe !important;
   z-index: 100;
+  width: 18px;
+  height: 18px;
+  padding: 4px;
   opacity: 0.95;
-  padding: 0 5px !important;
+  background-size: 14px;
+}
+.redGlowBtn {
+  animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;
+  width: 25px;
+  height: 25px;
+}
+div img.flav_icon {
+  height: 18px;
+  margin-bottom: 4px;
+  margin-right: 3px;
 }
 .mapImgClose {
   position: absolute;
@@ -589,10 +602,10 @@ li b::before {
   transition-delay: 5ms;
 }
 .text-form {
-  color: #14c08c;
+  color: #1a8a9d;
 }
-.text-form-dark {
-  color: #fd7e14;
+h4 span.text-info {
+  color: #1a9d29 !important;
 }
 #actionBtn .actionBtnhint {
   visibility: hidden;
@@ -625,7 +638,7 @@ li b::before {
   padding: 10px;
   border-radius: 50%;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #actionBtnBug .actionBtnhint {
   visibility: hidden;
@@ -658,7 +671,7 @@ li b::before {
   padding: 10px;
   border-radius: 50%;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #actionBtnChat .actionBtnhint {
   visibility: hidden;
@@ -692,7 +705,7 @@ li b::before {
   padding: 10px;
   border-radius: 50%;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.8;
   animation: clicker 0.1s reverse;
 }
 #lightMode .actionBtnhint {
@@ -727,7 +740,7 @@ li b::before {
   padding: 10px;
   border-radius: 50%;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.8;
   animation: clicker 0.1s reverse;
 }
 #darkMode .actionBtnhint {
@@ -839,6 +852,9 @@ li b::before {
   transition-property: transform;
   transition-duration: 100ms;
   transition-delay: 5ms;
+  opacity: 0.8;
+  font-variant: small-caps;
+  font-weight: 500;
 }
 .up-button:active {
   transform: scale(0.8) translateY(1px);
@@ -881,7 +897,7 @@ img.small-icon-std {
   z-index: 1234;
   border-left: 280px solid transparent;
   border-right: 0px solid transparent;
-  border-top: 280px solid #868e9675;
+  border-top: 280px solid #696f7475;
   pointer-events: none;
 }
 
@@ -989,7 +1005,11 @@ img.small-icon-std {
 body {
   font-family: "Open Sans", serif;
   padding-top: 54px;
-  color: #868e96;
+  color: #696f74 !important;
+}
+.list-group-item,
+.list-group-flush {
+  color: #696f74 !important;
 }
 h1,
 h2,
@@ -1156,7 +1176,6 @@ a:active {
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
-    padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
