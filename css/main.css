@@ -358,8 +358,12 @@ iframe.site {
       drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
   }
 }
-#interests {
+#interests,
+.relativ {
   position: relative;
+}
+.modImgUI {
+  border-radius: 10px;
 }
 .watermark {
   position: absolute;
@@ -464,6 +468,9 @@ li b::before {
 #recruiter-link {
   font-weight: 600;
   text-shadow: 0.5px 0.5px 0 #545b62;
+}
+#GSAP {
+  margin-bottom: 13px;
 }
 .changeGSAP:hover,
 .changeGSAP:focus {
@@ -1145,7 +1152,7 @@ a:active {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
+    min-width: 10rem;
   }
 }
 @media (min-width: 992px) {
@@ -1200,7 +1207,9 @@ a:active {
     display: block;
   }
 }
-
+.font-9 {
+  font-size: 0.9em;
+}
 .resume-item.d-flex {
   justify-content: space-between;
 }
@@ -1248,7 +1257,7 @@ a:active {
   filter: contrast(90%) saturate(90%) brightness(0.95);
 }
 .dark_mode #HeaderName {
-  color: #ddd;
+  color: #ddd !important;
 }
 .dark_mode .fa-ul a,
 .dark_mode .subheading a {
@@ -1275,7 +1284,7 @@ a:active {
 }
 
 .dark_mode {
-  color: #ddd;
+  color: #ddd !important;
   background-color: #111;
 }
 .dark_mode h1,
@@ -1294,7 +1303,7 @@ a:active {
 }
 .dark_mode .list-group-item,
 .dark_mode .list-group-flush {
-  color: #ddd;
+  color: #ddd !important;
   background-color: #111;
   border: 1px solid rgba(250, 250, 250, 0.125);
   border-width: 0 0 1px 0;
@@ -1304,7 +1313,7 @@ a:active {
 }
 
 .dark_mode #infoAlert {
-  color: #ddd;
+  color: #ddd !important;
   background-color: #57141a;
   border: 1px solid #343a40;
   border-radius: 3px;
@@ -1394,7 +1403,7 @@ a:active {
 }
 
 .dark_mode .secHeading {
-  color: #ddd;
+  color: #ddd !important;
   border-right: 3px solid #c13d3d;
   border-left: 3px solid #c13d3d;
   text-shadow: 0 0 1px #c13d3d;
