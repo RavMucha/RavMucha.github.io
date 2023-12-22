@@ -56,9 +56,6 @@ div u.via {
   font-size: 0.8em;
   opacity: 0.9;
 }
-#skillsAccordion {
-  margin: 0.4rem 0;
-}
 .interests > li {
   padding-left: 5px;
   margin-bottom: 10px;
@@ -78,7 +75,7 @@ div u.via {
   border-radius: 10px;
 }
 div.card {
-  width: clamp(15rem, calc(50% - 2rem), 35rem) !important;
+  width: clamp(14rem, calc(50% - 2rem), 20rem) !important;
   margin-bottom: 0;
   transform: translateY(0) scale(1);
   transition-property: transform;
@@ -101,9 +98,6 @@ div.card:hover {
   transition-property: transform;
   transition-duration: 300ms;
   transition-delay: 1ms;
-}
-.clearBtn {
-  margin-right: 26px;
 }
 .cert-section {
   line-height: 230%;
@@ -1258,7 +1252,7 @@ a:active {
 .dark_mode .form-control {
   color: #eee;
 }
-.dark_mode .clearBtn {
+.dark_mode .clear-btn {
   -webkit-filter: saturate(0.5) brightness(1.1);
   filter: saturate(0.5) brightness(1.1);
 }
@@ -1279,9 +1273,6 @@ a:active {
 .dark_mode .fa-ul a,
 .dark_mode .subheading a {
   color: #c20404;
-}
-.dark_mode #skillsAccordion {
-  background-color: #222;
 }
 .dark_mode #actionBtn {
   background-color: #c20404;
@@ -1325,9 +1316,6 @@ a:active {
 }
 .dark_mode .list-group-flush {
   border-bottom-width: 0 !important;
-}
-.dark_mode #skillsAccordion .list-group-item.list-group-item {
-  color: #000000 !important;
 }
 .dark_mode #infoAlert {
   color: #ddd !important;
