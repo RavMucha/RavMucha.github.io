@@ -160,6 +160,18 @@ iframe.site {
   transition-property: transform;
   transition-duration: 500ms;
 }
+div.icon_container {
+  display: flex;
+  gap: 0.5rem;
+}
+div.icon_container img {
+  width: 16px;
+  height: 16px;
+  filter: grayscale(1);
+}
+div.card-body .icon_container.icon_container i:hover {
+  color: currentColor !important;
+}
 #GH:not(:hover) {
   color: #335 !important;
 }
