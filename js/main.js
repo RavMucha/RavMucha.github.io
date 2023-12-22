@@ -57,10 +57,11 @@ window.onload = function () {
   }
 };
 // Play sound on mode change
-function playSaber(url) {
-  var sound = new Audio(url);
+
+function playSound(url) {
+  let sound = new Audio(url);
   sound.play();
-  sound.volume = 0.3;
+  sound.volume = 0.2;
 }
 // Photo change on scroll
 window.addEventListener("scroll", () => {
@@ -78,10 +79,12 @@ document.getElementById("darkMode").addEventListener("click", darkModeSwitch);
 document.getElementById("lightMode").addEventListener("click", lightModeSwitch);
 function darkModeSwitch() {
   localStorage.setItem("darkMode", "true");
+  playSound("../media/saberOn.mp3");
   document.querySelector("body").classList.add("dark_mode");
 }
 function lightModeSwitch() {
   localStorage.clear();
+  playSound("../media/saberOff.mp3");
   document.querySelector("body").classList.remove("dark_mode");
 }
 // Setting DarkMode via localStorage
