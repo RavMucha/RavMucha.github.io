@@ -84,6 +84,7 @@ div.card {
   transition-property: transform;
   transition-duration: 200ms;
   transition-delay: 1ms;
+  background-color: #fefefe;
 }
 div.card .btn {
   font-family: "Saira Extra Condensed", serif;
