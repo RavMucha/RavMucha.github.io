@@ -121,6 +121,9 @@ iframe.site {
 .flipLink:visited {
   color: var(--gray-dark);
 }
+.flipLink a {
+  display: inline-block;
+}
 .secHeading {
   color: #6c757d;
   border-right: 3px solid #6c757d;
@@ -144,15 +147,21 @@ iframe.site {
 }
 .flip {
   transition-property: transform;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
 }
 .list-inline-item .colored {
   display: inline-block;
 }
 .flip:hover {
-  transform: scale(0.8) rotateZ(360deg);
+  color: #1a8a9d !important;
+  transform: scale(0.9);
   transition-property: transform;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
+}
+.flip:hover .fa-inverse {
+  transform: rotateZ(360deg);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
 div.icon_container {
   gap: 0.5rem;
