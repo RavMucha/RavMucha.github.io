@@ -142,7 +142,6 @@ iframe.site {
   transition-duration: 500ms;
   transition-delay: 1ms;
 }
-.list-inline-item .link,
 .flip {
   transition-property: transform;
   transition-duration: 500ms;
@@ -150,7 +149,6 @@ iframe.site {
 .list-inline-item .colored {
   display: inline-block;
 }
-.list-inline-item:hover .link,
 .flip:hover {
   transform: scale(0.8) rotateZ(360deg);
   transition-property: transform;
