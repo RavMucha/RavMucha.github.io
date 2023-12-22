@@ -9,20 +9,19 @@ if (
     "font-weight: bold; font-family:monospace; font-size: 30px; color: gold; text-shadow: 1px 1px 0 rgb(226,91,14), 2px 2px 0 red, 3px 3px 0 rgb(5,148,68), 4px 4px 0 rgb(42,21,113)"
   );
 }
-
 // Closing the alert until session end
 if (sessionStorage.getItem("dismiss") === "true") {
   document.getElementById("infoAlert").style.display = "none";
 }
-
+// Dynamically add iframe src when needed
 function addSrc(id) {
   document.getElementById(id).src = "https://" + id;
 }
-
+// Dynamically add image src when needed
 function addSrcImg(id) {
   document.getElementById(id).src = id;
 }
-
+// Photo change on window load
 window.onload = function () {
   document.getElementById("loading-container").style.display = "none";
   if (window.scrollY > 10000) {
@@ -34,7 +33,7 @@ window.onload = function () {
       .setAttribute("src", "img/profile.png");
   }
 };
-
+// Play sound on mode change
 function playSaber(url) {
   var sound = new Audio(url);
   sound.play();
@@ -51,7 +50,6 @@ window.addEventListener("scroll", () => {
       .setAttribute("src", "img/profile.png");
   }
 });
-
 // Dark/light mode listeners
 document.getElementById("darkMode").addEventListener("click", darkModeSwitch);
 document.getElementById("lightMode").addEventListener("click", lightModeSwitch);
@@ -59,12 +57,10 @@ function darkModeSwitch() {
   localStorage.setItem("darkMode", "true");
   document.querySelector("body").classList.add("dark_mode");
 }
-
 function lightModeSwitch() {
   localStorage.clear();
   document.querySelector("body").classList.remove("dark_mode");
 }
-
 // Setting DarkMode via localStorage
 if (localStorage.getItem("darkMode")) {
   darkModeSwitch();
