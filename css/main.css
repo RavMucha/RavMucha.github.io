@@ -57,7 +57,7 @@ div u.via {
   opacity: 0.9;
 }
 #skillsAccordion {
-  padding: 0.7rem;
+  margin: 0.4rem 0;
 }
 .interests > li {
   padding-left: 5px;
@@ -76,6 +76,29 @@ div u.via {
 .siteUI {
   width: 100%;
   border-radius: 10px;
+}
+div.card {
+  width: clamp(15rem, 45%, 35rem) !important;
+  margin-bottom: 0;
+  transform: translateY(0) scale(1);
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-delay: 1ms;
+}
+div.card .btn {
+  font-family: "Saira Extra Condensed", serif;
+}
+div.card .card-img-top {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+div.card:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: -1px 1px 3px rgba(0, 0, 5, 0.1), -3px 5px 9px rgba(2, 2, 8, 0.15),
+    0 15px 15px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-delay: 1ms;
 }
 .clearBtn {
   margin-right: 26px;
@@ -123,19 +146,6 @@ iframe.site {
   transition-duration: 500ms;
   transition-delay: 1ms;
 }
-.hoverGroupCV:hover ~ .hoverGroupCV,
-.hoverGroupApp:hover ~ .hoverGroupApp {
-  transform: scale(1.3) rotateZ(360deg);
-  transition-property: transform;
-  transition-duration: 500ms;
-  transition-delay: 1ms;
-}
-.hoverGroupCV,
-.hoverGroupApp {
-  transition-property: transform;
-  transition-duration: 500ms;
-  transition-delay: 50ms;
-}
 .list-inline-item .link,
 .flip {
   transition-property: transform;
@@ -149,21 +159,6 @@ iframe.site {
   transform: scale(0.8) rotateZ(360deg);
   transition-property: transform;
   transition-duration: 500ms;
-}
-.hoverGroup:hover ~ .hoverGroup,
-.hoverGroupGit:hover ~ .hoverGroupGit,
-.hoverGroup2Do:hover ~ .hoverGroup2Do {
-  transform: scale(0.8) rotateY(360deg);
-  transition-property: transform;
-  transition-duration: 500ms;
-  transition-delay: 1ms;
-}
-.hoverGroup,
-.hoverGroupGit,
-.hoverGroup2Do {
-  transition-property: transform;
-  transition-duration: 500ms;
-  transition-delay: 50ms;
 }
 #GH:not(:hover) {
   color: #335 !important;
@@ -1152,6 +1147,9 @@ a:active {
   .bio {
     width: 90%;
   }
+  div.card {
+    margin-bottom: 1rem;
+  }
 }
 @media (min-width: 768px) {
   section.resume-section {
@@ -1413,4 +1411,11 @@ a:active {
   border-right: 3px solid #c13d3d;
   border-left: 3px solid #c13d3d;
   text-shadow: 0 0 1px #c13d3d;
+}
+.dark_mode div.card {
+  background-color: #343a40 !important;
+  background: linear-gradient(145deg, hsl(210deg 10.34% 15%) 10%, #343a40 100%);
+}
+.dark_mode div.card * {
+  color: #eee !important;
 }
