@@ -164,7 +164,9 @@ iframe.site {
   transition-duration: 400ms;
 }
 div.icon_container {
-  gap: 0.5rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
 }
 div.icon_container img {
   width: 16px;
