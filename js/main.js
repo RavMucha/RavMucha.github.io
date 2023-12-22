@@ -1,3 +1,12 @@
+//PWA required ServiceWorker installation script
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("../serviceWorker.js")
+      .then((res) => console.log("service worker registered"))
+      .catch((err) => console.log("service worker not registered", err));
+  });
+}
 // Check user browser
 if (
   navigator.userAgent.indexOf("Chrome") != -1 ||
