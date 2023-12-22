@@ -78,7 +78,7 @@ div u.via {
   border-radius: 10px;
 }
 div.card {
-  width: clamp(15rem, 45%, 35rem) !important;
+  width: clamp(15rem, calc(50% - 2rem), 35rem) !important;
   margin-bottom: 0;
   transform: translateY(0) scale(1);
   transition-property: transform;
@@ -162,7 +162,6 @@ iframe.site {
   transition-duration: 500ms;
 }
 div.icon_container {
-  display: flex;
   gap: 0.5rem;
 }
 div.icon_container img {
