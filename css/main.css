@@ -85,6 +85,7 @@ div.card {
   transition-duration: 200ms;
   transition-delay: 1ms;
   background-color: #fefefe;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
 }
 div.card .btn {
   font-family: "Saira Extra Condensed", serif;
@@ -551,10 +552,9 @@ div img.flav_icon {
   margin-bottom: 4px;
   margin-right: 3px;
 }
-.mapImgClose {
+.modal_close_modifirer {
   position: absolute;
-  transform: scale(1.2);
-  top: 2px;
+  top: 8px;
   right: 10px;
   z-index: 100;
 }
@@ -1161,6 +1161,7 @@ a:active {
   }
   div.card {
     margin-bottom: 1rem;
+    width: 75vw !important;
   }
 }
 @media (min-width: 768px) {
@@ -1427,6 +1428,7 @@ a:active {
 .dark_mode div.card {
   background-color: #343a40 !important;
   background: linear-gradient(145deg, hsl(210deg 10.34% 15%) 10%, #343a40 100%);
+  border: 1px solid #545b62;
 }
 .dark_mode div.card * {
   color: #eee !important;
