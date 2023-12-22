@@ -75,7 +75,7 @@ div u.via {
   border-radius: 10px;
 }
 div.card {
-  width: clamp(14rem, calc(50% - 2rem), 20rem) !important;
+  width: clamp(14rem, 45%, 22rem) !important;
   margin-bottom: 0;
   transform: translateY(0) scale(1);
   transition-property: transform;
