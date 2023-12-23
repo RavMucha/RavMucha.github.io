@@ -53,7 +53,6 @@ window.onload = function () {
   }
 };
 // Play sound on mode change
-
 function playSound(url) {
   let sound = new Audio(url);
   sound.play();

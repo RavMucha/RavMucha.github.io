@@ -28,6 +28,7 @@ const assets = [
   "/img/Card_Images/TB.png",
   "/img/Card_Images/ToDo.png",
   "/img/Card_Images/XO.png",
+  "/img/Card_Images/Resume.png",
   "/img/00.png",
   "/img/01.png",
   "/img/02.png",

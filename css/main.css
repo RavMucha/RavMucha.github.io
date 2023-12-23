@@ -134,6 +134,10 @@ iframe.site {
   margin-top: 3px;
 }
 
+.skills-container {
+  max-width: calc(100% - 2.5rem);
+}
+
 .list-inline-item .colored {
   transition-property: transform;
   transition-duration: 500ms;
