@@ -40,10 +40,6 @@ if (sessionStorage.getItem("dismiss") === "true") {
 function addSrc(id) {
   document.getElementById(id).src = "https://" + id;
 }
-// Dynamically add image src when needed
-function addSrcImg(id) {
-  document.getElementById(id).src = id;
-}
 // Photo change on window load
 window.onload = function () {
   document.getElementById("loading-container").style.display = "none";
@@ -73,6 +69,12 @@ window.addEventListener("scroll", () => {
       .querySelector(".img-profile")
       .setAttribute("src", "img/profile.png");
   }
+});
+document.getElementById("alert_closer").addEventListener("click", () => {
+  sessionStorage.setItem("dismiss", "true");
+});
+document.getElementById("form_clearer").addEventListener("click", () => {
+  document.getElementById("contact-form").reset();
 });
 // Dark/light mode listeners
 document.getElementById("darkMode").addEventListener("click", darkModeSwitch);

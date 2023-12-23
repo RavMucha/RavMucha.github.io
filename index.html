@@ -121,7 +121,7 @@
                   </div>
                 </div>
                 <div class="text-end">
-                  <input type="button" value="CLEAR &#10006;" onclick="document.getElementById('contact-form').reset()"
+                  <input id="form_clearer" type="button" value="CLEAR &#10006;"
                     class="btn btn-outline-secondary clear-btn me-2" />
                   <input type="submit" value="SEND &#10132;" class="btn btn-outline-success" />
                 </div>
@@ -262,8 +262,7 @@
                     this
                     out!</a>
                 </p>
-                <button type="button" class="btn-close" data-bs-dismiss="alert"
-                  onclick="sessionStorage.setItem('dismiss', 'true');" aria-label="Close">
+                <button id="alert_closer" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                 </button>
               </div>
             </div>
@@ -1080,9 +1079,8 @@
                   spin on instructional tutorials.</p>
                 <div class="icon_container"><img alt="icon" src="./img/Figma-logo.svg" alt="Figma" />
                 </div>
-              </div><button type="button" onClick='addSrcImg("img/UI.jpg");' data-bs-toggle="modal"
-                data-bs-target="#portF" class="btn btn-dark m-3"><i class="fa fa-external-link"
-                  aria-hidden="true"></i>&nbsp;&nbsp;See
+              </div><button type="button" data-bs-toggle="modal" data-bs-target="#portF" class="btn btn-dark m-3"><i
+                  class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;See
                 Project</button>
             </div>
             <div class="card">
@@ -1162,11 +1160,9 @@
         <div class="modal fade bd-modal-lg" id="portHTM" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
           aria-hidden="true">
           <div class="modal-dialog modal-lg">
-
             <div class="modal-content site">
               <button type="button" class="btn-close modalClose modalAddon" title="Close" data-bs-dismiss="modal"
                 aria-label="Close">
-
               </button>
               <a title="link" rel="noopener" href="https://ref-card.netlify.app/" class="siteLink modalAddon"
                 target="_blank"><img alt="icon" src="img/Link.png" class="floatImg sqr-20" /><span
@@ -1296,7 +1292,7 @@
                 aria-label="Close">
 
               </button>
-              <img alt="icon" id="img/UI.jpg" class="modImgUI" width="100%" src="img/fig.svg" />
+              <img alt="icon" class="modImgUI" width="100%" src="img/UI.jpg" alt="Figma designs" />
             </div>
           </div>
         </div>
@@ -1502,8 +1498,8 @@
             online marketing</span>
         </li>
         <li class="sixsigma">
-          <button type="button" onClick='addSrcImg("img/SixSigma.png");' class="btn btn-light btn-sm"
-            data-bs-toggle="modal" data-bs-target="#cert6"><b></b>Six Sigma
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#cert6"><b></b>Six
+            Sigma
             <span class="badge bg-success">Green Belt</span>
             certified</button>
           <div class="modal fade bd-modal-lg" id="cert6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -1513,7 +1509,7 @@
                   data-bs-dismiss="modal" aria-label="Close">
 
                 </button>
-                <img alt="icon" id="img/SixSigma.png" class="modImg" width="100%" src="img/SixS.png" />
+                <img alt="icon" class="modImg" width="100%" src="img/SixSigma.png" alt="Six Sigma cert" />
               </div>
             </div>
           </div>
