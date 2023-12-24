@@ -21,6 +21,15 @@ const registerServiceWorker = async () => {
   }
 };
 registerServiceWorker();
+//Variables
+const loader = document.getElementById("loading-container");
+const modalImage = document.getElementById("imageModal");
+const image = document.getElementById("websiteModalImage");
+const modalImgs = document.querySelectorAll(".img-attacher");
+const modalFrame = document.getElementById("websiteModal");
+const frame = document.getElementById("websiteModalIframe");
+const anchor = document.getElementById("websiteModalAnchor");
+const modalBtns = document.querySelectorAll(".event-attacher");
 //Check user browser
 if (
   navigator.userAgent.indexOf("Chrome") != -1 ||
@@ -52,6 +61,7 @@ function AvatarChangeOnScroll() {
       .setAttribute("src", "img/profile.png");
   }
 }
+//Dark/light mode change
 function darkModeSwitch() {
   localStorage.setItem("darkMode", "true");
   playSound("../media/saberOn.mp3");
@@ -66,18 +76,17 @@ function lightModeSwitch() {
 if (localStorage.getItem("darkMode")) {
   darkModeSwitch();
 }
-const loader = document.getElementById("loading-container");
 // Photo change and loader close on window load
 window.onload = function () {
   AvatarChangeOnScroll();
   loader.style.display = "none";
 };
-
-// Dynamically add iframe src when needed
-const modalFrame = document.getElementById("websiteModal");
-const frame = document.getElementById("websiteModalIframe");
-const anchor = document.getElementById("websiteModalAnchor");
-const modalBtns = document.querySelectorAll(".event-attacher");
+// Dynamically add iframe or img src when needed
+modalImgs.forEach((im) => {
+  im.addEventListener("click", function (e) {
+    image.src = e.target.id;
+  });
+});
 modalBtns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     frame.src = e.target.id;
