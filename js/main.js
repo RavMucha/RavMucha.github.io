@@ -36,22 +36,14 @@ if (
 if (sessionStorage.getItem("dismiss") === "true") {
   document.getElementById("infoAlert").style.display = "none";
 }
+
+let frame = document.getElementById("websiteModalIframe");
+let anchor = document.getElementById("websiteModalAnchor");
 // Dynamically add iframe src when needed
 function addSrc(id) {
-  document.getElementById(id).src = "https://" + id;
+  frame.src = id;
+  anchor.href = id;
 }
-// Photo change on window load
-window.onload = function () {
-  document.getElementById("loading-container").style.display = "none";
-  if (window.scrollY > 10000) {
-    document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
-  }
-  if (window.scrollY < 10000) {
-    document
-      .querySelector(".img-profile")
-      .setAttribute("src", "img/profile.png");
-  }
-};
 // Play sound on mode change
 function playSound(url) {
   let sound = new Audio(url);
@@ -62,8 +54,7 @@ function playSound(url) {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10000) {
     document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
-  }
-  if (window.scrollY < 10000) {
+  } else if (window.scrollY < 10000) {
     document
       .querySelector(".img-profile")
       .setAttribute("src", "img/profile.png");
@@ -92,3 +83,14 @@ function lightModeSwitch() {
 if (localStorage.getItem("darkMode")) {
   darkModeSwitch();
 }
+// Photo change and loader close on window load
+window.onload = function () {
+  if (window.scrollY > 10000) {
+    document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
+  } else if (window.scrollY < 10000) {
+    document
+      .querySelector(".img-profile")
+      .setAttribute("src", "img/profile.png");
+  }
+  document.getElementById("loading-container").style.display = "none";
+};
