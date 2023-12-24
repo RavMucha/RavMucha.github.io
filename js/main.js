@@ -36,14 +36,6 @@ if (
 if (sessionStorage.getItem("dismiss") === "true") {
   document.getElementById("infoAlert").style.display = "none";
 }
-
-let frame = document.getElementById("websiteModalIframe");
-let anchor = document.getElementById("websiteModalAnchor");
-// Dynamically add iframe src when needed
-function addSrc(id) {
-  frame.src = id;
-  anchor.href = id;
-}
 // Play sound on mode change
 function playSound(url) {
   let sound = new Audio(url);
@@ -51,7 +43,7 @@ function playSound(url) {
   sound.volume = 0.2;
 }
 // Photo change on scroll
-window.addEventListener("scroll", () => {
+function AvatarChangeOnScroll() {
   if (window.scrollY > 10000) {
     document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
   } else if (window.scrollY < 10000) {
@@ -59,16 +51,7 @@ window.addEventListener("scroll", () => {
       .querySelector(".img-profile")
       .setAttribute("src", "img/profile.png");
   }
-});
-document.getElementById("alert_closer").addEventListener("click", () => {
-  sessionStorage.setItem("dismiss", "true");
-});
-document.getElementById("form_clearer").addEventListener("click", () => {
-  document.getElementById("contact-form").reset();
-});
-// Dark/light mode listeners
-document.getElementById("darkMode").addEventListener("click", darkModeSwitch);
-document.getElementById("lightMode").addEventListener("click", lightModeSwitch);
+}
 function darkModeSwitch() {
   localStorage.setItem("darkMode", "true");
   playSound("../media/saberOn.mp3");
@@ -85,12 +68,27 @@ if (localStorage.getItem("darkMode")) {
 }
 // Photo change and loader close on window load
 window.onload = function () {
-  if (window.scrollY > 10000) {
-    document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
-  } else if (window.scrollY < 10000) {
-    document
-      .querySelector(".img-profile")
-      .setAttribute("src", "img/profile.png");
-  }
+  AvatarChangeOnScroll();
   document.getElementById("loading-container").style.display = "none";
 };
+
+// Dynamically add iframe src when needed
+const frame = document.getElementById("websiteModalIframe");
+const anchor = document.getElementById("websiteModalAnchor");
+const modalBtns = document.querySelectorAll(".event-attacher");
+modalBtns.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    frame.src = e.target.id;
+    anchor.href = e.target.id;
+  });
+});
+// Event listeners
+document.getElementById("alert_closer").addEventListener("click", () => {
+  sessionStorage.setItem("dismiss", "true");
+});
+document.getElementById("form_clearer").addEventListener("click", () => {
+  document.getElementById("contact-form").reset();
+});
+document.getElementById("darkMode").addEventListener("click", darkModeSwitch);
+document.getElementById("lightMode").addEventListener("click", lightModeSwitch);
+window.addEventListener("scroll", AvatarChangeOnScroll);
