@@ -21,7 +21,7 @@ const registerServiceWorker = async () => {
   }
 };
 registerServiceWorker();
-// Check user browser
+//Check user browser
 if (
   navigator.userAgent.indexOf("Chrome") != -1 ||
   navigator.userAgent.indexOf("Edg") != -1 ||
@@ -32,17 +32,17 @@ if (
     "font-weight: bold; font-family:monospace; font-size: 30px; color: gold; text-shadow: 1px 1px 0 rgb(226,91,14), 2px 2px 0 red, 3px 3px 0 rgb(5,148,68), 4px 4px 0 rgb(42,21,113)"
   );
 }
-// Closing the alert until session end
+//Closing the alert until session end
 if (sessionStorage.getItem("dismiss") === "true") {
   document.getElementById("infoAlert").style.display = "none";
 }
-// Play sound on mode change
+//Play sound on mode change
 function playSound(url) {
   let sound = new Audio(url);
   sound.play();
   sound.volume = 0.2;
 }
-// Photo change on scroll
+//Photo change on scroll
 function AvatarChangeOnScroll() {
   if (window.scrollY > 10000) {
     document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
@@ -101,13 +101,16 @@ frame.addEventListener("load", function () {
 modalFrame.addEventListener("hidden.bs.modal", function () {
   frame.src = "";
 });
-// Event listeners
+//Keep header alert closed after user closure
 document.getElementById("alert_closer").addEventListener("click", () => {
   sessionStorage.setItem("dismiss", "true");
 });
+//Clear contact form
 document.getElementById("form_clearer").addEventListener("click", () => {
   document.getElementById("contact-form").reset();
 });
+//Dark/light mode switch
 document.getElementById("darkMode").addEventListener("click", darkModeSwitch);
 document.getElementById("lightMode").addEventListener("click", lightModeSwitch);
+//On scroll pic changer
 window.addEventListener("scroll", AvatarChangeOnScroll);
