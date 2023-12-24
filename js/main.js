@@ -66,13 +66,15 @@ function lightModeSwitch() {
 if (localStorage.getItem("darkMode")) {
   darkModeSwitch();
 }
+const loader = document.getElementById("loading-container");
 // Photo change and loader close on window load
 window.onload = function () {
   AvatarChangeOnScroll();
-  document.getElementById("loading-container").style.display = "none";
+  loader.style.display = "none";
 };
 
 // Dynamically add iframe src when needed
+const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
 const modalBtns = document.querySelectorAll(".event-attacher");
@@ -80,7 +82,24 @@ modalBtns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     frame.src = e.target.id;
     anchor.href = e.target.id;
+    if (e.target.id === "https://rafal-mucha.pl/") {
+      anchor.style.display = "none";
+    } else {
+      anchor.style.display = "";
+    }
   });
+});
+//iFrame loader
+modalFrame.addEventListener("show.bs.modal", function () {
+  loader.style.display = "block";
+});
+//Close modal loader once inner page appears
+frame.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+//Reset iFrame to default
+modalFrame.addEventListener("hidden.bs.modal", function () {
+  frame.src = "";
 });
 // Event listeners
 document.getElementById("alert_closer").addEventListener("click", () => {
