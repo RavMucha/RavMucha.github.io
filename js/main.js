@@ -82,7 +82,11 @@ modalBtns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     frame.src = e.target.id;
     anchor.href = e.target.id;
-    if (e.target.id === "https://rafal-mucha.pl/") {
+    if (
+      e.target.id === "https://rafal-mucha.pl/" ||
+      e.target.id ===
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.156110345693!2d20.002538803666585!3d50.08093989726195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645337160b089%3A0x84a5709cc373db92!2z8J-PoQ!5e0!3m2!1spl!2spl!4v1532419377895"
+    ) {
       anchor.style.display = "none";
     } else {
       anchor.style.display = "";
