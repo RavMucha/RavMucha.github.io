@@ -72,10 +72,6 @@ const assets = [
   "/img/profile.png",
   "/img/udemy.png",
 ];
-console.log(
-  "%c The Service Worker is active!",
-  "font-family:monospace; font-size: 18px; color: gold; text-shadow: 0.5px 0.5px 0 rgb(220,90,10), 1px 1px 0 red, 1.5px 1.5px 0 rgb(5,140,60)"
-);
 self.addEventListener("install", (installEvent) => {
   self.skipWaiting();
   const files = (cache) => {
@@ -90,6 +86,10 @@ self.addEventListener("install", (installEvent) => {
     return Promise.all(stack);
   };
   installEvent.waitUntil(caches.open(staticCV).then(files));
+  console.log(
+    "%c The Service Worker is active!",
+    "font-family:monospace; font-size: 18px; color: gold; text-shadow: 0.5px 0.5px 0 rgb(220,90,10), 1px 1px 0 red, 1.5px 1.5px 0 rgb(5,140,60)"
+  );
 });
 
 self.addEventListener("fetch", (fetchEvent) => {
