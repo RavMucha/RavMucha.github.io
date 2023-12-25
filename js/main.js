@@ -24,7 +24,7 @@ registerServiceWorker();
 //Variables
 const loader = document.getElementById("loading-container");
 const modalImage = document.getElementById("imageModal");
-const image = document.getElementById("websiteModalImage");
+const image = document.getElementById("imageTag");
 const modalImgs = document.querySelectorAll(".img-attacher");
 const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
