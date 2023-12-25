@@ -82,6 +82,14 @@ window.onload = function () {
 // Dynamically add iframe or img src when needed
 modalImage.addEventListener("show.bs.modal", function (e) {
   image.src = e.relatedTarget.id;
+  if (
+    e.relatedTarget.classList.contains("modal-medium") &&
+    modalImage.classList.contains("bd-modal-lg")
+  ) {
+    modalImage.querySelector(".modal-dialog").classList.remove("modal-lg");
+  } else {
+    modalImage.querySelector(".modal-dialog").classList.add("modal-lg");
+  }
 });
 modalFrame.addEventListener("show.bs.modal", function (e) {
   loader.style.display = "block";
