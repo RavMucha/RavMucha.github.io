@@ -1293,6 +1293,9 @@ a:active {
 .dark_mode .chatInput {
   background-color: #111;
 }
+.dark_mode .chatInput:disabled {
+  background-color: #343a41;
+}
 
 .dark_mode {
   color: #ddd !important;
