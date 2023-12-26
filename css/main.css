@@ -1256,10 +1256,6 @@ a:active {
 .dark_mode .form-control {
   color: #eee;
 }
-.dark_mode .clear-btn {
-  -webkit-filter: saturate(0.5) brightness(1.1);
-  filter: saturate(0.5) brightness(1.1);
-}
 .dark_mode #footer {
   box-shadow: none;
 }
@@ -1370,7 +1366,7 @@ a:active {
   border-color: #1a1e21;
 }
 
-.dark_mode .btn-outline-success {
+.dark_mode .btn-success {
   filter: hue-rotate(250deg) saturate(1.5);
 }
 
