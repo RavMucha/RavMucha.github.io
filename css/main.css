@@ -182,7 +182,7 @@ div.icon_container img {
 div.card-body .icon_container.icon_container i:hover {
   color: currentColor !important;
 }
-#GH:not(:hover) {
+.color-modifier:not(:hover) {
   color: #335 !important;
 }
 #alert-container {
@@ -201,7 +201,7 @@ div.card-body .icon_container.icon_container i:hover {
   letter-spacing: 1px;
   border-bottom: none;
   box-shadow: inset 0.5px 1.5px 3px hsla(0, 0%, 50%, 0.5);
-  padding: 4rem 4rem 4rem 3rem !important;
+  padding: 8rem 5rem 8rem 3rem !important;
 }
 .dark_mode .img-profile {
   -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
@@ -1378,20 +1378,17 @@ a:active {
   filter: hue-rotate(250deg) saturate(1.5);
 }
 
-.dark_mode i.devicons:focus,
-.dark_mode i.newIcon:focus,
+.dark_mode i.devicon:focus,
 .dark_mode .fa-stack.fa-lg:focus,
 .dark_mode .flipLink:focus {
   color: #57141a !important;
 }
 .dark_mode i.devicon:hover,
-.dark_mode i.newIcon:hover,
 .dark_mode .fa-stack.fa-lg:hover,
 .dark_mode .flipLink:hover {
   color: red !important;
 }
-.dark_mode i.devicons:active,
-.dark_mode i.newIcon:active,
+.dark_mode i.devicon:active,
 .dark_mode .fa-stack.fa-lg:active,
 .dark_mode .flipLink:active {
   color: #57141a !important;

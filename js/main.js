@@ -52,7 +52,9 @@ function playSound(url) {
 //Photo change on scroll
 function AvatarChangeOnScroll() {
   if (window.scrollY > 10000) {
-    document.querySelector(".img-profile").setAttribute("src", "img/FACE2.png");
+    document
+      .querySelector(".img-profile")
+      .setAttribute("src", "img/profile_alt.png");
   } else if (window.scrollY < 10000) {
     document
       .querySelector(".img-profile")
