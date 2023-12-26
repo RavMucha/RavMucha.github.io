@@ -64,12 +64,10 @@ function AvatarChangeOnScroll() {
 //Dark/light mode change
 function darkModeSwitch() {
   localStorage.setItem("darkMode", "true");
-  playSound("../media/saberOn.mp3");
   document.querySelector("body").classList.add("dark_mode");
 }
 function lightModeSwitch() {
   localStorage.clear();
-  playSound("../media/saberOff.mp3");
   document.querySelector("body").classList.remove("dark_mode");
 }
 // Setting DarkMode via localStorage
@@ -127,7 +125,13 @@ document.getElementById("form_clearer2").addEventListener("click", () => {
   document.getElementById("contact-form2").reset();
 });
 //Dark/light mode switch
-document.getElementById("darkMode").addEventListener("click", darkModeSwitch);
-document.getElementById("lightMode").addEventListener("click", lightModeSwitch);
+document.getElementById("darkMode").addEventListener("click", function () {
+  playSound("../media/saberOn.mp3");
+  darkModeSwitch();
+});
+document.getElementById("lightMode").addEventListener("click", function () {
+  playSound("../media/saberOff.mp3");
+  lightModeSwitch();
+});
 //On scroll pic changer
 window.addEventListener("scroll", AvatarChangeOnScroll);
