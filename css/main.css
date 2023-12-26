@@ -879,17 +879,13 @@ h4 span.text-info {
 .up-button {
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 100ms;
-  transition-delay: 5ms;
+  transition-duration: 50ms;
   opacity: 0.8;
-  font-variant: small-caps;
-  font-weight: 500;
 }
 .up-button:active {
-  transform: scale(0.8) translateY(1px);
+  transform: scale(0.8);
   transition-property: transform;
-  transition-duration: 200ms;
-  transition-delay: 5ms;
+  transition-duration: 100ms;
 }
 .floatImg {
   -webkit-filter: hue-rotate(120deg) opacity(0.9);
