@@ -151,6 +151,56 @@
       </div>
     </div>
   </div>
+  <div class="modal fade bd-modal-lg" id="bugForm" tabindex="-1" role="dialog" aria-labelledby="data-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content container chatHolder mb-4">
+        <button type="button" class="btn-close modalClose modalAddon" title="Close" data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+        <div class="modal-header">
+          <h2 class="modal-title chatHead">Report a bug</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
+              <form id="contact-form2" name="contact-form2" netlify>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form mb-3"><label for="subject2" class="formLabel">subject</label>
+                      <input type="text" id="subject2" name="subject2" class="form-control chatInput" value="BUG REPORT"
+                        disabled>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form mb-3">
+                      <label for="email2" class="formLabel">your email</label>
+                      <input type="email" id="email2" name="email2" class="form-control chatInput"
+                        placeholder="good_guy@gmail.com" autocomplete="email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-4"><label for="report" class="formLabel">your
+                        bug report</label>
+                      <textarea type="text" id="report" name="report" rows="2"
+                        class="form-control md-textarea chatInput"
+                        placeholder="Text overflow / broken link / scaling issue on mobile..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <input id="form_clearer2" type="button" value="CLEAR &#10006;" class="btn btn-secondary me-2" />
+                  <input type="submit" value="REPORT &#10132;" class="btn btn-warning" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modals end -->
   <a title="link" rel="noopener" href="/media/CV_Rafal_Mucha.pdf" id="actionBtn" class="floatBtn"
     download="CV_Rafal_Mucha.pdf"><img alt="icon" src="img/DTray.png" class="floatImg sqr-25" /><span
@@ -158,9 +208,8 @@
       cv</span></a>
   <a data-bs-toggle="modal" data-bs-target="#chatForm" class="floatBtn" id="actionBtnChat"><img alt="icon"
       src="img/chat.png" class="floatImg sqr-25" /><span class="actionBtnhint subheading">contact form</span></a>
-  <a title="link" rel="noopener" href="mailto:r.p.mucha@gmail.com?subject=Oh-found-a-bug!&Body=Hello!" class="floatBtn"
-    id="actionBtnBug"><img alt="icon" src="img/Bug.png" class="floatImg sqr-25" /><span
-      class="actionBtnhint subheading">report a
+  <a data-bs-toggle="modal" data-bs-target="#bugForm" class="floatBtn" id="actionBtnBug"><img alt="icon"
+      src="img/Bug.png" class="floatImg sqr-25" /><span class="actionBtnhint subheading">report a
       bug</span></a>
   <a id="lightMode" class="floatBtn"><img alt="icon" src="img/Rebel.png" class="floatImg sqr-25" /><span
       class="actionBtnhint subheading">light
