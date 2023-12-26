@@ -4,9 +4,6 @@ html {
 html:has(body.modal-open) {
   overflow-y: hidden;
 }
-html:has(body.modal-open) .floatBtn {
-  right: 28px !important;
-}
 body::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -1177,6 +1174,9 @@ a:active {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 10rem;
+  }
+  html:has(body.modal-open) .floatBtn {
+    right: 28px !important;
   }
 }
 @media (min-width: 992px) {
