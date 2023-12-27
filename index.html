@@ -1874,7 +1874,33 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
     <div class="my-auto">
       <h2 id="interests_header" class="mb-5">Interests</h2>
-      <p class="mb-0">
+      <div id="interestsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/img/Slider_Images/slide0.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/Slider_Images/slide1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/Slider_Images/slide2.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#interestsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#interestsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <ul class="fa-ul mb-0 subheading interests">
         <li><i class="fa-li fa fa-microchip"></i> Electronics &amp; new
           technologies:&nbsp;&nbsp;VR, AR, artificial
@@ -1896,9 +1922,9 @@
         </li>
         <li><i class="fa-li fa fa-book"></i> Personal development &amp;
           financial literature</li>
+        <li><i class="fa-li fa fa-plane"></i> Traveling the world</li>
         <li><i class="fa-li fa fa-cutlery"></i> Cooking</li>
       </ul>
-      </p>
       <i class="fa fa-code watermark" aria-hidden="true"></i>
     </div>
   </section>

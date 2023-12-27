@@ -69,6 +69,14 @@ div u.via {
   margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
+
+#interests #interestsCarousel {
+  width: clamp(18rem, 70%, 1200px);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
 .browserModal {
   border: 2px solid #f1b706;
   border-radius: 7px;
@@ -1428,4 +1436,8 @@ a.btn:active {
 }
 .dark_mode div.card * {
   color: #eee !important;
+}
+
+.dark_mode #interests #interestsCarousel {
+  filter: saturate(0) brightness(1.1);
 }
