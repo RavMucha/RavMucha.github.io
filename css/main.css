@@ -1088,19 +1088,24 @@ section.resume-section .resume-item .resume-date {
   min-width: auto;
 }
 .bg-primary {
-  background-color: #389bbd !important;
+  background-color: hsl(195, 80%, 30%) !important;
 }
 .text-primary {
-  color: #389bbd !important;
+  color: hsl(195, 54%, 35%) !important;
 }
 a {
-  color: #389bbd;
+  color: hsl(195, 80%, 30%);
   text-decoration: none !important;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #078e8e;
+  color: hsl(180, 91%, 29%);
+}
+a.btn:hover,
+a.btn:focus,
+a.btn:active {
+  color: #efffff;
 }
 @media (max-width: 992px) {
   #loading-container {
