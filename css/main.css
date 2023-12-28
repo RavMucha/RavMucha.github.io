@@ -1099,10 +1099,19 @@ section.resume-section .resume-item .resume-date {
   background-color: hsl(195, 80%, 30%) !important;
 }
 .text-primary {
-  color: hsl(195, 54%, 35%) !important;
+  color: hsl(195, 54%, 37%) !important;
+}
+#HeaderSurname {
+  color: rgba(255 255 255 / 0.1);
+  background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    hsl(195, 100%, 20%) 20%,
+    hsl(195, 54%, 48%) 80%
+  );
 }
 a {
-  color: hsl(195, 80%, 30%);
+  color: hsl(195, 80%, 33%);
   text-decoration: none !important;
 }
 a:hover,
@@ -1285,6 +1294,10 @@ a.btn:active {
 }
 .dark_mode #HeaderName {
   color: #ddd !important;
+}
+.dark_mode #HeaderSurname {
+  background-image: linear-gradient(45deg, #fd7e14 25%, #c20404 50%);
+  text-shadow: none !important;
 }
 .dark_mode .fa-ul a,
 .dark_mode .subheading a {
