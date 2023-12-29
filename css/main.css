@@ -535,16 +535,7 @@ li b::before {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 99;
-  border: none;
-  outline: none;
   background-color: #389bbd;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 16px;
-  opacity: 0.8;
 }
 .modalClose {
   position: absolute;
@@ -561,8 +552,6 @@ li b::before {
 }
 .redGlowBtn {
   animation: redGlowConstBTN 2s linear 2s infinite alternate-reverse;
-  width: 25px;
-  height: 25px;
 }
 div img.flav_icon {
   height: 18px;
@@ -666,16 +655,7 @@ h4 span.text-info {
   position: fixed;
   bottom: 70px;
   right: 15px;
-  z-index: 99;
-  border: none;
-  outline: none;
   background-color: #ffc107;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 16px;
-  opacity: 0.8;
 }
 #actionBtnBug .actionBtnhint {
   visibility: hidden;
@@ -699,16 +679,7 @@ h4 span.text-info {
   position: fixed;
   bottom: 125px;
   right: 15px;
-  z-index: 99;
-  border: none;
-  outline: none;
   background-color: #20c997;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 16px;
-  opacity: 0.8;
 }
 #actionBtnChat .actionBtnhint {
   visibility: hidden;
@@ -733,16 +704,7 @@ h4 span.text-info {
   position: fixed;
   bottom: 180px;
   right: 15px;
-  z-index: 99;
-  border: none;
-  outline: none;
   background-color: #b5bec7;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 16px;
-  opacity: 0.8;
   animation: clicker 0.1s reverse;
 }
 #lightMode .actionBtnhint {
@@ -764,20 +726,11 @@ h4 span.text-info {
   animation: faderAnimation 1s;
 }
 #darkMode {
-  display: block;
+  display: flex;
   position: fixed;
   bottom: 180px;
   right: 15px;
-  z-index: 99;
-  border: none;
-  outline: none;
   background-color: #24272b;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 16px;
-  opacity: 0.8;
   animation: clicker 0.1s reverse;
 }
 #darkMode .actionBtnhint {
@@ -895,17 +848,9 @@ h4 span.text-info {
   transition-property: transform;
   transition-duration: 100ms;
 }
-.floatImg {
-  -webkit-filter: hue-rotate(120deg) opacity(0.9);
-  filter: hue-rotate(120deg) opacity(0.9);
-}
 .sqr-20 {
   width: 20px;
   height: 20px;
-}
-.sqr-25 {
-  width: 25px;
-  height: 25px;
 }
 .university-icon {
   height: 25px;
@@ -915,7 +860,23 @@ h4 span.text-info {
   width: 50%;
 }
 .floatBtn {
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
   box-shadow: 1px 1px 3px #111;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floatBtn:hover {
+  color: white;
 }
 img.small-icon-std {
   height: 16px;
@@ -1367,7 +1328,7 @@ a.btn:active {
 }
 
 .dark_mode #lightMode {
-  display: block !important;
+  display: flex !important;
 }
 
 .dark_mode #darkMode {
