@@ -547,17 +547,18 @@ li b::before {
 }
 .changeGSAP:hover,
 .changeGSAP:focus {
-  -webkit-filter: sepia(100%) brightness(50%) hue-rotate(170deg) saturate(300%)
-    contrast(1500%);
-  filter: sepia(100%) brightness(50%) hue-rotate(170deg) saturate(300%)
-    contrast(1500%);
+  -webkit-filter: hue-rotate(120deg);
+  filter: hue-rotate(120deg);
 }
 .blueChange:hover,
 .blueChange:focus {
-  -webkit-filter: invert(12%) sepia(77%) saturate(4957%) hue-rotate(251deg)
-    brightness(55%) contrast(120%);
-  filter: invert(12%) sepia(77%) saturate(4957%) hue-rotate(251deg)
-    brightness(55%) contrast(120%);
+  -webkit-filter: invert(10%) sepia(25%) hue-rotate(195deg) contrast(150%);
+  filter: invert(10%) sepia(25%) hue-rotate(195deg) contrast(150%);
+}
+.blueChangePWA:hover,
+.blueChangePWA:focus {
+  -webkit-filter: invert(75%) hue-rotate(105deg);
+  filter: invert(75%) hue-rotate(105deg);
 }
 .formLabel {
   font-variant: small-caps;
@@ -1417,13 +1418,19 @@ a.btn:active {
   color: #57141a !important;
 }
 .dark_mode .blueChange:hover,
-.dark_mode .blueChange:focus,
+.dark_mode .blueChange:focus {
+  -webkit-filter: saturate(100);
+  filter: saturate(100);
+}
+.dark_mode .blueChangePWA:hover,
+.dark_mode .blueChangePWA:focus {
+  -webkit-filter: hue-rotate(100deg) saturate(2);
+  filter: hue-rotate(100deg) saturate(2);
+}
 .dark_mode #GSAP:hover,
 .dark_mode #GSAP:focus {
-  -webkit-filter: invert(12%) sepia(96%) saturate(7451%) hue-rotate(359deg)
-    brightness(96%) contrast(115%);
-  filter: invert(12%) sepia(96%) saturate(7451%) hue-rotate(359deg)
-    brightness(96%) contrast(115%);
+  -webkit-filter: saturate(10) hue-rotate(240deg) contrast(5);
+  filter: saturate(10) hue-rotate(240deg) contrast(5);
 }
 
 .dark_mode #loading-wrapper {
