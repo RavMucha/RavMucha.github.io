@@ -1,3 +1,45 @@
+@font-face {
+  font-display: swap;
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../vendor/Saira_Condensed/saira-extra-condensed-v13-latin-ext-200.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../vendor/Saira_Condensed/saira-extra-condensed-v13-latin-ext-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../vendor/Saira_Condensed/saira-extra-condensed-v13-latin-ext-500.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../vendor/Saira_Condensed/saira-extra-condensed-v13-latin-ext-600.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../vendor/Saira_Condensed/saira-extra-condensed-v13-latin-ext-700.woff2")
+    format("woff2");
+}
+
 html {
   overflow-x: hidden;
 }
@@ -101,7 +143,7 @@ div.card {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 div.card .btn {
-  font-family: "Saira Extra Condensed", serif;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 div.card .card-img-top {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -533,8 +575,8 @@ li b::before {
 }
 #actionBtn {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 10px;
+  right: 10px;
   background-color: #389bbd;
 }
 .modalClose {
@@ -650,8 +692,8 @@ h4 span.text-info {
 }
 #actionBtnBug {
   position: fixed;
-  bottom: 70px;
-  right: 15px;
+  bottom: 60px;
+  right: 10px;
   background-color: #ffc107;
 }
 #actionBtnBug .actionBtnhint {
@@ -674,8 +716,8 @@ h4 span.text-info {
 }
 #actionBtnChat {
   position: fixed;
-  bottom: 125px;
-  right: 15px;
+  bottom: 110px;
+  right: 10px;
   background-color: #20c997;
 }
 #actionBtnChat .actionBtnhint {
@@ -699,8 +741,8 @@ h4 span.text-info {
 #lightMode {
   display: none;
   position: fixed;
-  bottom: 180px;
-  right: 15px;
+  bottom: 160px;
+  right: 10px;
   background-color: #b5bec7;
   animation: clicker 0.1s reverse;
 }
@@ -725,8 +767,8 @@ h4 span.text-info {
 #darkMode {
   display: flex;
   position: fixed;
-  bottom: 180px;
-  right: 15px;
+  bottom: 160px;
+  right: 10px;
   background-color: #24272b;
   animation: clicker 0.1s reverse;
 }
@@ -862,12 +904,11 @@ h4 span.text-info {
   outline: none;
   color: black;
   cursor: pointer;
-  padding: 12.5px;
   border-radius: 50%;
   opacity: 0.8;
   box-shadow: 1px 1px 3px #111;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -994,7 +1035,7 @@ img.small-icon-std {
   }
 }
 body {
-  font-family: "Open Sans", serif;
+  font-family: "Arial", sans-serif;
   padding-top: 54px;
   color: #696f74 !important;
 }
@@ -1008,7 +1049,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Saira Extra Condensed", serif;
+  font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -1023,7 +1064,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Saira Extra Condensed", serif;
+  font-family: "Saira Extra Condensed", sans-serif;
   font-size: 1.35rem;
 }
 .list-social-icons a {
