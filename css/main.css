@@ -1197,7 +1197,7 @@ a.btn:active {
     min-width: 10rem;
   }
   html:has(body.modal-open) .floatBtn {
-    right: 28px !important;
+    right: 23px !important;
   }
 }
 @media (min-width: 992px) {
