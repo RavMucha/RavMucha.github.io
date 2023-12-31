@@ -113,10 +113,17 @@ div u.via {
 }
 
 #interests #interestsCarousel {
-  width: clamp(18rem, 70%, 1200px);
-  border-radius: 1rem;
+  width: clamp(18rem, 75%, 1200px);
+  border-radius: 40% 60% 30% 70% / 50% 60% 40% 50%;
   overflow: hidden;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+#interests #interestsCarousel .carousel-indicators {
+  margin-right: 10%;
+  margin-bottom: 1.5rem;
+  margin-left: 40%;
+}
+#interests #interestsCarousel .carousel-indicators button {
+  cursor: pointer;
 }
 
 .browserModal {
@@ -1461,5 +1468,5 @@ a.btn:active {
 }
 
 .dark_mode #interests #interestsCarousel {
-  filter: saturate(0) brightness(1.1);
+  filter: saturate(0) contrast(1.4);
 }
