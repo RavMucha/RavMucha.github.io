@@ -287,183 +287,8 @@ div.card-body .icon_container.icon_container i:hover {
   box-shadow: inset 0.5px 1.5px 3px hsla(0, 0%, 50%, 0.5);
   padding: 8rem 4rem 8rem 3rem !important;
 }
-.dark_mode .img-profile {
-  -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
-    saturate(90%) grayscale(50%) drop-shadow(0 0 5px red)
-    drop-shadow(3px 3px 8px #111);
-  filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
-    grayscale(50%) drop-shadow(0 0 5px red) drop-shadow(3px 3px 8px #111);
-  animation: redGlow 1500ms linear 0s 1 normal,
-    redGlowConst 3s linear 2s infinite alternate-reverse;
-}
-@keyframes redGlow {
-  from {
-    -webkit-filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
-      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
-      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
-      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
-    filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
-      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
-      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
-      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
-      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
-      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
-      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
-    filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
-      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
-      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
-      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
-  }
-}
-@keyframes redGlow {
-  from {
-    -webkit-filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
-      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
-      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
-      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
-    filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
-      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
-      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
-      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
-      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
-      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
-      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
-    filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
-      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
-      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
-      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
-  }
-}
-@-webkit-keyframes redGlow {
-  from {
-    -webkit-filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
-      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
-      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
-      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
-    filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
-      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
-      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
-      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
-      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
-      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
-      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
-    filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
-      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
-      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
-      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
-  }
-}
-@keyframes redGlowConstBTN {
-  from {
-    -webkit-filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
-    filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
-  }
-  to {
-    -webkit-filter: drop-shadow(1px 1px 3px #111)
-      drop-shadow(1px 1px 7px #ff8792);
-    filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-  }
-}
-@-webkit-keyframes redGlowConstBTN {
-  from {
-    -webkit-filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
-    filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
-  }
-  to {
-    -webkit-filter: drop-shadow(1px 1px 3px #111)
-      drop-shadow(1px 1px 7px #ff8792);
-    filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
-  }
-}
-@keyframes redGlowConst {
-  from {
-    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
-      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
-      drop-shadow(0 0 5px red);
-    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
-      grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0 0 5px red);
-  }
-  to {
-    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
-      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
-      drop-shadow(1px 1px 8px #57141a);
-    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
-      grayscale(50%) drop-shadow(3px 3px 8px #111)
-      drop-shadow(1px 1px 8px #57141a);
-  }
-}
-@-webkit-keyframes redGlowConst {
-  from {
-    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
-      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
-      drop-shadow(0 0 5px red);
-    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
-      grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0 0 5px red);
-  }
-  to {
-    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
-      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
-      drop-shadow(1px 1px 8px #57141a);
-    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
-      grayscale(50%) drop-shadow(3px 3px 8px #111)
-      drop-shadow(1px 1px 8px #57141a);
-  }
-}
 .img-profile {
   animation: greenGlow 1s linear 10ms reverse;
-}
-@keyframes greenGlow {
-  from {
-    -webkit-filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
-      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
-      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
-      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
-    filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
-      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
-      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
-      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
-      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
-      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
-      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
-    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
-      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
-      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
-      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
-  }
-}
-@-webkit-keyframes greenGlow {
-  from {
-    -webkit-filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
-      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
-      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
-      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
-    filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
-      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
-      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
-      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
-      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
-      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
-      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
-    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
-      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
-      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
-      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
-  }
 }
 #interests,
 .relativ {
@@ -840,26 +665,6 @@ h4 span.text-info {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-@-webkit-keyframes pulse {
-  from {
-    color: #fd7e14;
-    text-shadow: 0 0 2px #ffc107;
-  }
-  to {
-    color: #ffc107;
-    text-shadow: 0 0 0 #111;
-  }
-}
-@keyframes pulse {
-  from {
-    color: #fd7e14;
-    text-shadow: 0 0 2px #ffc107;
-  }
-  to {
-    color: #ffc107;
-    text-shadow: 0 0 0 #111;
-  }
-}
 .inset {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
@@ -869,44 +674,6 @@ h4 span.text-info {
 }
 .inset:hover {
   border: 1px solid #c3ccd5;
-}
-@keyframes clicker {
-  0% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes clicker {
-  0% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes faderAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes faderAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .up-button {
   transform: scale(1);
@@ -1047,20 +814,6 @@ img.small-icon-std {
   -moz-animation: loader 2s linear infinite;
   -o-animation: loader 2s linear infinite;
   animation: loader 1.5s linear infinite;
-}
-
-@keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 body {
   font-family: "Arial", sans-serif;
@@ -1293,6 +1046,15 @@ a.btn:active {
   background: rgba(163, 0, 14, 0.7);
   box-shadow: inset 0 0 5px #520007;
 }
+.dark_mode .img-profile {
+  -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
+    saturate(90%) grayscale(50%) drop-shadow(0 0 5px red)
+    drop-shadow(3px 3px 8px #111);
+  filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
+    grayscale(50%) drop-shadow(0 0 5px red) drop-shadow(3px 3px 8px #111);
+  animation: redGlow 1500ms linear 0s 1 normal,
+    redGlowConst 3s linear 2s infinite alternate-reverse;
+}
 .dark_mode .edu img {
   -webkit-filter: drop-shadow(0.5px 0.5px 0 #b6000f);
   filter: drop-shadow(0.5px 0.5px 0 #b6000f);
@@ -1490,4 +1252,255 @@ a.btn:active {
   filter: saturate(0) contrast(1.3) brightness(1.2)
     drop-shadow(1px 1px 5px rgb(255 0 0 / 0.3));
   transform: scale(1.05);
+}
+/* KEYFRAMES */
+@-webkit-keyframes pulse {
+  from {
+    color: #fd7e14;
+    text-shadow: 0 0 2px #ffc107;
+  }
+  to {
+    color: #ffc107;
+    text-shadow: 0 0 0 #111;
+  }
+}
+@keyframes pulse {
+  from {
+    color: #fd7e14;
+    text-shadow: 0 0 2px #ffc107;
+  }
+  to {
+    color: #ffc107;
+    text-shadow: 0 0 0 #111;
+  }
+}
+@keyframes clicker {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes clicker {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes faderAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes faderAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes redGlow {
+  from {
+    -webkit-filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
+      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
+      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
+      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
+    filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
+      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
+      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
+      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
+      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
+      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
+      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
+    filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
+      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
+      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
+      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
+  }
+}
+@keyframes redGlow {
+  from {
+    -webkit-filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
+      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
+      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
+      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
+    filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
+      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
+      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
+      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
+      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
+      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
+      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
+    filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
+      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
+      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
+      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
+  }
+}
+@-webkit-keyframes redGlow {
+  from {
+    -webkit-filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
+      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
+      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
+      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
+    filter: drop-shadow(0 0 6px #111) drop-shadow(0 0 10px #111)
+      drop-shadow(0 0 20px #111) drop-shadow(0 0 30px #57141a)
+      drop-shadow(0 0 50px #c13d3d) drop-shadow(0 0 60px red)
+      drop-shadow(0 0 70px #57141a) drop-shadow(0 0 80px #c13d3d);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
+      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
+      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
+      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
+    filter: drop-shadow(0 0 3px #111) drop-shadow(0 0 5px #111)
+      drop-shadow(0 0 10px #111) drop-shadow(0 0 15px #57141a)
+      drop-shadow(0 0 25px #c13d3d) drop-shadow(0 0 30px red)
+      drop-shadow(0 0 35px #57141a) drop-shadow(0 0 50px #c13d3d);
+  }
+}
+@keyframes redGlowConstBTN {
+  from {
+    -webkit-filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
+    filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
+  }
+  to {
+    -webkit-filter: drop-shadow(1px 1px 3px #111)
+      drop-shadow(1px 1px 7px #ff8792);
+    filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+  }
+}
+@-webkit-keyframes redGlowConstBTN {
+  from {
+    -webkit-filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
+    filter: drop-shadow(3px 3px 7px #111) drop-shadow(0 0 3px red);
+  }
+  to {
+    -webkit-filter: drop-shadow(1px 1px 3px #111)
+      drop-shadow(1px 1px 7px #ff8792);
+    filter: drop-shadow(1px 1px 3px #111) drop-shadow(1px 1px 7px #ff8792);
+  }
+}
+@keyframes redGlowConst {
+  from {
+    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
+      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
+      drop-shadow(0 0 5px red);
+    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
+      grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0 0 5px red);
+  }
+  to {
+    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
+      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
+      drop-shadow(1px 1px 8px #57141a);
+    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
+      grayscale(50%) drop-shadow(3px 3px 8px #111)
+      drop-shadow(1px 1px 8px #57141a);
+  }
+}
+@-webkit-keyframes redGlowConst {
+  from {
+    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
+      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
+      drop-shadow(0 0 5px red);
+    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
+      grayscale(50%) drop-shadow(3px 3px 8px #111) drop-shadow(0 0 5px red);
+  }
+  to {
+    -webkit-filter: hue-rotate(350deg) contrast(150%) brightness(90%)
+      saturate(90%) grayscale(50%) drop-shadow(3px 3px 8px #111)
+      drop-shadow(1px 1px 8px #57141a);
+    filter: hue-rotate(350deg) contrast(150%) brightness(90%) saturate(90%)
+      grayscale(50%) drop-shadow(3px 3px 8px #111)
+      drop-shadow(1px 1px 8px #57141a);
+  }
+}
+@keyframes greenGlow {
+  from {
+    -webkit-filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
+      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
+      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
+      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
+    filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
+      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
+      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
+      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
+      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
+      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
+      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
+      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
+      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
+      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
+  }
+}
+@-webkit-keyframes greenGlow {
+  from {
+    -webkit-filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
+      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
+      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
+      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
+    filter: drop-shadow(0 0 6px white) drop-shadow(0 0 10px #ddd)
+      drop-shadow(0 0 20px #ddd) drop-shadow(0 0 30px lightgreen)
+      drop-shadow(0 0 50px darkgreen) drop-shadow(0 0 60px green)
+      drop-shadow(0 0 70px lightgreen) drop-shadow(0 0 80px darkgreen);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
+      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
+      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
+      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 3px #ddd)
+      drop-shadow(0 0 7px #ddd) drop-shadow(0 0 10px lightgreen)
+      drop-shadow(0 0 20px darkgreen) drop-shadow(0 0 25px green)
+      drop-shadow(0 0 30px lightgreen) drop-shadow(0 0 40px darkgreen);
+  }
 }
