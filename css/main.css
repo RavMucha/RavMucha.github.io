@@ -249,6 +249,10 @@ iframe.site {
   transition-property: transform;
   transition-duration: 400ms;
 }
+a img.solo_link {
+  width: 70px;
+  height: 56px;
+}
 div.icon_container {
   display: flex;
   gap: 0.4rem;
@@ -1336,7 +1340,7 @@ a.btn:active {
   background-color: #c20404;
 }
 .dark_mode #actionBtnBug {
-  background-color: #ba8b00;
+  background-color: #b7a800;
 }
 .dark_mode #actionBtnChat {
   background-color: #fd7e14;
