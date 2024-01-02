@@ -644,12 +644,12 @@ div img.flav_icon {
 .siteLink {
   position: absolute;
   bottom: -42px;
-  left: calc(50% - 20px);
+  left: calc(50% - 22.5px);
   z-index: -1;
   border: none;
   outline: none;
   background-color: #fefefe;
-  color: white;
+  color: #000;
   cursor: pointer;
   padding: 10px;
   border-radius: 1px 1px 50% 50%;
@@ -683,10 +683,7 @@ div img.flav_icon {
 .siteLink:hover {
   background-color: #495057;
   opacity: 0.99;
-}
-.siteLink:hover img {
-  -webkit-filter: invert(99%);
-  filter: invert(99%);
+  color: #fff;
 }
 
 #darkMode:hover,
@@ -921,10 +918,6 @@ h4 span.text-info {
   transform: scale(0.8);
   transition-property: transform;
   transition-duration: 100ms;
-}
-.sqr-20 {
-  width: 20px;
-  height: 20px;
 }
 .university-icon {
   height: 25px;

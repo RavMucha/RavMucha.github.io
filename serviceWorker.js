@@ -55,7 +55,6 @@ const assets = [
   "/img/GH.png",
   "/img/GL.png",
   "/img/LUXOFT.png",
-  "/img/Link.png",
   "/img/M1M0.png",
   "/img/SL.PNG",
   "/img/SS.png",
