@@ -28,6 +28,15 @@ const image = document.getElementById("imageTag");
 const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
+//BS Tooltip mandatory trigger
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+if (tooltipTriggerList) {
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
+}
 //Check user browser
 if (
   navigator.userAgent.indexOf("Chrome") != -1 ||
