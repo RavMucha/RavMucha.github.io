@@ -880,6 +880,9 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
   color: hsl(195, 54%, 37%) !important;
 }
+.rounded-pill.bg-light {
+  box-shadow: inset 0 0 3px rgb(0 0 0 / 40%);
+}
 #HeaderSurname {
   color: rgba(255 255 255 / 0.1);
   background-clip: text;
