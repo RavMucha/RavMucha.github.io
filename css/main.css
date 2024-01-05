@@ -1125,6 +1125,11 @@ a.btn:active {
   background-color: #111;
   text-shadow: 0 0 1px red;
 }
+.dark_mode h6 {
+  color: hsl(0deg 51.97% 70%);
+  background-color: #111;
+  text-shadow: 1px 0 0 rgb(150, 0, 0);
+}
 .dark_mode h1 .text-primary,
 .dark_mode h2 .text-primary,
 .dark_mode h3 .text-primary {
