@@ -99,8 +99,26 @@
           <div class="row">
             <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
               <form id="contact-form" name="contact-form" netlify>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating">
+                  <input type="email" class="form-control is-invalid" id="floatingInputInvalid"
+                    placeholder="name@example.com" value="test@example.com">
+                  <label for="floatingInputInvalid">Invalid input</label>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>
                 <div class="row">
                   <div class="col-md-6">
+
                     <div class="md-form mb-3">
                       <label for="name" class="formLabel">your name</label>
                       <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk"
@@ -752,8 +770,7 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Telephone consultant | Transcription Process
-                Lead</h3>
+              <h3 class="mb-0">Telephone consultant</h3>
               <div class="subheading mb-3">
                 <img src="img/05.png" alt="company logo" class="small-icon-std" /> Medicover Sp. z o.o.
               </div>
@@ -761,10 +778,7 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Telephone customer service in
                   Polish and English</li>
-                <li class="list-group-item">Training new joiners</li>
-                <li class="list-group-item">Transcription of phone
-                  calls</li>
-                <li class="list-group-item">Various supervisory roles.</li>
+                <li class="list-group-item">Training new joiners &amp; various supervisory roles.</li>
               </ul>
               </p>
             </div>
@@ -787,7 +801,7 @@
                   advertising space, website administration (HTML,
                   phpBB).</li>
                 <li class="list-group-item">Employed and managed the work
-                  of up to 15 contractors.</li>
+                  of contractors.</li>
               </ul>
               </p>
             </div>
