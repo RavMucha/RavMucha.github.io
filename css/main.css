@@ -76,6 +76,7 @@
   --header-orange: #fd7e14;
   --dm-hover-dark: #1c1f23;
   --dm-hover-border: #1a1e21;
+  --custom-pink: #ff8792;
 }
 html {
   overflow-x: hidden;
@@ -754,7 +755,7 @@ img.small-icon-std {
   z-index: 1234;
   border-left: 280px solid transparent;
   border-right: 0 solid transparent;
-  border-top: 280px solid var(--card-text) 75;
+  border-top: 280px solid #696f7475;
   pointer-events: none;
 }
 #loading-wrapper {
@@ -1485,9 +1486,9 @@ a.btn:active {
   }
   to {
     -webkit-filter: drop-shadow(1px 1px 3px var(--darkmode-bg))
-      drop-shadow(1px 1px 7px #ff8792);
+      drop-shadow(1px 1px 7px var(--custom-pink));
     filter: drop-shadow(1px 1px 3px var(--darkmode-bg))
-      drop-shadow(1px 1px 7px #ff8792);
+      drop-shadow(1px 1px 7px var(--custom-pink));
   }
 }
 @-webkit-keyframes redGlowConstBTN {
@@ -1498,9 +1499,9 @@ a.btn:active {
   }
   to {
     -webkit-filter: drop-shadow(1px 1px 3px var(--darkmode-bg))
-      drop-shadow(1px 1px 7px #ff8792);
+      drop-shadow(1px 1px 7px var(--custom-pink));
     filter: drop-shadow(1px 1px 3px var(--darkmode-bg))
-      drop-shadow(1px 1px 7px #ff8792);
+      drop-shadow(1px 1px 7px var(--custom-pink));
   }
 }
 @keyframes redGlowConst {
