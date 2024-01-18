@@ -30,6 +30,7 @@ const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
 const mobileNav = document.getElementById("sideNav");
 const mobileBtn = document.querySelector(".navbar-toggler");
+const navInside = document.getElementById("navbarSupportedContent");
 //BS Tooltip mandatory trigger
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
@@ -150,7 +151,7 @@ window.addEventListener("scroll", AvatarChangeOnScroll);
 document.addEventListener("mouseup", (e) => {
   if (
     !(e.target == mobileNav || mobileNav.contains(e.target)) &&
-    !mobileBtn.classList.contains("collapsed")
+    navInside.classList.contains("show")
   ) {
     mobileBtn.click();
   }
