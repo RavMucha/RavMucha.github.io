@@ -28,6 +28,8 @@ const image = document.getElementById("imageTag");
 const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
+const mobileNav = document.getElementById("sideNav");
+const mobileBtn = document.querySelector(".navbar-toggler");
 //BS Tooltip mandatory trigger
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
@@ -144,3 +146,12 @@ document.getElementById("lightMode").addEventListener("click", function () {
 });
 //On scroll pic changer
 window.addEventListener("scroll", AvatarChangeOnScroll);
+
+document.addEventListener("mouseup", (e) => {
+  if (
+    !(e.target == mobileNav || mobileNav.contains(e.target)) &&
+    !mobileBtn.classList.contains("collapsed")
+  ) {
+    mobileBtn.click();
+  }
+});
