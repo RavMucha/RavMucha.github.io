@@ -871,6 +871,9 @@ h2 {
   font-family: "Saira Extra Condensed", sans-serif;
   font-size: 1.35rem;
 }
+h5.skills-header {
+  font-weight: 500;
+}
 .list-social-icons a {
   color: var(--hover-dark) !important;
 }
@@ -1163,8 +1166,8 @@ a.btn:active {
   background-color: var(--darkmode-bg);
   text-shadow: 0 0 1px red;
 }
-.dark_mode h6 {
-  color: hsl(0deg 51.97% 70%);
+.dark_mode h5.skills-header {
+  color: hsl(0deg 60% 70%);
   background-color: var(--darkmode-bg);
   text-shadow: 1px 0 0 rgb(150, 0, 0);
 }
