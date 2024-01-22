@@ -3,6 +3,7 @@ const assets = [
   "/",
   "/index.html",
   "/css/main-min.css",
+  "/css/success-min.css",
   "/js/main.js",
   "vendor/bootstrap/css/bootstrap.min.css",
   "vendor/font-awesome/css/all.min.css",

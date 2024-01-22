@@ -1,4 +1,15 @@
+@font-face {
+  font-display: swap;
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../vendor/Saira_Condensed/saira-extra-condensed-v13-latin-ext-700.woff2")
+    format("woff2");
+}
+
 body {
+  font-family: "Arial", sans-serif;
+  color: #696f74;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +36,7 @@ body {
 
 main {
   padding: 3rem 6rem;
+  margin: 0.5rem;
   border-radius: 0.3rem;
   border-radius: 40% 60% 30% 70% / 50% 60% 40% 50%;
   background-color: white;
@@ -57,18 +69,31 @@ main {
 
 main h1 {
   margin: 0;
+  font-size: 6rem;
+  line-height: 5.5rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
 }
 
 main a {
   font-weight: 700;
+  color: #117697;
+  text-decoration: none;
+}
+main a:hover,
+main a:focus,
+main a:active {
+  color: #078d8d;
 }
 
 @media (max-width: 440px) {
   main {
-    padding: 2.5rem 3rem;
+    padding: 3rem;
   }
   main h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 2.5rem;
   }
 }
