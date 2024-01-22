@@ -14,11 +14,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--custom-main) !important;
-  background: linear-gradient(-40deg, #2b7891, #389bbd, #20c997, #fd7e14);
-  background-size: 200% 200%;
+  background-color: #389bbd;
+  background: linear-gradient(-50deg, #389bbd, #20c997, #389bbd, #fd7e14);
+  background-size: 300% 300%;
   background-position: 0% 50%;
-  animation: floatingGradient 30s ease infinite;
+  background-repeat: no-repeat;
+  animation: floatingGradient 25s ease infinite;
   margin: 0;
   padding: 0;
   overflow: hidden;
