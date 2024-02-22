@@ -450,11 +450,6 @@ li b::before {
   -webkit-filter: hue-rotate(120deg);
   filter: hue-rotate(120deg);
 }
-.blueChange:hover,
-.blueChange:focus {
-  -webkit-filter: invert(10%) sepia(25%) hue-rotate(195deg) contrast(150%);
-  filter: invert(10%) sepia(25%) hue-rotate(195deg) contrast(150%);
-}
 .blueChangePWA:hover,
 .blueChangePWA:focus {
   -webkit-filter: invert(75%) hue-rotate(105deg);
@@ -1255,11 +1250,6 @@ a.btn:active {
 .dark_mode .fa-stack.fa-lg:active,
 .dark_mode .flipLink:active {
   color: var(--blood) !important;
-}
-.dark_mode .blueChange:hover,
-.dark_mode .blueChange:focus {
-  -webkit-filter: saturate(100);
-  filter: saturate(100);
 }
 .dark_mode .blueChangePWA:hover,
 .dark_mode .blueChangePWA:focus {

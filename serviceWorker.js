@@ -68,7 +68,6 @@ const assets = [
   "/img/flag-PL.png",
   "/img/flag-UK.png",
   "/img/gsap.svg",
-  "/img/materialize.svg",
   "/img/me_ico.PNG",
   "/img/profile.png",
   "/img/udemy.png",
