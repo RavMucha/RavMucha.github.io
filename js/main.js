@@ -131,7 +131,7 @@ document.getElementById("alert_closer").addEventListener("click", () => {
 });
 //Clear forms
 document.getElementById("form_clearer").addEventListener("click", () => {
-  document.getElementById("contact-form").reset();
+  document.getElementById("contact").reset();
 });
 //Dark/light mode switch
 document.getElementById("darkMode").addEventListener("click", function () {
