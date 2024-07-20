@@ -354,6 +354,13 @@ div.card-body .icon_container.icon_container i:hover {
   -ms-user-select: none;
   user-select: none;
 }
+#topic:required:valid,
+#topic option {
+  color: #212529;
+}
+#topic:required:invalid {
+  color: #595c5f;
+}
 .langList {
   list-style-type: disc;
   margin: 10px 0 10px 0;
@@ -1128,7 +1135,12 @@ a.btn:active {
 .dark_mode #topic:disabled {
   background-color: #343a41;
 }
-.dark_mode .chatInput::placeholder {
+.dark_mode #topic:required:valid,
+.dark_mode #topic option {
+  color: var(--loading-bg);
+}
+.dark_mode .chatInput::placeholder,
+.dark_mode #topic:required:invalid {
   color: hsla(0, 100%, 60%, 0.4);
 }
 .dark_mode {
