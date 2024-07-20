@@ -359,7 +359,7 @@ div.card-body .icon_container.icon_container i:hover {
   color: #212529;
 }
 #topic:required:invalid {
-  color: #595c5f;
+  color: var(--bs-secondary-color);
 }
 .langList {
   list-style-type: disc;
