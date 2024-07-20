@@ -549,8 +549,7 @@ div img.flav_icon {
 #darkMode:hover,
 #lightMode:hover,
 #actionBtn:hover,
-#actionBtnChat:hover,
-#actionBtnBug:hover {
+#actionBtnChat:hover {
   background-color: var(--hover-dark);
   opacity: 0.9;
   transform: scale(1.05) translateX(-1px) translateY(-1px);
@@ -582,33 +581,9 @@ h4 span.text-info {
   -webkit-animation: faderAnimation 1s;
   animation: faderAnimation 1s;
 }
-#actionBtnBug {
-  position: fixed;
-  bottom: 60px;
-  right: 10px;
-  background-color: var(--icon-bug);
-}
-#actionBtnBug .actionBtnhint {
-  visibility: hidden;
-  position: absolute;
-  z-index: 99;
-  top: 2px;
-  right: 115%;
-  background-color: var(--hover-dark);
-  width: 140px;
-  color: var(--basic-white);
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-}
-#actionBtnBug:hover .actionBtnhint {
-  visibility: visible;
-  -webkit-animation: faderAnimation 1s;
-  animation: faderAnimation 1s;
-}
 #actionBtnChat {
   position: fixed;
-  bottom: 110px;
+  bottom: 60px;
   right: 10px;
   background-color: var(--icon-chat);
 }
@@ -633,7 +608,7 @@ h4 span.text-info {
 #lightMode {
   display: none;
   position: fixed;
-  bottom: 160px;
+  bottom: 110px;
   right: 10px;
   background-color: var(--icon-light);
   animation: clicker 0.1s reverse;
@@ -659,7 +634,7 @@ h4 span.text-info {
 #darkMode {
   display: flex;
   position: fixed;
-  bottom: 160px;
+  bottom: 110px;
   right: 10px;
   background-color: var(--icon-dark);
   animation: clicker 0.1s reverse;
@@ -1138,9 +1113,6 @@ a.btn:active {
 .dark_mode #actionBtn {
   background-color: var(--header-red);
 }
-.dark_mode #actionBtnBug {
-  background-color: var(--icon-bug-bg);
-}
 .dark_mode #actionBtnChat {
   background-color: var(--header-orange);
 }
@@ -1148,13 +1120,16 @@ a.btn:active {
 .dark_mode .chatHolder {
   background-color: var(--header-grey);
 }
-.dark_mode .chatInput {
+.dark_mode .chatInput,
+.dark_mode #topic {
   background-color: var(--darkmode-bg);
 }
-.dark_mode .chatInput:disabled {
+.dark_mode .chatInput:disabled,
+.dark_mode #topic:disabled {
   background-color: #343a41;
 }
-.dark_mode .chatInput::placeholder {
+.dark_mode .chatInput::placeholder,
+.dark_mode #topic #select_placeholder {
   color: hsla(0, 100%, 60%, 0.4);
 }
 .dark_mode {

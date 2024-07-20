@@ -133,9 +133,6 @@ document.getElementById("alert_closer").addEventListener("click", () => {
 document.getElementById("form_clearer").addEventListener("click", () => {
   document.getElementById("contact-form").reset();
 });
-document.getElementById("form_clearer2").addEventListener("click", () => {
-  document.getElementById("contact-form2").reset();
-});
 //Dark/light mode switch
 document.getElementById("darkMode").addEventListener("click", function () {
   playSound("../media/saberOn.mp3");
