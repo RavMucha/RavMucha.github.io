@@ -361,6 +361,10 @@ div.card-body .icon_container.icon_container i:hover {
 #topic:required:invalid {
   color: var(--bs-secondary-color);
 }
+#captcha {
+  overflow-x: auto;
+  overflow-y: clip;
+}
 .langList {
   list-style-type: disc;
   margin: 10px 0 10px 0;
