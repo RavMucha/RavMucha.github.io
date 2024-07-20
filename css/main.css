@@ -1128,8 +1128,7 @@ a.btn:active {
 .dark_mode #topic:disabled {
   background-color: #343a41;
 }
-.dark_mode .chatInput::placeholder,
-.dark_mode #topic #select_placeholder {
+.dark_mode .chatInput::placeholder {
   color: hsla(0, 100%, 60%, 0.4);
 }
 .dark_mode {
