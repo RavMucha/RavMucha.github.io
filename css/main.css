@@ -320,6 +320,9 @@ div.card-body .icon_container.icon_container i:hover {
 #infoAlert .alert-dismissible {
   padding-right: 3.5rem;
 }
+#message {
+  min-height: 80px;
+}
 #footer {
   -webkit-backdrop-filter: invert(2%);
   backdrop-filter: invert(1%);
