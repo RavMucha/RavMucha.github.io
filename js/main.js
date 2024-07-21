@@ -131,7 +131,10 @@ document.getElementById("alert_closer").addEventListener("click", () => {
 });
 //Clear forms
 document.getElementById("form_clearer").addEventListener("click", () => {
-  document.getElementById("contact").reset();
+  const inputs = document.getElementsByClassName("chatInput");
+  for (let input of inputs) {
+    input.value = "";
+  }
 });
 //Dark/light mode switch
 document.getElementById("darkMode").addEventListener("click", function () {

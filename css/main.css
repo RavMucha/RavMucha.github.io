@@ -1142,12 +1142,10 @@ a.btn:active {
 .dark_mode .chatHolder {
   background-color: var(--header-grey);
 }
-.dark_mode .chatInput,
-.dark_mode #topic {
+.dark_mode .chatInput {
   background-color: var(--darkmode-bg);
 }
-.dark_mode .chatInput:disabled,
-.dark_mode #topic:disabled {
+.dark_mode .chatInput:disabled {
   background-color: #343a41;
 }
 .dark_mode #topic:required:valid,
