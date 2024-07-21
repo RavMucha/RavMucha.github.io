@@ -1098,6 +1098,11 @@ a.btn:active {
 .dark_mode .form-control {
   color: var(--loading-bg);
 }
+
+.dark_mode #captcha {
+  filter: invert(1) grayscale(0.25) hue-rotate(200deg);
+}
+
 .dark_mode #footer {
   box-shadow: none;
 }
