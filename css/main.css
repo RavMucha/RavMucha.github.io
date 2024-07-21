@@ -360,6 +360,7 @@ div.card-body .icon_container.icon_container i:hover {
 #topic:required:valid,
 #topic option {
   color: #212529;
+  cursor: pointer;
 }
 #topic:required:invalid {
   color: var(--bs-secondary-color);
